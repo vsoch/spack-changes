@@ -48,3 +48,4 @@ We will start out with two packages, [axom](https://github.com/LLNL/axom) and [a
 The raw data will be organized in [data](data), and in subfolders by the type.
 
  - [sourcecode](data/sourcecode): will use caliper to assess high level changes in the code base.
+ - [specs](data/specs): We want to look at changes in spack specs, over time.
