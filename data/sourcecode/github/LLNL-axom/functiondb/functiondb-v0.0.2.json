@@ -1,0 +1,841 @@
+{
+    "v0.0.2": {
+        "src.components.shroud.src.util": {
+            "util.wformat": [
+                "template",
+                "dct"
+            ],
+            "util.append_format": [
+                "lst",
+                "template",
+                "dct"
+            ],
+            "util.eval_template": [
+                "node",
+                "name",
+                "tname",
+                "fmt"
+            ],
+            "util.un_camel": [
+                "text"
+            ],
+            "util.update": [
+                "d",
+                "u"
+            ],
+            "util.WrapperMixin": {
+                "_init_splicer": [
+                    "self",
+                    "splicers"
+                ],
+                "_push_splicer": [
+                    "self",
+                    "name"
+                ],
+                "_pop_splicer": [
+                    "self",
+                    "name"
+                ],
+                "_create_splicer": [
+                    "self",
+                    "name",
+                    "out",
+                    "override",
+                    "default"
+                ],
+                "std_c_type": [
+                    "self",
+                    "lang",
+                    "arg",
+                    "const",
+                    "ptr"
+                ],
+                "std_c_decl": [
+                    "self",
+                    "lang",
+                    "arg",
+                    "name",
+                    "const",
+                    "ptr"
+                ],
+                "namespace": [
+                    "self",
+                    "node",
+                    "position",
+                    "output"
+                ],
+                "write_output_file": [
+                    "self",
+                    "fname",
+                    "directory",
+                    "output"
+                ],
+                "write_copyright": [
+                    "self",
+                    "fp"
+                ],
+                "write_lines": [
+                    "self",
+                    "fp",
+                    "lines"
+                ],
+                "write_doxygen_file": [
+                    "self",
+                    "output",
+                    "fname",
+                    "node",
+                    "cls"
+                ],
+                "write_doxygen": [
+                    "self",
+                    "output",
+                    "docs"
+                ]
+            },
+            "util.Typedef": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "kw"
+                ],
+                "update": [
+                    "self",
+                    "d"
+                ],
+                "XXXcopy": [
+                    "self"
+                ],
+                "clone_as": [
+                    "self",
+                    "name"
+                ],
+                "_to_dict": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "util.Options": {
+                "__init__": [
+                    "self",
+                    "parent",
+                    "kw"
+                ],
+                "__getattr__": [
+                    "self",
+                    "name"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__contains__": [
+                    "self",
+                    "item"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "get": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "setdefault": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "update": [
+                    "self",
+                    "d",
+                    "replace"
+                ],
+                "inlocal": [
+                    "self",
+                    "key"
+                ],
+                "_to_dict": [
+                    "self"
+                ],
+                "_to_full_dict": [
+                    "self",
+                    "d"
+                ]
+            },
+            "util.copy_function_node": [
+                "node"
+            ],
+            "util.XXXClassNode": {
+                "__init__": [
+                    "self",
+                    "name"
+                ]
+            },
+            "util.XXXFunctionNode": {
+                "__init__": [
+                    "self"
+                ],
+                "set_decl": [
+                    "self",
+                    "decl"
+                ],
+                "update": [
+                    "self",
+                    "d"
+                ],
+                "_update_result_args": [
+                    "self",
+                    "d"
+                ],
+                "dump": [
+                    "self"
+                ]
+            },
+            "util.ExpandedEncoder": {
+                "default": [
+                    "self",
+                    "obj"
+                ]
+            }
+        },
+        "src.components.shroud.src.whelpers": {},
+        "src.components.shroud.src": {},
+        "src.components.shroud.src.wrapc": {
+            "Wrapc": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "config",
+                    "splicers"
+                ],
+                "_begin_output_file": [
+                    "self"
+                ],
+                "_c_type": [
+                    "self",
+                    "lang",
+                    "arg"
+                ],
+                "_c_decl": [
+                    "self",
+                    "lang",
+                    "arg",
+                    "name"
+                ],
+                "wrap_library": [
+                    "self"
+                ],
+                "write_file": [
+                    "self",
+                    "node",
+                    "worker",
+                    "cls"
+                ],
+                "wrap_functions": [
+                    "self",
+                    "tree"
+                ],
+                "write_header": [
+                    "self",
+                    "node",
+                    "fname",
+                    "cls"
+                ],
+                "write_impl": [
+                    "self",
+                    "node",
+                    "hname",
+                    "fname",
+                    "cls"
+                ],
+                "write_headers": [
+                    "self",
+                    "headers",
+                    "output"
+                ],
+                "wrap_class": [
+                    "self",
+                    "node"
+                ],
+                "wrap_function": [
+                    "self",
+                    "cls",
+                    "node"
+                ],
+                "write_helper_files": [
+                    "self"
+                ]
+            }
+        },
+        "src.components.shroud.src.wrapf": {
+            "Wrapf": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "config",
+                    "splicers"
+                ],
+                "_begin_output_file": [
+                    "self"
+                ],
+                "_end_output_file": [
+                    "self"
+                ],
+                "_begin_class": [
+                    "self"
+                ],
+                "_c_type": [
+                    "self",
+                    "arg"
+                ],
+                "_c_decl": [
+                    "self",
+                    "arg",
+                    "name"
+                ],
+                "_f_type": [
+                    "self",
+                    "arg",
+                    "default",
+                    "local"
+                ],
+                "_f_decl": [
+                    "self",
+                    "arg",
+                    "name",
+                    "default",
+                    "local"
+                ],
+                "wrap_library": [
+                    "self"
+                ],
+                "wrap_class": [
+                    "self",
+                    "node"
+                ],
+                "write_object_get_set": [
+                    "self",
+                    "node",
+                    "fmt_class"
+                ],
+                "overload_compare": [
+                    "self",
+                    "fmt_class",
+                    "operator",
+                    "procedure",
+                    "predicate"
+                ],
+                "wrap_function": [
+                    "self",
+                    "cls",
+                    "node"
+                ],
+                "wrap_function_interface": [
+                    "self",
+                    "cls",
+                    "node"
+                ],
+                "wrap_function_impl": [
+                    "self",
+                    "cls",
+                    "node"
+                ],
+                "append_method_arguments": [
+                    "self",
+                    "F_code",
+                    "line1"
+                ],
+                "write_module": [
+                    "self",
+                    "node",
+                    "cls"
+                ],
+                "write_c_helper": [
+                    "self"
+                ]
+            }
+        },
+        "src.components.shroud.src.splicer": {
+            "get_splicers": [
+                "fname",
+                "out"
+            ],
+            "get_splicer_based_on_suffix": [
+                "name",
+                "out"
+            ]
+        },
+        "src.components.shroud.src.wrapp": {
+            "add_templates": [
+                "options"
+            ],
+            "Wrapp": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "config",
+                    "splicers"
+                ],
+                "XXX_begin_output_file": [
+                    "self"
+                ],
+                "XXX_end_output_file": [
+                    "self"
+                ],
+                "_begin_class": [
+                    "self"
+                ],
+                "reset_file": [
+                    "self"
+                ],
+                "wrap_library": [
+                    "self"
+                ],
+                "wrap_class": [
+                    "self",
+                    "node"
+                ],
+                "create_class_helper_functions": [
+                    "self",
+                    "node"
+                ],
+                "intent_out": [
+                    "self",
+                    "typedef",
+                    "fmt",
+                    "output"
+                ],
+                "wrap_functions": [
+                    "self",
+                    "cls",
+                    "functions"
+                ],
+                "wrap_function": [
+                    "self",
+                    "cls",
+                    "node"
+                ],
+                "create_method": [
+                    "self",
+                    "cls",
+                    "expose",
+                    "fmt",
+                    "PY_impl"
+                ],
+                "write_tp_func": [
+                    "self",
+                    "node",
+                    "fmt",
+                    "fmt_type",
+                    "output"
+                ],
+                "write_extension_type": [
+                    "self",
+                    "node"
+                ],
+                "multi_dispatch": [
+                    "self",
+                    "cls",
+                    "methods"
+                ],
+                "write_header": [
+                    "self",
+                    "node"
+                ],
+                "write_module": [
+                    "self",
+                    "node"
+                ],
+                "write_helper": [
+                    "self"
+                ],
+                "not_implemented_error": [
+                    "self",
+                    "msg",
+                    "ret"
+                ],
+                "not_implemented": [
+                    "self",
+                    "msg",
+                    "ret"
+                ]
+            }
+        },
+        "src.components.shroud.src.parse_decl": {
+            "add_to_dict": [
+                "d",
+                "key",
+                "value"
+            ],
+            "check_decl": [
+                "expr",
+                "parser"
+            ]
+        },
+        "src.components.shroud.src.main": {
+            "main": [],
+            "Config": {},
+            "Schema": {
+                "__init__": [
+                    "self",
+                    "config"
+                ],
+                "push_options": [
+                    "self",
+                    "node"
+                ],
+                "pop_options": [
+                    "self"
+                ],
+                "check_options_only": [
+                    "self",
+                    "node"
+                ],
+                "push_fmt": [
+                    "self",
+                    "node"
+                ],
+                "pop_fmt": [
+                    "self"
+                ],
+                "check_schema": [
+                    "self"
+                ],
+                "check_classes": [
+                    "self",
+                    "node"
+                ],
+                "check_class": [
+                    "self",
+                    "node"
+                ],
+                "check_function": [
+                    "self",
+                    "node"
+                ],
+                "check_functions": [
+                    "self",
+                    "node",
+                    "member"
+                ]
+            },
+            "GenFunctions": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "config"
+                ],
+                "gen_library": [
+                    "self"
+                ],
+                "append_function_index": [
+                    "self",
+                    "node"
+                ],
+                "define_function_suffix": [
+                    "self",
+                    "functions"
+                ],
+                "template_function": [
+                    "self",
+                    "node",
+                    "ordered_functions"
+                ],
+                "generic_function": [
+                    "self",
+                    "node",
+                    "ordered_functions"
+                ],
+                "has_default_args": [
+                    "self",
+                    "node",
+                    "ordered_functions"
+                ],
+                "string_to_buffer_and_len": [
+                    "self",
+                    "node",
+                    "ordered_functions"
+                ],
+                "check_class_dependencies": [
+                    "self",
+                    "node"
+                ],
+                "check_function_dependencies": [
+                    "self",
+                    "node",
+                    "used_types"
+                ],
+                "gen_annotations_decl": [
+                    "self",
+                    "attrs",
+                    "decl"
+                ],
+                "gen_arg_decl": [
+                    "self",
+                    "arg",
+                    "decl"
+                ],
+                "gen_functions_decl": [
+                    "self",
+                    "functions"
+                ]
+            },
+            "VerifyAttrs": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "config"
+                ],
+                "verify_attrs": [
+                    "self"
+                ],
+                "create_class_typedef": [
+                    "self",
+                    "cls"
+                ],
+                "check_arg_attrs": [
+                    "self",
+                    "node"
+                ]
+            },
+            "Namify": {
+                "__init__": [
+                    "self",
+                    "tree",
+                    "config"
+                ],
+                "name_library": [
+                    "self"
+                ],
+                "name_language": [
+                    "self",
+                    "handler"
+                ],
+                "name_function_c": [
+                    "self",
+                    "cls",
+                    "node"
+                ],
+                "name_function_fortran": [
+                    "self",
+                    "cls",
+                    "node"
+                ]
+            }
+        },
+        "src.components.shroud.src.cog.cogapp": {
+            "CogError": {
+                "__init__": [
+                    "self",
+                    "msg",
+                    "file",
+                    "line"
+                ]
+            },
+            "CogUsageError": {},
+            "CogInternalError": {},
+            "CogGeneratedError": {},
+            "Redirectable": {
+                "__init__": [
+                    "self"
+                ],
+                "setOutput": [
+                    "self",
+                    "stdout",
+                    "stderr"
+                ],
+                "prout": [
+                    "self",
+                    "s",
+                    "end"
+                ],
+                "prerr": [
+                    "self",
+                    "s",
+                    "end"
+                ]
+            },
+            "CogGenerator": {
+                "__init__": [
+                    "self"
+                ],
+                "parseMarker": [
+                    "self",
+                    "l"
+                ],
+                "parseLine": [
+                    "self",
+                    "l"
+                ],
+                "getCode": [
+                    "self"
+                ],
+                "evaluate": [
+                    "self",
+                    "cog",
+                    "globals",
+                    "fname"
+                ],
+                "msg": [
+                    "self",
+                    "s"
+                ],
+                "out": [
+                    "self",
+                    "sOut",
+                    "dedent",
+                    "trimblanklines"
+                ],
+                "outl": [
+                    "self",
+                    "sOut"
+                ],
+                "error": [
+                    "self",
+                    "msg"
+                ]
+            },
+            "NumberedFileReader": {
+                "__init__": [
+                    "self",
+                    "f"
+                ],
+                "readline": [
+                    "self"
+                ],
+                "linenumber": [
+                    "self"
+                ]
+            },
+            "CogOptions": {
+                "__init__": [
+                    "self"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ],
+                "clone": [
+                    "self"
+                ],
+                "addToIncludePath": [
+                    "self",
+                    "dirs"
+                ],
+                "parseArgs": [
+                    "self",
+                    "argv"
+                ],
+                "_parse_markers": [
+                    "self",
+                    "val"
+                ],
+                "validate": [
+                    "self"
+                ]
+            },
+            "Cog": {
+                "__init__": [
+                    "self"
+                ],
+                "_fixEndOutputPatterns": [
+                    "self"
+                ],
+                "showWarning": [
+                    "self",
+                    "msg"
+                ],
+                "isBeginSpecLine": [
+                    "self",
+                    "s"
+                ],
+                "isEndSpecLine": [
+                    "self",
+                    "s"
+                ],
+                "isEndOutputLine": [
+                    "self",
+                    "s"
+                ],
+                "installCogModule": [
+                    "self"
+                ],
+                "openOutputFile": [
+                    "self",
+                    "fname"
+                ],
+                "openInputFile": [
+                    "self",
+                    "fname"
+                ],
+                "processFile": [
+                    "self",
+                    "fIn",
+                    "fOut",
+                    "fname",
+                    "globals"
+                ],
+                "suffixLines": [
+                    "self",
+                    "text"
+                ],
+                "processString": [
+                    "self",
+                    "sInput",
+                    "fname"
+                ],
+                "replaceFile": [
+                    "self",
+                    "sOldPath",
+                    "sNewText"
+                ],
+                "saveIncludePath": [
+                    "self"
+                ],
+                "restoreIncludePath": [
+                    "self"
+                ],
+                "addToIncludePath": [
+                    "self",
+                    "includePath"
+                ],
+                "processOneFile": [
+                    "self",
+                    "sFile"
+                ],
+                "processFileList": [
+                    "self",
+                    "sFileList"
+                ],
+                "processArguments": [
+                    "self",
+                    "args"
+                ],
+                "callableMain": [
+                    "self",
+                    "argv"
+                ],
+                "main": [
+                    "self",
+                    "argv"
+                ]
+            }
+        },
+        "src.components.shroud.src.cog.whiteutils": {
+            "whitePrefix": [
+                "strings"
+            ],
+            "reindentBlock": [
+                "lines",
+                "newIndent"
+            ],
+            "commonPrefix": [
+                "strings"
+            ]
+        },
+        "src.components.shroud.src.cog": {},
+        "src.components.shroud.src.cog.backward": {}
+    }
+}
