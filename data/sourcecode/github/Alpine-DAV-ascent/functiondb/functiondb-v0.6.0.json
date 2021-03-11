@@ -1,0 +1,531 @@
+{
+    "v0.6.0": {
+        "src.flow.python.py_src": {},
+        "src.flow.python.py_src.helpers": {
+            "wrap_function": [
+                "func"
+            ]
+        },
+        "src.ascent.python.ascent_jupyter_bridge.setup": {},
+        "src.ascent.python.ascent_jupyter_bridge": {},
+        "src.ascent.python.ascent_jupyter_bridge.console_client": {
+            "select_backend": [],
+            "Status": {},
+            "ConsoleClientCompletor": {
+                "__init__": [
+                    "self",
+                    "tcr"
+                ],
+                "complete": [
+                    "self",
+                    "code",
+                    "state"
+                ]
+            },
+            "ConsoleClient": {
+                "__init__": [
+                    "self",
+                    "config",
+                    "klass",
+                    "readline_delims",
+                    "prompt"
+                ],
+                "__del__": [
+                    "self"
+                ],
+                "_setup_builtins": [
+                    "self"
+                ],
+                "_process_builtins": [
+                    "self",
+                    "code"
+                ],
+                "_add_builtin": [
+                    "self",
+                    "name",
+                    "callback",
+                    "info"
+                ],
+                "_help": [
+                    "self"
+                ],
+                "_connect_client": [
+                    "self"
+                ],
+                "_disconnect_client": [
+                    "self"
+                ],
+                "_quit": [
+                    "self"
+                ],
+                "_shutdown_backend": [
+                    "self"
+                ],
+                "_toggle_client_debug": [
+                    "self"
+                ],
+                "_flush_client": [
+                    "self"
+                ],
+                "_inspect": [
+                    "self",
+                    "text"
+                ],
+                "complete": [
+                    "self",
+                    "code"
+                ],
+                "repl": [
+                    "self"
+                ]
+            }
+        },
+        "src.ascent.python.ascent_jupyter_bridge.ascent_jupyter_bridge.kernel": {
+            "BridgeKernel": {
+                "__init__": [
+                    "self",
+                    "klass"
+                ],
+                "out": [
+                    "self",
+                    "name",
+                    "message",
+                    "silent"
+                ],
+                "stdout": [
+                    "self"
+                ],
+                "stderr": [
+                    "self"
+                ],
+                "display": [
+                    "self",
+                    "msg"
+                ],
+                "display_widget": [
+                    "self",
+                    "widget"
+                ],
+                "exec_local": [
+                    "self",
+                    "code"
+                ],
+                "set_disconnect_callback": [
+                    "self",
+                    "f"
+                ],
+                "disconnect": [
+                    "self"
+                ],
+                "connect": [
+                    "self",
+                    "cfg"
+                ],
+                "connect_magic": [
+                    "self",
+                    "args"
+                ],
+                "connect_wait": [
+                    "self",
+                    "cfg",
+                    "backend_wait_file"
+                ],
+                "backend_exists": [
+                    "self",
+                    "cfg"
+                ],
+                "pick_backend": [
+                    "self"
+                ],
+                "do_execute": [
+                    "self",
+                    "code",
+                    "silent",
+                    "store_history",
+                    "user_expressions",
+                    "allow_stdin"
+                ],
+                "do_complete": [
+                    "self",
+                    "code",
+                    "cursor_pos"
+                ],
+                "do_shutdown": [
+                    "self",
+                    "restart"
+                ]
+            }
+        },
+        "src.ascent.python.ascent_jupyter_bridge.ascent_jupyter_bridge.client": {
+            "make_config_dir": [],
+            "clean_config_dir": [],
+            "get_backend_list": [],
+            "validate_config": [
+                "config"
+            ],
+            "load_config": [
+                "path"
+            ],
+            "MessageType": {},
+            "SocketClient": {
+                "__init__": [
+                    "self",
+                    "config",
+                    "stdout",
+                    "stderr",
+                    "display"
+                ],
+                "from_config": [
+                    "cls",
+                    "config",
+                    "stdout",
+                    "stderr",
+                    "display"
+                ],
+                "from_config_path": [
+                    "cls",
+                    "path",
+                    "stdout",
+                    "stderr",
+                    "display"
+                ],
+                "__del__": [
+                    "self"
+                ],
+                "_connect": [
+                    "self",
+                    "connect_args"
+                ],
+                "connect": [
+                    "self",
+                    "config"
+                ],
+                "disconnect": [
+                    "self",
+                    "error"
+                ],
+                "set_disconnect_callback": [
+                    "self",
+                    "f"
+                ],
+                "_tobytes": [
+                    "self",
+                    "s"
+                ],
+                "_tostr": [
+                    "self",
+                    "s"
+                ],
+                "_has_message": [
+                    "self",
+                    "timeout"
+                ],
+                "_read": [
+                    "self",
+                    "num_bytes"
+                ],
+                "readmsg": [
+                    "self"
+                ],
+                "writemsg": [
+                    "self",
+                    "obj"
+                ],
+                "flush": [
+                    "self"
+                ],
+                "read": [
+                    "self",
+                    "timeout"
+                ],
+                "check_connection": [
+                    "self"
+                ],
+                "_execute": [
+                    "self",
+                    "code"
+                ],
+                "execute": [
+                    "self",
+                    "code"
+                ],
+                "complete": [
+                    "self",
+                    "code",
+                    "cursor_pos"
+                ],
+                "interrupt": [
+                    "self"
+                ],
+                "inspect": [
+                    "self",
+                    "path"
+                ],
+                "set_debug": [
+                    "self",
+                    "status"
+                ],
+                "set_silent": [
+                    "self",
+                    "status"
+                ]
+            }
+        },
+        "src.ascent.python.ascent_jupyter_bridge.ascent_jupyter_bridge": {},
+        "src.ascent.python.ascent_jupyter_bridge.ascent_jupyter_bridge.tunnel": {
+            "use_host_check": [
+                "use"
+            ],
+            "ssh_tunnel": [
+                "log",
+                "mode",
+                "ltransport",
+                "lport",
+                "rtransport",
+                "rport",
+                "server",
+                "user",
+                "ssh_port",
+                "check_hosts",
+                "sleep_duration",
+                "silent"
+            ],
+            "try_ssh": [
+                "log",
+                "server",
+                "port",
+                "env",
+                "check_hosts",
+                "timeout"
+            ],
+            "try_mrsh": [
+                "log",
+                "server",
+                "port",
+                "env",
+                "check_hosts",
+                "timeout"
+            ],
+            "open_ssh_tunnel": [
+                "log",
+                "config",
+                "server",
+                "ssh_port",
+                "timeout",
+                "ipc_wait_file"
+            ],
+            "TunnelError": {}
+        },
+        "src.ascent.python.ascent_jupyter_bridge.ascent_widgets.trackball._version": {},
+        "src.ascent.python.ascent_jupyter_bridge.ascent_widgets.trackball.trackball": {
+            "TrackballWidget": {
+                "__init__": [
+                    "self",
+                    "kernelUtils"
+                ],
+                "disconnect": [
+                    "self"
+                ],
+                "_update_image": [
+                    "self"
+                ],
+                "_update_camera_info": [
+                    "self",
+                    "camera_info"
+                ],
+                "_update_camera_info_from_ascent": [
+                    "self"
+                ],
+                "_update_scene_bounds": [
+                    "self"
+                ],
+                "_handle_msg": [
+                    "self",
+                    "msg"
+                ]
+            }
+        },
+        "src.ascent.python.ascent_jupyter_bridge.ascent_widgets.trackball": {
+            "_jupyter_nbextension_paths": []
+        },
+        "src.ascent.python.ascent_module.py_src": {},
+        "src.ascent.python.ascent_module.py_src.jupyter": {
+            "AscentImageSequenceViewer": {
+                "__init__": [
+                    "self",
+                    "image_fnames"
+                ],
+                "update_index": [
+                    "self",
+                    "change"
+                ],
+                "update_checkbox": [
+                    "self",
+                    "change"
+                ],
+                "image_path_txt": [
+                    "self"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "AscentStatusWidget": {
+                "__init__": [
+                    "self",
+                    "info"
+                ],
+                "show": [
+                    "self"
+                ],
+                "detect_style": [
+                    "self",
+                    "info"
+                ]
+            },
+            "AscentNodeViewer": {
+                "__init__": [
+                    "self",
+                    "node"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "AscentResultsViewer": {
+                "__init__": [
+                    "self",
+                    "info"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "AscentViewer": {
+                "__init__": [
+                    "self",
+                    "ascent"
+                ],
+                "show": [
+                    "self"
+                ]
+            }
+        },
+        "src.ascent.python.ascent_module.py_src.ascent": {
+            "about": [],
+            "Ascent": [],
+            "jupyter_bridge": []
+        },
+        "src.ascent.python.ascent_module.py_src.bridge_kernel.mpi_server": {
+            "MPIServer": {
+                "__init__": [
+                    "self",
+                    "comm",
+                    "ns",
+                    "callback",
+                    "prefix",
+                    "inline_matplotlib"
+                ],
+                "_quitter": [
+                    "self"
+                ],
+                "_mpi_print": [
+                    "self",
+                    "value",
+                    "ranks"
+                ],
+                "_redirect": [
+                    "self"
+                ],
+                "_remove_files": [
+                    "self"
+                ],
+                "_write_bytes_image": [
+                    "self",
+                    "data",
+                    "fmt"
+                ],
+                "_setup_matplotlib": [
+                    "self"
+                ],
+                "readmsg": [
+                    "self"
+                ],
+                "writemsg": [
+                    "self",
+                    "data"
+                ],
+                "root_writemsg": [
+                    "self",
+                    "data"
+                ],
+                "evaluate": [
+                    "self",
+                    "code"
+                ],
+                "complete": [
+                    "self",
+                    "text",
+                    "cursor_pos"
+                ],
+                "serve": [
+                    "self"
+                ]
+            }
+        },
+        "src.ascent.python.ascent_module.py_src.bridge_kernel.server": {
+            "jupyter_extract": []
+        },
+        "src.ascent.python.ascent_module.py_src.bridge_kernel": {},
+        "src.ascent.python.ascent_module.py_src.bridge_kernel.utils": {
+            "normalize": [
+                "vec"
+            ],
+            "rotate": [
+                "p0",
+                "p1",
+                "p2",
+                "radians"
+            ],
+            "look_at": [
+                "info",
+                "position",
+                "look_at",
+                "up"
+            ],
+            "move_up": [
+                "info",
+                "multiplier"
+            ],
+            "move_forward": [
+                "info",
+                "multiplier"
+            ],
+            "move_right": [
+                "info",
+                "multiplier"
+            ],
+            "roll": [
+                "info",
+                "radians"
+            ],
+            "pitch": [
+                "info",
+                "radians"
+            ],
+            "yaw": [
+                "info",
+                "radians"
+            ]
+        },
+        "src.ascent.python.ascent_module.py_src.mpi": {},
+        "src.ascent.python.ascent_module.py_src.mpi.ascent_mpi": {
+            "about": [],
+            "Ascent": [],
+            "jupyter_bridge": []
+        },
+        "src.docs.sphinx._theme.sphinx_rtd_theme": {
+            "get_html_theme_path": []
+        }
+    }
+}

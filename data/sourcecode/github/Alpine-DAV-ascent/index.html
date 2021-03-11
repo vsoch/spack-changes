@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title>Alpine-DAV ascent Changed Lines</title>
+  <script src="https://www.chartjs.org/dist/2.9.4/Chart.min.js"></script>
+  <style>
+  canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  </style>
+</head>
+<body>
+    <div style="width: 75%">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script>
+        var barChartData = {
+            labels: [ "EMPTY..v0.2.0", "v0.2.0..v0.3.0", "v0.3.0..v0.4.0", "v0.4.0..v0.5.0", "v0.5.0..v0.5.1", "v0.5.1..v0.6.0"],
+            datasets: [{
+                label: 'Insertions',
+                backgroundColor: "turquoise",
+                stack: 'Stack 0',
+                data: [ 97645, 7949, 16303, 63729, 7548, 27567]
+            },{
+                label: 'Deletions',
+                backgroundColor: "tomato",
+                stack: 'Stack 0',
+                data: [ 0, 850, 1457, 11130, 2781, 5542]
+            }]
+
+        };
+        window.onload = function() {
+            var ctx = document.getElementById('canvas').getContext('2d');
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Alpine-DAV ascent Changed Lines'
+                    },
+                    tooltips: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    responsive: true,
+                    scales: {
+                        xAxes: [{
+                            stacked: true,
+                        }],
+                        yAxes: [{
+                            stacked: true
+                        }]
+                    }
+                }
+            });
+        };
+    </script>
+</body>
+</html>
