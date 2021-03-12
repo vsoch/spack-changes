@@ -1,4 +1,4 @@
-#!/usr/bin/env spack-python
+#!/usr/bin/env python3
 
 # This script will install different versions of spack, and for each version,
 # generate a concretized spec for a set of packages of interest.
