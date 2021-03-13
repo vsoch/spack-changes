@@ -104,7 +104,8 @@ $(document).ready(function() {
 
     $.getJSON(filename, function(data) {
 
-        $("#title").text(data['spec1_name'] + " (A) vs. " +  data["spec2_name"] + " (B) Comparison");
+        // Put spec 2 first (should be earlier version)
+        $("#title").text(data['spec2_name'] + " (A) vs. " +  data["spec1_name"] + " (B) Comparison");
 
         // Add intersection to the middle, sort by name
         data['intersect'] = data['intersect'].sort(function(a,b){return a[0] > b[0]})
@@ -116,11 +117,11 @@ $(document).ready(function() {
            $("#" + divname).append('<span class="badge badge-success">' + element[1] + '</span><br>')  
         })
 
-        $.each(data['spec1_not_spec2'], function( index, element ) {
+        $.each(data['spec2_not_spec1'], function( index, element ) {
            var divname = "left-" + element[0];
            $("#" + divname).append('<span class="badge badge-warning">' + element[1] + '</span><br>')  
         })
-        $.each(data['spec2_not_spec1'], function( index, element ) {
+        $.each(data['spec1_not_spec2'], function( index, element ) {
            var divname = "right-" + element[0];
            $("#" + divname).append('<span class="badge badge-warning">' + element[1] + '</span><br>')  
         })
