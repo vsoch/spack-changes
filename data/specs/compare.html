@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+<style>
+.changeset {
+  display: none;
+}
+</style>
+
+<body>
+<div class="container-fluid" style="padding-top:10px 30px">
+    <div class="row" style="padding-bottom:20px; padding-top:20px">
+        <div class="col-md-9" style="padding-top:20px; padding-bottom:20px">
+           <h2 id="title"></h2>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="version" id='version-button'>Version</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="concrete" id="concrete-button">Concrete</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="node" id="node-button">Node</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="node_compiler_set" id="node_compiler_set-button">Node Compiler Set</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="node_compiler_version_set" id="node_compiler_version_set-button">Node Compiler Version Set</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="node_os_set" id="node_os_set-button">Node Compiler OS Set</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="node_platform_set" id="node_platform_set-button">Node Platform Set</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="node_target_set" id="node_target_set-button">Node Target Set</button>
+           <button class="btn btn-sm btn-primary choose-changeset" data-id="variant_set" id="variant_set-button">Variant Set</button>
+        </div>
+    </div>
+    <div class="row" style="padding-bottom:20px; padding-top:20px">
+        <div class="col-md-9">
+          <h1 id="showing"></h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+           <h4>In A but not B</h4>
+           <div class="changeset" id="left-concrete"></div>
+           <div class="changeset" id="left-node"></div>
+           <div class="changeset" id="left-node_compiler_set"></div>
+           <div class="changeset" id="left-node_compiler_version_set"></div>
+           <div class="changeset" id="left-node_os_set"></div>
+           <div class="changeset" id="left-node_platform_set"></div>
+           <div class="changeset" id="left-node_target_set"></div>
+           <div class="changeset" id="left-variant_set"></div>
+           <div class="changeset" id="left-version"></div>
+        </div>
+        <div class="col-md-4">
+           <h4>Intersection</h4>
+           <div class="changeset" id="middle-concrete"></div>
+           <div class="changeset" id="middle-node"></div>
+           <div class="changeset" id="middle-node_compiler_set"></div>
+           <div class="changeset" id="middle-node_compiler_version_set"></div>
+           <div class="changeset" id="middle-node_os_set"></div>
+           <div class="changeset" id="middle-node_platform_set"></div>
+           <div class="changeset" id="middle-node_target_set"></div>
+           <div class="changeset" id="middle-variant_set"></div>
+           <div class="changeset" id="middle-version"></div>
+        </div>
+        <div class="col-md-4">
+            <h4>In B but not A</h4>
+           <div class="changeset" id="right-concrete"></div>
+           <div class="changeset" id="right-node"></div>
+           <div class="changeset" id="right-node_compiler_set"></div>
+           <div class="changeset" id="right-node_compiler_version_set"></div>
+           <div class="changeset" id="right-node_os_set"></div>
+           <div class="changeset" id="right-node_platform_set"></div>
+           <div class="changeset" id="right-node_target_set"></div>
+           <div class="changeset" id="right-variant_set"></div>
+           <div class="changeset" id="right-version"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+$(".choose-changeset").click(function(){
+    $(".changeset").hide();
+    var changetype = $(this).attr("data-id");
+    $("#right-" + changetype).show();
+    $("#left-" + changetype).show();
+    $("#middle-" + changetype).show();
+    $("button").addClass("btn-primary");
+    $("button").removeClass("btn-info");
+    $("#" + changetype + "-button").addClass("btn-info");
+    $("#" + changetype + "-button").removeClass("btn-primary");
+    $("#showing").text(changetype);
+})
+
+
+// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+$(document).ready(function() {
+    var filename = getParameterByName('filename');
+    console.log(filename)
+
+    $.getJSON(filename, function(data) {
+
+        $("#title").text(data['spec1_name'] + " (A) vs. " +  data["spec2_name"] + " (B) Comparison");
+
+        // Add intersection to the middle, sort by name
+        data['intersect'] = data['intersect'].sort(function(a,b){return a[0] > b[0]})
+        data['spec1_not_spec2'] = data['spec1_not_spec2'].sort(function(a,b){return a[0] > b[0]})
+        data['spec2_not_spec1'] = data['spec2_not_spec1'].sort(function(a,b){return a[0] > b[0]})
+
+        $.each(data['intersect'], function( index, element ) {
+           var divname = "middle-" + element[0];
+           $("#" + divname).append('<span class="badge badge-success">' + element[1] + '</span><br>')  
+        })
+
+        $.each(data['spec1_not_spec2'], function( index, element ) {
+           var divname = "left-" + element[0];
+           $("#" + divname).append('<span class="badge badge-warning">' + element[1] + '</span><br>')  
+        })
+        $.each(data['spec2_not_spec1'], function( index, element ) {
+           var divname = "right-" + element[0];
+           $("#" + divname).append('<span class="badge badge-warning">' + element[1] + '</span><br>')  
+        })
+     console.log(data)
+  });
+   
+  // populate the first set of changes
+  $("#version-button").click();
+
+})
+</script>

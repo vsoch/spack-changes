@@ -5,7 +5,6 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<!--<script src="https://vsoch.github.io/image-comparison-thresholding/static/js/tipsy.js"></script>-->
 
 
 <style>
@@ -153,6 +152,7 @@ function generate_plot(metric) {
       .attr("ry", 4)
       .attr("width", x.bandwidth() )
       .attr("height", y.bandwidth() )
+      .style("cursor", "pointer")
       .style("fill", function(d) { return myColor(d.value)} )
       .style("stroke-width", 4)
       .style("stroke", "none")
@@ -160,6 +160,7 @@ function generate_plot(metric) {
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
     .on("mouseleave", mouseleave)
+    .on("click", function(d){ document.location = "../compare.html?filename=" + d.spec1 + "-" + d.spec2 + "-comparison.json"})
 }
 
 // Add title to graph

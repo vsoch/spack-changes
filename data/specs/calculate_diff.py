@@ -66,7 +66,14 @@ def read_yaml(filename):
 
 
 def to_tuple(asp_function):
-    return tuple([asp_function.name, *asp_function.args])
+    # We need the arguments to be json serializable
+    args = []
+    for arg in asp_function.args:
+        if isinstance(arg, str):
+            args.append(arg)
+            continue
+        args.append("%s(%s)" %(type(arg).__name__, str(arg)))
+    return tuple([asp_function.name] + args)
 
 
 def load_spack_spec(spec_file):
@@ -75,12 +82,39 @@ def load_spack_spec(spec_file):
     spec.concretize()
     return spec
 
+def flatten(tuple_list):
+    """Given a list of tuples, convert into a list of key: value tuples (so
+    we are squashing whatever is after the first index into one string for
+    easier parsing in the interface
+    """
+    updated = []
+    for item in tuple_list:
+        updated.append([item[0], " ".join(item[1:])])
+    return updated
 
-def diff(a, b):
+def compare(a, b, a_name, b_name):
+    """Generate a comparison, including diffs (for each side) along with
+    an intersection
+    """
     # See https://gist.github.com/tgamblin/83eba3c6d27f90d9fa3afebfc049ceaf for
+
+    # Prepare a solver setup to parse differences
+    setup = spack.solver.asp.SpackSolverSetup()
+
     a_facts = set(to_tuple(t) for t in setup.spec_clauses(a))
     b_facts = set(to_tuple(t) for t in setup.spec_clauses(b))
-    return a_facts.difference(b_facts), b_facts.difference(a_facts)
+
+    # We want to present them to the user as simple key: values
+    intersect = list(a_facts.intersection(b_facts))
+    spec1_not_spec2 = list(a_facts.difference(b_facts))
+    spec2_not_spec1 = list(b_facts.difference(a_facts))
+    
+    # We want to show what is the same, and then difference for each
+    return {"intersect": flatten(intersect),
+            "spec1_not_spec2": flatten(spec1_not_spec2),
+            "spec2_not_spec1": flatten(spec2_not_spec1),
+            "spec1_name": a_name,
+            "spec2_name": b_name}
 
 
 def create_package_lookup(spec):
@@ -164,11 +198,11 @@ def main():
                 key = "-".join(specs_sorted)
                 result = {"spec1": specs_sorted[0], "spec2": specs_sorted[1]}
 
-                # TODO: we can use this for the detail view (not developed yet)
-                # Calculate the diff via the solver setup!
-                # res1, res2 = diff(spack_spec1, spack_spec2)
-
+                # Calculate intersection and diffs, save to comparison file
                 # checks needs to be optional https://github.com/spack/spack/blob/develop/lib/spack/spack/solver/asp.py#L969
+                comparison = compare(spack_spec1, spack_spec2, spec1_name, spec2_name)
+                result_file = os.path.join(package_dir, "%s-comparison.json" % key)
+                write_json(result_file, comparison)
 
                 ## Comparison 1: just the overlap of packages
                 # Cut out early and call them perfectly equal if we are comparing the same spec
