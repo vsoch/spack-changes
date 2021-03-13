@@ -1,14 +1,15 @@
-#!/usr/bin/env python3
+#!/usr/bin/env spack-python
 
 # This script will take a package directory and calculate pairwise diffs for
-# the packages installed. We originally tried to do this by way of
-# generating asp output with the spack solver, but this does not work consistently
-# (likely we need to use the same version of spack that generated the file)
-# so we are taking a simpler approach to compare the package overlap, and then
-# versions.
+# the packages installed. We take two approaches:
+# 1. calculating basic similarity metrics based on the loaded specs
+# 2. using the spack asp solver to generate sets of facts (and them compare them)
 #
+# You must have the spack bin with spack python on your PATH for this to work!
+# See https://gist.github.com/tgamblin/83eba3c6d27f90d9fa3afebfc049ceaf for
+# the dummy example of using spack.solve to calculate the diff.
 # Usage:
-# python3 calculate_diff.py <package-dir>
+# spack python calculate_diff.py <package-dir>
 
 
 from distutils.version import StrictVersion
@@ -20,8 +21,17 @@ import sys
 import json
 import os
 
+try:
+    import spack.spec
+    from spack.solver.asp import SpackSolverSetup
+except ImportError:
+    sys.exit("You must have the spack bin on your path to import spack modules.")
 
-here = os.path.abspath(os.path.dirname(__file__))
+# spack python does not support __file__
+here = os.getcwd()
+
+# Prepare a solver setup to parse differences
+setup = spack.solver.asp.SpackSolverSetup()
 
 ## File Operations
 
@@ -53,6 +63,25 @@ def is_semvar(version):
 def read_yaml(filename):
     stream = read_file(filename)
     return yaml.load(stream, Loader=yaml.FullLoader)
+
+
+def to_tuple(asp_function):
+    return tuple([asp_function.name, *asp_function.args])
+
+
+def load_spack_spec(spec_file):
+    with open(spec_file, "r") as stream:
+        spec = spack.spec.Spec.from_yaml(stream)
+    spec.concretize()
+    return spec
+
+
+def diff(a, b):
+    # See https://gist.github.com/tgamblin/83eba3c6d27f90d9fa3afebfc049ceaf for
+    a_facts = set(to_tuple(t) for t in setup.spec_clauses(a))
+    b_facts = set(to_tuple(t) for t in setup.spec_clauses(b))
+    print(a_facts.difference(b_facts))
+    print(b_facts.difference(a_facts))
 
 
 def create_package_lookup(spec):
@@ -123,15 +152,21 @@ def main():
         # For each spec file, generate the raw asp
         for spec_file1 in spec_files:
             spec1 = read_yaml(spec_file1)
+            spack_spec1 = load_spack_spec(spec_file1)
             spec1_name = os.path.basename(spec_file1).replace(".yaml", "")
 
             for spec_file2 in spec_files:
                 spec2 = read_yaml(spec_file2)
                 spec2_name = os.path.basename(spec_file2).replace(".yaml", "")
+                spack_spec2 = load_spack_spec(spec_file2)
 
                 # The unique key for the result is the sorted spec names
                 key = "-".join(sorted([spec1_name, spec2_name]))
                 result = {}
+
+                # Calculate the diff via the solver setup! TODO
+                # diff(spack_spec1, spack_spec2)
+                # checks needs to be optional https://github.com/spack/spack/blob/develop/lib/spack/spack/solver/asp.py#L969
 
                 ## Comparison 1: just the overlap of packages
                 # Cut out early and call them perfectly equal if we are comparing the same spec
@@ -140,8 +175,8 @@ def main():
                         "1_package_name_overlap": 1,
                         "2_package_name_version_exact": 1,
                         "3_package_weighted_versions": 1,
-                        "4_parameters": 1,
-                        "5_arch": 1,
+                        "4_parameter_overlap": 1,
+                        "5_arch_overlap": 1,
                     }
                     diffs[key] = result
                     continue

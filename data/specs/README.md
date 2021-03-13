@@ -47,21 +47,17 @@ We next want to try comparing these structures.
 ### 2. Calculate Diffs
 
 Next, we can use the script [calculate_diffs.py](calculate_diffs.py) to generate
-a similarity score between specs. We can provide one or more package folders to calculate:
+a similarity score between specs. Spack python needs to be on your path - we are
+setting this up to use the asp solver to generate diffs (although it doesn't work yet
+because it's trying to validate them). We can provide one or more package folders to calculate:
 
 ```bash
-$ python calculate_diff.py ascent
+$ export PATH=/path/to/spack/bin:$PATH
+$ spack python calculate_diff.py ascent
 ```
 
-Originally, I wanted to use logic to make comparisons, meaning dumping out ast
-for a spec, something like:
-
-```bash
-result = asp.solve([spec])
-```
-But this was problematic having data generated with different versions of spack -
-I always got error messages. Instead I decided to put together some simple algorithms
-to compare data structures, discussed next. 
+The algorithms to discuss data structures (separate from the solver diff approach)
+are discussed next.
 
 ### Level 1 Comparison: List of Packages
 
@@ -129,3 +125,26 @@ need to weight them based on importance.
 > Question: how important is a parameter vs. package for stability?
 
 We will calculate them as different metrics for now.
+
+
+### 3. Plot Results
+
+Once we have diffs for the specs (each metric with different data) we can use
+the [plot_diffs.py](plot_diffs.py) script to generate an interactive output
+file for each package to show a matrix of a single package compared to different
+versions of itself over time (it's spec as produced by different versions of spack).
+The following command creates the output folder under docs, then a subfolder
+for the package, and directs the extraction script to output there.
+
+
+```bash
+$ mkdir -p ../../docs/ascent
+$ python plot_diffs.py ascent/spec-diffs.json ../../docs/ascent
+```
+
+### 4. Filter and Run Scaled
+
+Finally, we want to filter down to packages that have successfully produced specs,
+and generate these interfaces across all packages!
+
+**TODO**
