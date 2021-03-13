@@ -57,7 +57,7 @@ Originally, I wanted to use logic to make comparisons, meaning dumping out ast
 for a spec, something like:
 
 ```bash
-result = ast.solve([spec])
+result = asp.solve([spec])
 ```
 But this was problematic having data generated with different versions of spack -
 I always got error messages. Instead I decided to put together some simple algorithms
@@ -96,7 +96,8 @@ v1.0.0, v2.0.0, v.3.0.0, ... v.18.0.0
 ```
 
 We can calculate a range of versions (e.g., in the above we'd go from 1 to 18)
-and then be able to calculate a distance between any two actual versions. Once we know
+and then be able to calculate a distance between any two actual versions. If the versions
+are branch names (e.g., develop vs. master) we can only give a boolean yes/no (1/0) answer. Once we know
 that difference, we can use it to come up with a more fine grained number to represent
 the difference, e.g., given package AA in spec A, and package AB in B (the same
 package with different versions):
@@ -126,3 +127,5 @@ do in the same way (intersection / union). And then if we want to combine them w
 need to weight them based on importance.
 
 > Question: how important is a parameter vs. package for stability?
+
+We will calculate them as different metrics for now.

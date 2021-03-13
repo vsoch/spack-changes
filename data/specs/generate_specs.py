@@ -19,10 +19,12 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 ## File Operations
 
+
 def read_file(filename):
-    with open(filename, 'r') as fd:
+    with open(filename, "r") as fd:
         content = fd.read()
     return content
+
 
 def write_file(filename, content):
     with open(filename, "w") as filey:
@@ -37,7 +39,7 @@ def main():
     # Sniff to see if we have a package file
     package_file = sys.argv[1]
     if os.path.exists(package_file):
-        specs = read_file(package_file).split('\n')
+        specs = read_file(package_file).split("\n")
     else:
         specs = sys.argv[1:]
 
@@ -76,6 +78,7 @@ def main():
     # Clean up git directory with spack
     if os.path.exists(git.folder):
         shutil.rmtree(git.folder)
+
 
 if __name__ == "__main__":
     main()
