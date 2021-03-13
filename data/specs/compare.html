@@ -12,6 +12,7 @@
 
 <body>
 <div class="container-fluid" style="padding-top:10px 30px">
+    <a href="../"><< back to index</a>
     <div class="row" style="padding-bottom:20px; padding-top:20px">
         <div class="col-md-9" style="padding-top:20px; padding-bottom:20px">
            <h2 id="title"></h2>
@@ -100,7 +101,6 @@ function getParameterByName(name, url = window.location.href) {
 
 $(document).ready(function() {
     var filename = getParameterByName('filename');
-    console.log(filename)
 
     $.getJSON(filename, function(data) {
 

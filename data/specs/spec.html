@@ -160,7 +160,7 @@ function generate_plot(metric) {
     .on("mouseover", mouseover)
     .on("mousemove", mousemove)
     .on("mouseleave", mouseleave)
-    .on("click", function(d){ document.location = "../compare.html?filename=ascent/" + d.spec1 + "-" + d.spec2 + "-comparison.json"})
+    .on("click", function(d){ document.location = "compare.html?filename=" + window.package_name + "/" + d.spec1 + "-" + d.spec2 + "-comparison.json"})
 }
 
 // Add title to graph
@@ -187,21 +187,36 @@ update_graph = function(selector) {
    generate_plot(selector.value);
 }
 
-d3.json("spec-diffs-vizdata.json", function(data) {
-    window.data = data
 
-    // We can cycle through different metrics
-    var metrics = Object.keys(window.data);
-    var selector = document.getElementById("version_selector");
-    for (var i = 0; i < metrics.length; i++) {        
-        var option = document.createElement("option");
-        option.text = "Metric " + metrics[i];  
-        option.value = metrics[i]
-        selector.appendChild(option);
-    }
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 
-    // 3_package_weighted_versions
-    generate_plot(metrics[0])
+$(document).ready(function() {
+    window.package_name = getParameterByName('name');
 
-});
+    d3.json(window.package_name + "/spec-diffs-vizdata.json", function(data) {
+
+        window.data = data
+
+        // We can cycle through different metrics
+        var metrics = Object.keys(window.data);
+        var selector = document.getElementById("version_selector");
+        for (var i = 0; i < metrics.length; i++) {        
+            var option = document.createElement("option");
+            option.text = "Metric " + metrics[i];  
+            option.value = metrics[i]
+            selector.appendChild(option);
+        }
+
+        // 3_package_weighted_versions
+        generate_plot(metrics[0])
+    });
+})
+
 </script>

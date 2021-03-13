@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>    
+</head>
+    
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
+
+body {
+  background-color: darkblue;
+}
+
+.title {
+  padding-top:20px;
+  padding-left:10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: calc(100%) !important;
+  }
+}
+
+.card {
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: .75rem solid white;
+  margin: 10px;
+  padding: 20px;
+  height: 5vh;
+  color: #333;
+  min-height: 100px;
+  width: calc(10%);
+}
+
+</style>    
+    
+    <body>
+
+     <h1 class='title'>Which Spack Spec?</h1>
+     <main class="grid flex-grid">
+     <div onclick="document.location='spec.html?name=ascent'" class="card ">
+        Ascent
+     </div>
+    </body>
+</html>

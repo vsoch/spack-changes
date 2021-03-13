@@ -4,9 +4,7 @@ For this change analysis, we want to be able to generate concretized specs
 for the same packages across versions of spack, and then see how those specs
 change over time. This will require installing spack at different versions,
 and then concretizing (and saving) the resulting spec. You can see a list of early
-results here (still under development):
-
- - [ascent](https://vsoch.github.io/spack-changes/data/specs/ascent/)
+results [here](https://vsoch.github.io/spack-changes/data/specs/).
 
 ## Usage
 
