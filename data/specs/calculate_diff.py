@@ -80,8 +80,7 @@ def diff(a, b):
     # See https://gist.github.com/tgamblin/83eba3c6d27f90d9fa3afebfc049ceaf for
     a_facts = set(to_tuple(t) for t in setup.spec_clauses(a))
     b_facts = set(to_tuple(t) for t in setup.spec_clauses(b))
-    print(a_facts.difference(b_facts))
-    print(b_facts.difference(a_facts))
+    return a_facts.difference(b_facts), b_facts.difference(a_facts)
 
 
 def create_package_lookup(spec):
@@ -115,7 +114,7 @@ def main():
         # Keep a lookup of diffs, by version1-version2 (sorted)
         diffs = {}
 
-        spec_files = glob("%s/*.yaml" % package_dir)
+        spec_files = sorted(glob("%s/*.yaml" % package_dir))
 
         # We need the entire list of versions, for every dependency, in advance
         # We are treating compilers as packages
@@ -161,23 +160,28 @@ def main():
                 spack_spec2 = load_spack_spec(spec_file2)
 
                 # The unique key for the result is the sorted spec names
-                key = "-".join(sorted([spec1_name, spec2_name]))
-                result = {}
+                specs_sorted = sorted([spec1_name, spec2_name])
+                key = "-".join(specs_sorted)
+                result = {"spec1": specs_sorted[0], "spec2": specs_sorted[1]}
 
-                # Calculate the diff via the solver setup! TODO
-                # diff(spack_spec1, spack_spec2)
+                # TODO: we can use this for the detail view (not developed yet)
+                # Calculate the diff via the solver setup!
+                # res1, res2 = diff(spack_spec1, spack_spec2)
+
                 # checks needs to be optional https://github.com/spack/spack/blob/develop/lib/spack/spack/solver/asp.py#L969
 
                 ## Comparison 1: just the overlap of packages
                 # Cut out early and call them perfectly equal if we are comparing the same spec
                 if spec_file1 == spec_file2:
-                    result = {
-                        "1_package_name_overlap": 1,
-                        "2_package_name_version_exact": 1,
-                        "3_package_weighted_versions": 1,
-                        "4_parameter_overlap": 1,
-                        "5_arch_overlap": 1,
-                    }
+                    result.update(
+                        {
+                            "1_package_name_overlap": 1,
+                            "2_package_name_version_exact": 1,
+                            "3_package_weighted_versions": 1,
+                            "4_parameter_overlap": 1,
+                            "5_arch_overlap": 1,
+                        }
+                    )
                     diffs[key] = result
                     continue
 
@@ -297,6 +301,28 @@ def main():
         # Save the result to the package folder
         result_file = os.path.join(package_dir, "spec-diffs.json")
         write_json(result_file, diffs)
+
+        # Reorganize for visualization, index should be different metrics
+        vizdata = {
+            "1_package_name_overlap": [],
+            "2_package_name_version_exact": [],
+            "3_package_weighted_versions": [],
+            "4_parameter_overlap": [],
+            "5_arch_overlap": [],
+        }
+        result_types = list(vizdata.keys())
+        for key, result in diffs.items():
+            for result_type in result_types:
+                vizdata[result_type].append(
+                    {
+                        "spec1": result["spec1"],
+                        "spec2": result["spec2"],
+                        "value": result[result_type],
+                    }
+                )
+
+        result_file = os.path.join(package_dir, "spec-diffs-vizdata.json")
+        write_json(result_file, vizdata)
 
 
 if __name__ == "__main__":
