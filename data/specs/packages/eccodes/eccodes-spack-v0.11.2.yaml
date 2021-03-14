@@ -1,0 +1,60 @@
+spec:
+- eccodes:
+    version: 2.5.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      aec: false
+      build_type: RelWithDebInfo
+      examples: true
+      fortran: false
+      jp2k: openjpeg
+      memfs: false
+      netcdf: false
+      openmp: false
+      patches:
+      - 933f4104caac79bc41cbaf6372d72e6f8b3beae21e507055ccda9066632a137c
+      - caa4c2f2ac4a13a61c3372cd64f2f6f6570c78ed2ab91497a76b02c584abe1bc
+      png: false
+      pthreads: false
+      python: false
+      test: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openjpeg:
+        hash: zvkjq2yrio3u3mctrm5byufjzw2cyuym
+        type:
+        - build
+        - link
+    hash: m7c2h622ax4tfsacdakf3557ggdl642t
+- openjpeg:
+    version: 2.1.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: zvkjq2yrio3u3mctrm5byufjzw2cyuym
+

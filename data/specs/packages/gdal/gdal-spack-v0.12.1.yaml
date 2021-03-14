@@ -1,0 +1,260 @@
+spec:
+- gdal:
+    version: 2.3.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      armadillo: false
+      cfitsio: false
+      crypto: false
+      cryptopp: false
+      curl: false
+      expat: false
+      geos: false
+      gif: false
+      hdf4: false
+      hdf5: false
+      jasper: false
+      java: false
+      jpeg: true
+      kea: false
+      libiconv: false
+      liblzma: true
+      libtool: true
+      libz: true
+      mdb: false
+      netcdf: false
+      odbc: false
+      opencl: false
+      openjpeg: false
+      pcre: false
+      perl: false
+      pg: false
+      png: false
+      poppler: false
+      proj: true
+      python: false
+      qhull: false
+      sosi: false
+      sqlite3: false
+      xerces: false
+      xml2: false
+      zstd: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      json-c:
+        hash: lb4opuhnrmhwu6ez5pe36c65heuw7uim
+        type:
+        - build
+        - link
+      libgeotiff:
+        hash: x2rsozyssqjed33yxd4d7tccy4i5tz7c
+        type:
+        - build
+        - link
+      libjpeg-turbo:
+        hash: pswj4ubiv35ri3armizsspxxoidblnjs
+        type:
+        - build
+        - link
+      libtiff:
+        hash: fazf3ce6vws75gvhr3vfzcnog66bsk55
+        type:
+        - build
+        - link
+      proj:
+        hash: a23fhxrjznq5zhrdapkfusg35c53j5m6
+        type:
+        - build
+        - link
+      xz:
+        hash: 437sk5xvgpbxuw4machdcqgmkrgrs6bz
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: tscxi4opv6lk22kkdz3ftiql365cbfqy
+- json-c:
+    version: 0.13.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: lb4opuhnrmhwu6ez5pe36c65heuw7uim
+- libgeotiff:
+    version: 1.4.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      jpeg: true
+      proj: true
+      zlib: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libjpeg-turbo:
+        hash: pswj4ubiv35ri3armizsspxxoidblnjs
+        type:
+        - build
+        - link
+      libtiff:
+        hash: fazf3ce6vws75gvhr3vfzcnog66bsk55
+        type:
+        - build
+        - link
+      proj:
+        hash: a23fhxrjznq5zhrdapkfusg35c53j5m6
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: x2rsozyssqjed33yxd4d7tccy4i5tz7c
+- libjpeg-turbo:
+    version: 1.5.90
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: pswj4ubiv35ri3armizsspxxoidblnjs
+- libtiff:
+    version: 4.0.9
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libjpeg-turbo:
+        hash: pswj4ubiv35ri3armizsspxxoidblnjs
+        type:
+        - build
+        - link
+      xz:
+        hash: 437sk5xvgpbxuw4machdcqgmkrgrs6bz
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: fazf3ce6vws75gvhr3vfzcnog66bsk55
+- xz:
+    version: 5.2.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 437sk5xvgpbxuw4machdcqgmkrgrs6bz
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+- proj:
+    version: 5.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: a23fhxrjznq5zhrdapkfusg35c53j5m6

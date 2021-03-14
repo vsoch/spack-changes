@@ -1,0 +1,207 @@
+spec:
+- ferret:
+    version: '6.96'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      hdf5:
+        hash: fhxversp4smcf43lotspssj5buykabc5
+        type:
+        - build
+        - link
+      netcdf:
+        hash: ev45tsv7p2fhfahwfhsiidbowzh4tfhb
+        type:
+        - build
+        - link
+      netcdf-fortran:
+        hash: 2eo5pxlilz22uj6lur5wswkbexcwl43h
+        type:
+        - build
+        - link
+      readline:
+        hash: hzfyyp4wzuwomzf6zh6vs4o7tpcphzza
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: 2vq56uaue4rjrc6mkfrvpw3gpc5s2ulm
+- hdf5:
+    version: 1.10.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cxx: false
+      debug: false
+      fortran: false
+      hl: true
+      mpi: false
+      pic: true
+      shared: true
+      szip: false
+      threadsafe: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: fhxversp4smcf43lotspssj5buykabc5
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+- netcdf:
+    version: 4.4.1.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      dap: false
+      hdf4: false
+      maxdims: '1024'
+      maxvars: '8192'
+      mpi: false
+      parallel-netcdf: false
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      hdf5:
+        hash: fhxversp4smcf43lotspssj5buykabc5
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: ev45tsv7p2fhfahwfhsiidbowzh4tfhb
+- netcdf-fortran:
+    version: 4.4.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      netcdf:
+        hash: ev45tsv7p2fhfahwfhsiidbowzh4tfhb
+        type:
+        - build
+        - link
+    hash: 2eo5pxlilz22uj6lur5wswkbexcwl43h
+- readline:
+    version: '7.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      ncurses:
+        hash: bcellbbngcks3jeqi2s3pt3lkldwlvuw
+        type:
+        - build
+        - link
+    hash: hzfyyp4wzuwomzf6zh6vs4o7tpcphzza
+- ncurses:
+    version: '6.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 4110a40613b800da2b2888c352b64c75a82809d48341061e4de5861e8b28423f
+      - f84b2708a42777aadcc7f502a261afe10ca5646a51c1ef8b5e60d2070d926b57
+      symlinks: false
+      termlib: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: bcellbbngcks3jeqi2s3pt3lkldwlvuw
+

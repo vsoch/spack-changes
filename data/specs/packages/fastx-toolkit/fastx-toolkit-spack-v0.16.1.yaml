@@ -1,0 +1,111 @@
+spec:
+- fastx-toolkit:
+    version: 0.0.14
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 915bdfc1afa79e3677f7753c51f144358ea698b33e2e46da4550a4e325f1b3d8
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 915bdfc1afa79e3677f7753c51f144358ea698b33e2e46da4550a4e325f1b3d8
+    dependencies:
+      libgtextutils:
+        hash: v4gar564jztzksgsf2lb3ms5fexv4dcj
+        type:
+        - build
+        - link
+    hash: yac5j2ygzx7g27mkivvglke45ncfbm2b
+    full_hash: zkgy4mdgai7ug65yoau2jvgateyshifl
+    build_hash: yac5j2ygzx7g27mkivvglke45ncfbm2b
+- libgtextutils:
+    version: '0.7'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - ba9e1810336584a8bd32086f340ea7476073bf62355a61cc6b87d8e0179bfbcb
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - ba9e1810336584a8bd32086f340ea7476073bf62355a61cc6b87d8e0179bfbcb
+    hash: v4gar564jztzksgsf2lb3ms5fexv4dcj
+    full_hash: ilrd3fit4f4qe6ccrypteec4sz5djhka
+    build_hash: v4gar564jztzksgsf2lb3ms5fexv4dcj
