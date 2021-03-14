@@ -1,0 +1,52 @@
+spec:
+- nnvm:
+    version: '20170418'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      patches:
+      - 01c2f31fa4a7b4041be666b9d6977a2910be71f8eb98793c4225eacbe49e7190
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      dmlc-core:
+        hash: 4htgx7cyjyqlaq5xra2on6pbsvmgngvl
+        type:
+        - build
+        - link
+    hash: 3lshkajzy7kcofktf7iroihrstri5enz
+- dmlc-core:
+    version: '20170508'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      openmp: false
+      patches:
+      - b5383858c1b1dec2b2dfcb46bf0b1c7c3e25ccab26e369a06fbe3d2c0eec26b4
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 4htgx7cyjyqlaq5xra2on6pbsvmgngvl
+

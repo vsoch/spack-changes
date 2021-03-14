@@ -1,0 +1,54 @@
+{
+    "intersect": [
+        [
+            "variant_set",
+            "netlib-xblas plain_blas bool(True)"
+        ],
+        [
+            "node_compiler_set",
+            "netlib-xblas gcc"
+        ],
+        [
+            "variant_set",
+            "netlib-xblas fortran bool(True)"
+        ],
+        [
+            "concrete",
+            "netlib-xblas"
+        ],
+        [
+            "node",
+            "netlib-xblas"
+        ],
+        [
+            "node_os_set",
+            "netlib-xblas ubuntu20.04"
+        ],
+        [
+            "node_platform_set",
+            "netlib-xblas linux"
+        ],
+        [
+            "version",
+            "netlib-xblas Version(1.0.248)"
+        ],
+        [
+            "node_compiler_version_set",
+            "netlib-xblas gcc Version(9.3.0)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_target_set",
+            "netlib-xblas Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "node_target_set",
+            "netlib-xblas Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "netlib-xblas-spack-v0.13.0",
+    "spec2_name": "netlib-xblas-spack-v0.12.1"
+}

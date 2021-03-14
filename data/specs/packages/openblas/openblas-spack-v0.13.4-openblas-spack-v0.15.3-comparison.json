@@ -1,0 +1,82 @@
+{
+    "intersect": [
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ],
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(skylake)"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "variant_set",
+            "openblas consistent_fpcsr bool(False)"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.10)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "variant_set",
+            "openblas virtual_machine bool(False)"
+        ],
+        [
+            "variant_set",
+            "openblas avx512 bool(False)"
+        ],
+        [
+            "variant_set",
+            "openblas avx2 bool(True)"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.7)"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target auto"
+        ]
+    ],
+    "spec1_name": "openblas-spack-v0.15.3",
+    "spec2_name": "openblas-spack-v0.13.4"
+}

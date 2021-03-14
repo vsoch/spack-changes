@@ -1,0 +1,50 @@
+spec:
+- oce:
+    version: 0.18.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      X11: false
+      patches:
+      - 198b53ff8658cadec2fad7e4a9bcaebd758550d28634bce93f200b65ea6c1a22
+      tbb: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      intel-tbb:
+        hash: 2bg37kdd6folbg7eycublygp7cb4kpuz
+        type:
+        - build
+        - link
+    hash: lrr6wovdwzgslit2jkv7n2p5z5ap6aav
+- intel-tbb:
+    version: '2018.2'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 5db0a2b0e7de21a33f4b6aebf53ef802f54a9ce0eead8afdcb49804cf4a7bb92
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 2bg37kdd6folbg7eycublygp7cb4kpuz
+

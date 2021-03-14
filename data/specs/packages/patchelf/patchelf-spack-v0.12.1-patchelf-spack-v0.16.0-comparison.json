@@ -1,0 +1,50 @@
+{
+    "intersect": [
+        [
+            "node_os_set",
+            "patchelf ubuntu20.04"
+        ],
+        [
+            "node_platform_set",
+            "patchelf linux"
+        ],
+        [
+            "node_compiler_set",
+            "patchelf gcc"
+        ],
+        [
+            "node_compiler_version_set",
+            "patchelf gcc Version(9.3.0)"
+        ],
+        [
+            "concrete",
+            "patchelf"
+        ],
+        [
+            "node",
+            "patchelf"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "version",
+            "patchelf Version(0.10)"
+        ],
+        [
+            "node_target_set",
+            "patchelf Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "node_target_set",
+            "patchelf Target(x86_64)"
+        ],
+        [
+            "version",
+            "patchelf Version(0.9)"
+        ]
+    ],
+    "spec1_name": "patchelf-spack-v0.16.0",
+    "spec2_name": "patchelf-spack-v0.12.1"
+}

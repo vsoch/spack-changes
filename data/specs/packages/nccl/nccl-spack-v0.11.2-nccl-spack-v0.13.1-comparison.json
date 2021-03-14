@@ -1,0 +1,94 @@
+{
+    "intersect": [
+        [
+            "node_os_set",
+            "cuda ubuntu20.04"
+        ],
+        [
+            "node_platform_set",
+            "cuda linux"
+        ],
+        [
+            "node_os_set",
+            "nccl ubuntu20.04"
+        ],
+        [
+            "concrete",
+            "nccl"
+        ],
+        [
+            "node_compiler_set",
+            "cuda gcc"
+        ],
+        [
+            "node_compiler_version_set",
+            "cuda gcc Version(9.3.0)"
+        ],
+        [
+            "node_platform_set",
+            "nccl linux"
+        ],
+        [
+            "concrete",
+            "cuda"
+        ],
+        [
+            "node",
+            "nccl"
+        ],
+        [
+            "node_compiler_version_set",
+            "nccl gcc Version(9.3.0)"
+        ],
+        [
+            "node",
+            "cuda"
+        ],
+        [
+            "node_compiler_set",
+            "nccl gcc"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_target_set",
+            "cuda Target(skylake)"
+        ],
+        [
+            "version",
+            "cuda Version(10.1.243)"
+        ],
+        [
+            "version",
+            "nccl Version(2.4.8-1)"
+        ],
+        [
+            "node_target_set",
+            "nccl Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "nccl patches 42778c78eb9875dacddf5eca20f7f6a077773fcbee41e51174f81b3143684b6d"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "cuda Version(9.1.85)"
+        ],
+        [
+            "node_target_set",
+            "nccl Target(x86_64)"
+        ],
+        [
+            "version",
+            "nccl Version(1.3.4-1)"
+        ],
+        [
+            "node_target_set",
+            "cuda Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "nccl-spack-v0.13.1",
+    "spec2_name": "nccl-spack-v0.11.2"
+}

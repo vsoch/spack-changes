@@ -1,0 +1,138 @@
+{
+    "intersect": [
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target "
+        ],
+        [
+            "node_compiler_set",
+            "openfast gcc"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "variant_set",
+            "openfast dll-interface bool(True)"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "node",
+            "openfast"
+        ],
+        [
+            "variant_set",
+            "openblas patches 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d"
+        ],
+        [
+            "variant_set",
+            "openblas virtual_machine bool(False)"
+        ],
+        [
+            "node_target_set",
+            "openfast Target(x86_64)"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "openfast cxx bool(False)"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ],
+        [
+            "variant_set",
+            "openfast double-precision bool(True)"
+        ],
+        [
+            "concrete",
+            "openfast"
+        ],
+        [
+            "node_compiler_version_set",
+            "openfast gcc Version(9.3.0)"
+        ],
+        [
+            "node_os_set",
+            "openfast ubuntu20.04"
+        ],
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ],
+        [
+            "node_platform_set",
+            "openfast linux"
+        ],
+        [
+            "variant_set",
+            "openfast build_type RelWithDebInfo"
+        ],
+        [
+            "version",
+            "openfast Version(master)"
+        ],
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "version",
+            "openblas Version(0.3.3)"
+        ],
+        [
+            "variant_set",
+            "openfast pic bool(True)"
+        ],
+        [
+            "variant_set",
+            "openblas patches 714aea33692304a50bd0ccde42590c176c82ded4a8ac7f06e573dc8071929c33"
+        ],
+        [
+            "variant_set",
+            "openfast shared bool(True)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "variant_set",
+            "openfast shared bool(False)"
+        ],
+        [
+            "version",
+            "openblas Version(0.2.20)"
+        ]
+    ],
+    "spec1_name": "openfast-spack-v0.12.0",
+    "spec2_name": "openfast-spack-v0.11.2"
+}

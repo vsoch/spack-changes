@@ -1,0 +1,58 @@
+{
+    "intersect": [
+        [
+            "node",
+            "parsimonator"
+        ],
+        [
+            "node_os_set",
+            "parsimonator ubuntu20.04"
+        ],
+        [
+            "node_platform_set",
+            "parsimonator linux"
+        ],
+        [
+            "version",
+            "parsimonator Version(1.0.2)"
+        ],
+        [
+            "concrete",
+            "parsimonator"
+        ],
+        [
+            "node_compiler_version_set",
+            "parsimonator gcc Version(9.3.0)"
+        ],
+        [
+            "node_compiler_set",
+            "parsimonator gcc"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "variant_set",
+            "parsimonator patches f2515b67e889bdd6de2952bc52d90e3372d08f429939a6a359b0b3e28cff1fed"
+        ],
+        [
+            "node_target_set",
+            "parsimonator Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "variant_set",
+            "parsimonator avx bool(False)"
+        ],
+        [
+            "variant_set",
+            "parsimonator sse bool(True)"
+        ],
+        [
+            "node_target_set",
+            "parsimonator Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "parsimonator-spack-v0.14.1",
+    "spec2_name": "parsimonator-spack-v0.12.0"
+}

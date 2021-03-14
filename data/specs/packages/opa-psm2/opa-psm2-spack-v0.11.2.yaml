@@ -1,0 +1,44 @@
+spec:
+- opa-psm2:
+    version: 10.3-37
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      numactl:
+        hash: 4gx65osffrgjdsbff5muxiqxsgtahayu
+        type:
+        - build
+        - link
+    hash: dketxzwhbzaot72pkweogli7k4eogouv
+- numactl:
+    version: 2.0.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 4gx65osffrgjdsbff5muxiqxsgtahayu
+

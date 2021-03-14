@@ -1,0 +1,44 @@
+spec:
+- pacbio-daligner:
+    version: '2017-08-05'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      pacbio-dazz-db:
+        hash: rwmp6yfoilxl3dtzfe2qdpuy4msyweif
+        type:
+        - build
+        - link
+    hash: 4f4go62bakn6wnxrzf3lvidnqvfyobte
+- pacbio-dazz-db:
+    version: '2017-04-10'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: rwmp6yfoilxl3dtzfe2qdpuy4msyweif
+
