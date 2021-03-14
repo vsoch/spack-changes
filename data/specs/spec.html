@@ -29,9 +29,10 @@
     <div class="row">
         <div class="col-md-9">
           <div id="theplot"></div>
+          <a style='padding:30px;' href='index.html'><< back to index</a>
         </div>
         <div class="col-md-3">
-            <ul class="list-group">
+            <ul class="list-group" id="description">
             <li class="list-group-item"><h4>1_package_name_overlap</h4>
               The shared packages over union of packages, regardless of version.</li>
 	    <li class="list-group-item"><h4>2_package_name_version_exact</h4> 
@@ -202,20 +203,30 @@ $(document).ready(function() {
 
     d3.json(window.package_name + "/spec-diffs-vizdata.json", function(data) {
 
+        // If the user provides invalid input, stop and hide
+        if (!data) {
+        
+           $("#theplot").html("<h1 style='padding:30px; color:333'>That package does not exist!</h1><a style='padding:30px;' href='index.html'><< back to index</a>")
+           $("#version_selector").hide();
+           $("#description").hide();
+                   
+        } else {
+
         window.data = data
 
-        // We can cycle through different metrics
-        var metrics = Object.keys(window.data);
-        var selector = document.getElementById("version_selector");
-        for (var i = 0; i < metrics.length; i++) {        
-            var option = document.createElement("option");
-            option.text = "Metric " + metrics[i];  
-            option.value = metrics[i]
-            selector.appendChild(option);
+            // We can cycle through different metrics
+            var metrics = Object.keys(window.data);
+            var selector = document.getElementById("version_selector");
+            for (var i = 0; i < metrics.length; i++) {        
+                var option = document.createElement("option");
+                option.text = "Metric " + metrics[i];  
+                option.value = metrics[i]
+                selector.appendChild(option);
+            }
+    
+            // 3_package_weighted_versions
+            generate_plot(metrics[0])
         }
-
-        // 3_package_weighted_versions
-        generate_plot(metrics[0])
     });
 })
 

@@ -1,0 +1,44 @@
+spec:
+- cudnn:
+    version: '6.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      cuda:
+        hash: rpts2euvkn2gok54p3dtppv533pyc3g2
+        type:
+        - build
+        - link
+    hash: w4fa7u3qbwritjeqbihtdyyqlbf5mphb
+- cuda:
+    version: 9.0.176
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: rpts2euvkn2gok54p3dtppv533pyc3g2
+

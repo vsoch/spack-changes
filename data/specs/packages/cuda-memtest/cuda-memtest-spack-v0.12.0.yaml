@@ -1,0 +1,44 @@
+spec:
+- cuda-memtest:
+    version: master
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      cuda:
+        hash: t4lnuz7vybxy6wa2azqdntgvoqgf4p6s
+        type:
+        - build
+        - link
+    hash: mlj52sx3u3vdk4cyjrq4kfikvnsrbx5w
+- cuda:
+    version: 10.0.130
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: t4lnuz7vybxy6wa2azqdntgvoqgf4p6s

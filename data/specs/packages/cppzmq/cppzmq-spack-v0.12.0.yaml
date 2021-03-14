@@ -1,0 +1,69 @@
+spec:
+- cppzmq:
+    version: 4.3.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zeromq:
+        hash: 2etjpxwzkqi5wepoc4azuh772rtsoa7o
+        type:
+        - build
+        - link
+    hash: a2osvdkxlyaghynthym25t6qn733qm3f
+- zeromq:
+    version: 4.2.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      libsodium: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libsodium:
+        hash: kxfvzntqc2fectvwdtn2cynoe5evwyyy
+        type:
+        - build
+        - link
+    hash: 2etjpxwzkqi5wepoc4azuh772rtsoa7o
+- libsodium:
+    version: 1.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: kxfvzntqc2fectvwdtn2cynoe5evwyyy

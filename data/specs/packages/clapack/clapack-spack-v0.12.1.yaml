@@ -1,0 +1,46 @@
+spec:
+- clapack:
+    version: 3.2.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      external-blas: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      atlas:
+        hash: qlsp56l47vyvngspwgpymdfkd4btxseh
+        type:
+        - build
+        - link
+    hash: ium6hb7c4pex5alwwv2n5tdrjkkkgjjx
+- atlas:
+    version: 3.10.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      shared: true
+      threads: none
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: qlsp56l47vyvngspwgpymdfkd4btxseh

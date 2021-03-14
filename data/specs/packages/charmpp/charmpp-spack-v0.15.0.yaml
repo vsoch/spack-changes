@@ -1,0 +1,61 @@
+spec:
+- charmpp:
+    version: 6.10.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      backend: netlrts
+      build-target: LIBS
+      cuda: false
+      omp: false
+      papi: false
+      pmi: none
+      production: true
+      pthreads: false
+      shared: true
+      smp: true
+      syncft: false
+      tcp: false
+      tracing: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: ol5ktree54kcbpry55t7kystpzjihmer
+    build_hash: ol5ktree54kcbpry55t7kystpzjihmer

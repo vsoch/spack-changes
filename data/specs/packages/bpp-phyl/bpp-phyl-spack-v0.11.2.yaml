@@ -1,0 +1,76 @@
+spec:
+- bpp-phyl:
+    version: 2.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bpp-core:
+        hash: ukjv3ipp5a2k77bq6xmjfteqxljfx55h
+        type:
+        - build
+        - link
+      bpp-seq:
+        hash: 2ryj7qifaaclsayvafick3unqiyf7l3p
+        type:
+        - build
+        - link
+    hash: elvxxtw5xf7afenxfdtth26oanjle2go
+- bpp-core:
+    version: 2.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: ukjv3ipp5a2k77bq6xmjfteqxljfx55h
+- bpp-seq:
+    version: 2.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bpp-core:
+        hash: ukjv3ipp5a2k77bq6xmjfteqxljfx55h
+        type:
+        - build
+        - link
+    hash: 2ryj7qifaaclsayvafick3unqiyf7l3p
+

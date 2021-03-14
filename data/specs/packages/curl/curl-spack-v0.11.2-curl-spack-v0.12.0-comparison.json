@@ -1,0 +1,146 @@
+{
+    "intersect": [
+        [
+            "node_platform_set",
+            "openssl linux"
+        ],
+        [
+            "node_platform_set",
+            "curl linux"
+        ],
+        [
+            "node_compiler_set",
+            "openssl gcc"
+        ],
+        [
+            "node_compiler_set",
+            "curl gcc"
+        ],
+        [
+            "node_os_set",
+            "zlib ubuntu20.04"
+        ],
+        [
+            "node_target_set",
+            "zlib Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "curl nghttp2 bool(False)"
+        ],
+        [
+            "variant_set",
+            "zlib optimize bool(True)"
+        ],
+        [
+            "node_compiler_version_set",
+            "curl gcc Version(9.3.0)"
+        ],
+        [
+            "node_compiler_version_set",
+            "zlib gcc Version(9.3.0)"
+        ],
+        [
+            "node",
+            "zlib"
+        ],
+        [
+            "variant_set",
+            "zlib pic bool(True)"
+        ],
+        [
+            "concrete",
+            "zlib"
+        ],
+        [
+            "concrete",
+            "curl"
+        ],
+        [
+            "node",
+            "curl"
+        ],
+        [
+            "node_target_set",
+            "openssl Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "zlib shared bool(True)"
+        ],
+        [
+            "node_target_set",
+            "curl Target(x86_64)"
+        ],
+        [
+            "node_platform_set",
+            "zlib linux"
+        ],
+        [
+            "node_compiler_set",
+            "zlib gcc"
+        ],
+        [
+            "concrete",
+            "openssl"
+        ],
+        [
+            "node",
+            "openssl"
+        ],
+        [
+            "version",
+            "zlib Version(1.2.11)"
+        ],
+        [
+            "node_os_set",
+            "openssl ubuntu20.04"
+        ],
+        [
+            "node_os_set",
+            "curl ubuntu20.04"
+        ],
+        [
+            "node_compiler_version_set",
+            "openssl gcc Version(9.3.0)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "variant_set",
+            "curl darwinssl bool(False)"
+        ],
+        [
+            "variant_set",
+            "openssl systemcerts bool(True)"
+        ],
+        [
+            "variant_set",
+            "curl libssh2 bool(False)"
+        ],
+        [
+            "variant_set",
+            "curl libssh bool(False)"
+        ],
+        [
+            "version",
+            "openssl Version(1.0.2o)"
+        ],
+        [
+            "version",
+            "curl Version(7.60.0)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "openssl Version(1.0.2n)"
+        ],
+        [
+            "version",
+            "curl Version(7.56.0)"
+        ]
+    ],
+    "spec1_name": "curl-spack-v0.12.0",
+    "spec2_name": "curl-spack-v0.11.2"
+}

@@ -1,0 +1,54 @@
+{
+    "intersect": [
+        [
+            "node_os_set",
+            "cppcheck ubuntu20.04"
+        ],
+        [
+            "node_compiler_version_set",
+            "cppcheck gcc Version(9.3.0)"
+        ],
+        [
+            "node_platform_set",
+            "cppcheck linux"
+        ],
+        [
+            "node_compiler_set",
+            "cppcheck gcc"
+        ],
+        [
+            "node",
+            "cppcheck"
+        ],
+        [
+            "concrete",
+            "cppcheck"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "version",
+            "cppcheck Version(2.1)"
+        ],
+        [
+            "variant_set",
+            "cppcheck htmlreport bool(False)"
+        ],
+        [
+            "node_target_set",
+            "cppcheck Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "node_target_set",
+            "cppcheck Target(x86_64)"
+        ],
+        [
+            "version",
+            "cppcheck Version(1.78)"
+        ]
+    ],
+    "spec1_name": "cppcheck-spack-v0.16.0",
+    "spec2_name": "cppcheck-spack-v0.11.1"
+}

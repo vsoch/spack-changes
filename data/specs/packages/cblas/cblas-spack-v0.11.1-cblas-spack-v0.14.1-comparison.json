@@ -1,0 +1,114 @@
+{
+    "intersect": [
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ],
+        [
+            "concrete",
+            "cblas"
+        ],
+        [
+            "node_platform_set",
+            "cblas linux"
+        ],
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "version",
+            "cblas Version(2015-06-06)"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ],
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ],
+        [
+            "node_compiler_version_set",
+            "cblas gcc Version(9.3.0)"
+        ],
+        [
+            "node_os_set",
+            "cblas ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "node",
+            "cblas"
+        ],
+        [
+            "node_compiler_set",
+            "cblas gcc"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ],
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "variant_set",
+            "openblas consistentFPCSR bool(False)"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.8)"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(skylake)"
+        ],
+        [
+            "node_target_set",
+            "cblas Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "node_target_set",
+            "openblas Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "openblas patches 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target "
+        ],
+        [
+            "node_target_set",
+            "cblas Target(x86_64)"
+        ],
+        [
+            "version",
+            "openblas Version(0.2.20)"
+        ]
+    ],
+    "spec1_name": "cblas-spack-v0.14.1",
+    "spec2_name": "cblas-spack-v0.11.1"
+}

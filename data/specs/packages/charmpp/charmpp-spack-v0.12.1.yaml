@@ -1,0 +1,35 @@
+spec:
+- charmpp:
+    version: 6.8.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      backend: netlrts
+      build-target: LIBS
+      cuda: false
+      omp: false
+      papi: false
+      patches:
+      - 92d507d8b72ac01f114f7772510049cc7656f93daeadef46e1f2b00ad8533d2b
+      production: true
+      pthreads: false
+      shared: true
+      smp: true
+      syncft: false
+      tcp: false
+      tracing: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 92d507d8b72ac01f114f7772510049cc7656f93daeadef46e1f2b00ad8533d2b
+    hash: 4wverkwdoihdxxe2yakww6xnaazlx5vp
