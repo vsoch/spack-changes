@@ -1,0 +1,107 @@
+spec:
+- aspell6-es:
+    version: 1.11-2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      aspell:
+        hash: gmj3lrw7ipr3li3ukdo7udabmzw6aku2
+        type:
+        - build
+        - link
+    hash: ek6omduadd47xwbonrknfzoz6v5lklfe
+    build_hash: ek6omduadd47xwbonrknfzoz6v5lklfe
+- aspell:
+    version: 0.60.6.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 185d0632ff38c629632b81ab1255ac65ab848047cebbfda122407c723db6b2a0
+      - 28f7738df694bf5972339415d09933297f8144ee3b8e578e1f2ad5cb7697a2c4
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 185d0632ff38c629632b81ab1255ac65ab848047cebbfda122407c723db6b2a0
+    - 28f7738df694bf5972339415d09933297f8144ee3b8e578e1f2ad5cb7697a2c4
+    hash: gmj3lrw7ipr3li3ukdo7udabmzw6aku2
+    build_hash: gmj3lrw7ipr3li3ukdo7udabmzw6aku2

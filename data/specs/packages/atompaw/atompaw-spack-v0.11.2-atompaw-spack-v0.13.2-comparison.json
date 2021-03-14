@@ -1,0 +1,166 @@
+{
+    "intersect": [
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ],
+        [
+            "node_platform_set",
+            "atompaw linux"
+        ],
+        [
+            "concrete",
+            "atompaw"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ],
+        [
+            "node_compiler_set",
+            "atompaw gcc"
+        ],
+        [
+            "node",
+            "atompaw"
+        ],
+        [
+            "node_compiler_version_set",
+            "libxc gcc Version(9.3.0)"
+        ],
+        [
+            "node_platform_set",
+            "libxc linux"
+        ],
+        [
+            "variant_set",
+            "openblas virtual_machine bool(False)"
+        ],
+        [
+            "node_compiler_set",
+            "libxc gcc"
+        ],
+        [
+            "node_compiler_version_set",
+            "atompaw gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ],
+        [
+            "node_os_set",
+            "atompaw ubuntu20.04"
+        ],
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "concrete",
+            "libxc"
+        ],
+        [
+            "node",
+            "libxc"
+        ],
+        [
+            "node_os_set",
+            "libxc ubuntu20.04"
+        ],
+        [
+            "version",
+            "libxc Version(2.2.1)"
+        ],
+        [
+            "version",
+            "atompaw Version(4.0.0.13)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_target_set",
+            "libxc Target(skylake)"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.7)"
+        ],
+        [
+            "variant_set",
+            "libxc patches edf15362f5d524882cda51c70e6f36bd83f4dbc15a8746bc8b43443cb7151244"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target auto"
+        ],
+        [
+            "variant_set",
+            "openblas avx512 bool(False)"
+        ],
+        [
+            "variant_set",
+            "openblas avx2 bool(True)"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(skylake)"
+        ],
+        [
+            "node_target_set",
+            "atompaw Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "openblas Version(0.2.20)"
+        ],
+        [
+            "variant_set",
+            "openblas patches 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(x86_64)"
+        ],
+        [
+            "node_target_set",
+            "libxc Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target "
+        ],
+        [
+            "node_target_set",
+            "atompaw Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "atompaw-spack-v0.13.2",
+    "spec2_name": "atompaw-spack-v0.11.2"
+}

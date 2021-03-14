@@ -1,0 +1,68 @@
+spec:
+- andi:
+    version: '0.10'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gsl:
+        hash: zd4no5dguixvwzeg42c6ln7cgyrllwgd
+        type:
+        - build
+        - link
+      libdivsufsort:
+        hash: 56ozzvbnxzer4dz4vfbn22jrmw2z4dis
+        type:
+        - build
+        - link
+    hash: ercaggccqffq73ngzypy55bzkhj46q5k
+- gsl:
+    version: '2.4'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: zd4no5dguixvwzeg42c6ln7cgyrllwgd
+- libdivsufsort:
+    version: 2.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 56ozzvbnxzer4dz4vfbn22jrmw2z4dis
+

@@ -1,0 +1,105 @@
+spec:
+- aspell6-de:
+    version: 6-de-20030222-1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      aspell:
+        hash: 6l2jkda4krbnakopmcf6buc3bvwgmdh2
+        type:
+        - build
+        - link
+    hash: c5yua3sextxy4ydaq72h2epazddtna47
+    build_hash: c5yua3sextxy4ydaq72h2epazddtna47
+- aspell:
+    version: 0.60.6.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 28f7738df694bf5972339415d09933297f8144ee3b8e578e1f2ad5cb7697a2c4
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 28f7738df694bf5972339415d09933297f8144ee3b8e578e1f2ad5cb7697a2c4
+    hash: 6l2jkda4krbnakopmcf6buc3bvwgmdh2
+    build_hash: 6l2jkda4krbnakopmcf6buc3bvwgmdh2

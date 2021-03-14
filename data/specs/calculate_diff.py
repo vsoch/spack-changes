@@ -73,7 +73,7 @@ def to_tuple(asp_function):
         if isinstance(arg, str):
             args.append(arg)
             continue
-        args.append("%s(%s)" %(type(arg).__name__, str(arg)))
+        args.append("%s(%s)" % (type(arg).__name__, str(arg)))
     return tuple([asp_function.name] + args)
 
 
@@ -82,6 +82,7 @@ def load_spack_spec(spec_file):
         spec = spack.spec.Spec.from_yaml(stream)
     spec.concretize()
     return spec
+
 
 def flatten(tuple_list):
     """Given a list of tuples, convert into a list of key: value tuples (so
@@ -92,6 +93,7 @@ def flatten(tuple_list):
     for item in tuple_list:
         updated.append([item[0], " ".join(item[1:])])
     return updated
+
 
 def compare(a, b, a_name, b_name):
     """Generate a comparison, including diffs (for each side) along with
@@ -109,13 +111,15 @@ def compare(a, b, a_name, b_name):
     intersect = list(a_facts.intersection(b_facts))
     spec1_not_spec2 = list(a_facts.difference(b_facts))
     spec2_not_spec1 = list(b_facts.difference(a_facts))
-    
+
     # We want to show what is the same, and then difference for each
-    return {"intersect": flatten(intersect),
-            "spec1_not_spec2": flatten(spec1_not_spec2),
-            "spec2_not_spec1": flatten(spec2_not_spec1),
-            "spec1_name": a_name,
-            "spec2_name": b_name}
+    return {
+        "intersect": flatten(intersect),
+        "spec1_not_spec2": flatten(spec1_not_spec2),
+        "spec2_not_spec1": flatten(spec2_not_spec1),
+        "spec1_name": a_name,
+        "spec2_name": b_name,
+    }
 
 
 def create_package_lookup(spec):
@@ -137,8 +141,10 @@ def create_package_lookup(spec):
 
 def is_empty(spec):
     """A quick check if a spec is mostly empty"""
-    name = list(spec['spec'][0].keys())[0]
-    return 'versions' in spec['spec'][0][name] and spec['spec'][0][name]['versions'] == [':']
+    name = list(spec["spec"][0].keys())[0]
+    return "versions" in spec["spec"][0][name] and spec["spec"][0][name][
+        "versions"
+    ] == [":"]
 
 
 def main():
@@ -168,9 +174,9 @@ def main():
 
             for package in spec["spec"]:
                 name = list(package.keys())[0]
-                
+
                 # We can't parse these "empty" specs
-                if "versions" in package[name] and package[name]['versions'] == [':']:
+                if "versions" in package[name] and package[name]["versions"] == [":"]:
                     continue
 
                 if name not in _versions:
@@ -279,12 +285,11 @@ def main():
 
                 for package in packages1.intersection(packages2):
 
-
                     # If we don't have semantic versions, we compare them verbatim
                     if not versions[package]["semvar"]:
                         if package not in lookup1 or package not in lookup2:
                             continue
-                            
+
                         if lookup1[package]["version"] == lookup2[package]["version"]:
                             intersection += 1
                         continue
@@ -386,7 +391,7 @@ def main():
                         "value": result[result_type],
                     }
                 )
-        
+
         result_file = os.path.join(package_dir, "spec-diffs-vizdata.json")
         write_json(result_file, vizdata)
 

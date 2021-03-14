@@ -4,7 +4,19 @@ For this change analysis, we want to be able to generate concretized specs
 for the same packages across versions of spack, and then see how those specs
 change over time. This will require installing spack at different versions,
 and then concretizing (and saving) the resulting spec. You can see a list of early
-results [here](https://vsoch.github.io/spack-changes/data/specs/).
+results [here](https://vsoch.github.io/spack-changes/data/specs/). 
+
+## What to think about
+
+The results let you explore each package based on a similarity matrix of differences
+(across different metrics) along with a side by side comparison of a single package,
+and different features like versions or nodes. As you do this, keep in mind:
+
+- You should take notice of what you *don't* see - if a package doesn't have output for a version, this can mean a few things:
+  - 1. Running `spack spec <package>` for that version of spack was not successful. 
+  - 2. Since we are running with Python 3, the version of Spack had Python 2.x code and it dind't work.
+  - 3. The package was not added to spack at the time.
+
 
 ## Usage
 
@@ -176,9 +188,9 @@ run it for directories with the result already existing.
 
 ```bash
 for package in $(ls packages/); do
-   echo "Parsing $package"
    outfile="packages/${package}/spec-diffs.json"
    if [ ! -f "${outfile}" ]; then
+       echo "Parsing $package"
        spack python calculate_diff.py "packages/${package}"
    fi
 done
@@ -190,9 +202,19 @@ Finally, we want to generate an entry for each package we find.
 for package in $(ls packages/); do
    outfile="packages/${package}/spec-diffs.json"
    if [ -f "${outfile}" ]; then
-       echo "<div onclick=\"document.location='spec.html?name=packages/${package}'\" class=\"card\"> ${package}</div>"
+       echo "      <div onclick=\"document.location='spec.html?name=packages/${package}'\" class=\"card\"> ${package}</div>"
    fi
 done
 ```
 
-I just copy pasted this into the [index.html](index.html).
+I just copy pasted this into the [index.html](index.html). Then we can also automatically
+use this same method to add the right folders to git!
+
+```bash
+for package in $(ls packages/); do
+   outfile="packages/${package}/spec-diffs.json"
+   if [ -f "${outfile}" ]; then
+       git add packages/$package/
+   fi
+done
+```

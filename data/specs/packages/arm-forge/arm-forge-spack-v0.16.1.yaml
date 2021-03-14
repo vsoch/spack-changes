@@ -1,0 +1,49 @@
+spec:
+- arm-forge:
+    version: 19.0.4-19.0.4-Ubuntu-16.04-x86_64
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: hak2morwp2ho4ximqvt2yq6ciyszxsdf
+    full_hash: v7wfjh7cy3yzzvteaady4cymjyfosofu
+    build_hash: hak2morwp2ho4ximqvt2yq6ciyszxsdf
