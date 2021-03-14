@@ -1,0 +1,62 @@
+{
+    "intersect": [
+        [
+            "node_os_set",
+            "intel-mkl ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "intel-mkl ilp64 bool(False)"
+        ],
+        [
+            "node_compiler_set",
+            "intel-mkl gcc"
+        ],
+        [
+            "node_platform_set",
+            "intel-mkl linux"
+        ],
+        [
+            "variant_set",
+            "intel-mkl shared bool(True)"
+        ],
+        [
+            "node",
+            "intel-mkl"
+        ],
+        [
+            "concrete",
+            "intel-mkl"
+        ],
+        [
+            "variant_set",
+            "intel-mkl threads none"
+        ],
+        [
+            "node_compiler_version_set",
+            "intel-mkl gcc Version(9.3.0)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "version",
+            "intel-mkl Version(2019.3.199)"
+        ],
+        [
+            "node_target_set",
+            "intel-mkl Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "intel-mkl Version(2018.1.163)"
+        ],
+        [
+            "node_target_set",
+            "intel-mkl Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "intel-mkl-spack-v0.13.0",
+    "spec2_name": "intel-mkl-spack-v0.11.2"
+}

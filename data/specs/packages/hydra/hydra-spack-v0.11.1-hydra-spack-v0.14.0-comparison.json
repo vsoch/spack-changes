@@ -1,0 +1,46 @@
+{
+    "intersect": [
+        [
+            "version",
+            "hydra Version(3.2)"
+        ],
+        [
+            "node",
+            "hydra"
+        ],
+        [
+            "node_os_set",
+            "hydra ubuntu20.04"
+        ],
+        [
+            "concrete",
+            "hydra"
+        ],
+        [
+            "node_compiler_set",
+            "hydra gcc"
+        ],
+        [
+            "node_platform_set",
+            "hydra linux"
+        ],
+        [
+            "node_compiler_version_set",
+            "hydra gcc Version(9.3.0)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_target_set",
+            "hydra Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "node_target_set",
+            "hydra Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "hydra-spack-v0.14.0",
+    "spec2_name": "hydra-spack-v0.11.1"
+}

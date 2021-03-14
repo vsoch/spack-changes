@@ -1,0 +1,98 @@
+{
+    "intersect": [
+        [
+            "variant_set",
+            "m4 sigsegv bool(True)"
+        ],
+        [
+            "variant_set",
+            "m4 patches 3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00"
+        ],
+        [
+            "node_os_set",
+            "m4 ubuntu20.04"
+        ],
+        [
+            "node_compiler_version_set",
+            "m4 gcc Version(9.3.0)"
+        ],
+        [
+            "concrete",
+            "m4"
+        ],
+        [
+            "concrete",
+            "libsigsegv"
+        ],
+        [
+            "node_platform_set",
+            "m4 linux"
+        ],
+        [
+            "node",
+            "libsigsegv"
+        ],
+        [
+            "node_platform_set",
+            "libsigsegv linux"
+        ],
+        [
+            "node",
+            "m4"
+        ],
+        [
+            "node_compiler_version_set",
+            "libsigsegv gcc Version(9.3.0)"
+        ],
+        [
+            "version",
+            "m4 Version(1.4.18)"
+        ],
+        [
+            "node_compiler_set",
+            "m4 gcc"
+        ],
+        [
+            "node_os_set",
+            "libsigsegv ubuntu20.04"
+        ],
+        [
+            "node_compiler_set",
+            "libsigsegv gcc"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_target_set",
+            "m4 Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "m4 patches fc9b61654a3ba1a8d6cd78ce087e7c96366c290bc8d2c299f09828d793b853c8"
+        ],
+        [
+            "node_target_set",
+            "libsigsegv Target(skylake)"
+        ],
+        [
+            "version",
+            "libsigsegv Version(2.12)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "libsigsegv Version(2.11)"
+        ],
+        [
+            "node_target_set",
+            "libsigsegv Target(x86_64)"
+        ],
+        [
+            "node_target_set",
+            "m4 Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "m4-spack-v0.13.2",
+    "spec2_name": "m4-spack-v0.11.0"
+}

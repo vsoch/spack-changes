@@ -1,0 +1,48 @@
+spec:
+- libmatheval:
+    version: 1.1.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 0465844d690e3ff4d022f0c2bab76f636d78e4c6012a7a6d42b6c99e307fb671
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 0465844d690e3ff4d022f0c2bab76f636d78e4c6012a7a6d42b6c99e307fb671
+    dependencies:
+      flex:
+        hash: dh7rysk5ifiesool7lvayulxx7azkkgk
+        type:
+        - build
+        - link
+    hash: odydnaygblgac2rmedj4mvehd6zjz77u
+- flex:
+    version: 2.6.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      lex: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: dh7rysk5ifiesool7lvayulxx7azkkgk

@@ -1,0 +1,46 @@
+spec:
+- gtkorvo-atl:
+    version: '2.1'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gtkorvo-cercs-env:
+        hash: nt4lm5ap6s4zy4ontkocyypir2kk7yau
+        type:
+        - build
+        - link
+    hash: gyw7hheqts4hptiefuntm475ppx7arya
+- gtkorvo-cercs-env:
+    version: '1.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: nt4lm5ap6s4zy4ontkocyypir2kk7yau
+

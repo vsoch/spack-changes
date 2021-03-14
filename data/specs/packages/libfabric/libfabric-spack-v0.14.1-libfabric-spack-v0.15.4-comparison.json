@@ -1,0 +1,66 @@
+{
+    "intersect": [
+        [
+            "variant_set",
+            "libfabric kdreg bool(False)"
+        ],
+        [
+            "node",
+            "libfabric"
+        ],
+        [
+            "variant_set",
+            "libfabric fabrics sockets"
+        ],
+        [
+            "node_os_set",
+            "libfabric ubuntu20.04"
+        ],
+        [
+            "node_target_set",
+            "libfabric Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "libfabric fabrics udp"
+        ],
+        [
+            "node_compiler_version_set",
+            "libfabric gcc Version(9.3.0)"
+        ],
+        [
+            "node_compiler_set",
+            "libfabric gcc"
+        ],
+        [
+            "variant_set",
+            "libfabric fabrics tcp"
+        ],
+        [
+            "node_platform_set",
+            "libfabric linux"
+        ],
+        [
+            "concrete",
+            "libfabric"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "version",
+            "libfabric Version(1.9.1)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "variant_set",
+            "libfabric patches 71f06e8bf0adeccd425b194ac524e4d596469e9dab9e7a4f8bb209e6b9a454f4"
+        ],
+        [
+            "version",
+            "libfabric Version(1.9.0)"
+        ]
+    ],
+    "spec1_name": "libfabric-spack-v0.15.4",
+    "spec2_name": "libfabric-spack-v0.14.1"
+}

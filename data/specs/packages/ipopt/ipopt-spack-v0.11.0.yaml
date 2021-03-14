@@ -1,0 +1,92 @@
+spec:
+- ipopt:
+    version: 3.12.7
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      coinhsl: false
+      metis: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      mumps:
+        hash: t52emoi2btecsafgomsltucwpymjfhqd
+        type:
+        - build
+        - link
+      openblas:
+        hash: 3inizjueeps72anaqcwdunozaga6eqro
+        type:
+        - build
+        - link
+    hash: balumgbdwkqqnk7nm6tgossm2zd3xhpo
+- mumps:
+    version: 5.1.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      complex: true
+      double: true
+      float: true
+      int64: false
+      metis: false
+      mpi: false
+      parmetis: false
+      ptscotch: false
+      scotch: false
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openblas:
+        hash: 3inizjueeps72anaqcwdunozaga6eqro
+        type:
+        - build
+        - link
+    hash: t52emoi2btecsafgomsltucwpymjfhqd
+- openblas:
+    version: 0.2.20
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cpu_target: ''
+      ilp64: false
+      patches:
+      - 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d
+      pic: true
+      shared: true
+      threads: none
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 3inizjueeps72anaqcwdunozaga6eqro
+

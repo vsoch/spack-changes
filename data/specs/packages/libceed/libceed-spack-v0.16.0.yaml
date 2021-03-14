@@ -1,0 +1,112 @@
+spec:
+- libceed:
+    version: '0.7'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cuda: false
+      debug: false
+      hip: false
+      libxsmm: false
+      magma: false
+      occa: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      occa:
+        hash: phnvnn2pmkawvpeg36j6ojimoudypkrz
+        type:
+        - build
+        - link
+    hash: fcaenlbaskl6vfjtmai56v7bw2snd3yy
+    full_hash: rx3oghptla6stabpw63ktena5phqospx
+    build_hash: fcaenlbaskl6vfjtmai56v7bw2snd3yy
+- occa:
+    version: 1.1.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cuda: false
+      opencl: true
+      openmp: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: phnvnn2pmkawvpeg36j6ojimoudypkrz
+    full_hash: lf6rpi45jjmpyuwnahpdib7aia2vn2uk
+    build_hash: phnvnn2pmkawvpeg36j6ojimoudypkrz

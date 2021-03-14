@@ -1,0 +1,160 @@
+spec:
+- guacamole-client:
+    version: 1.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      maven:
+        hash: 47ohewsnoia4cya472wyg6s35u6kvnxl
+        type:
+        - build
+      openjdk:
+        hash: aaxojlkkvknzfzkb7kqk3dzeaczc3h6c
+        type:
+        - build
+        - run
+    hash: jyuswlmoad7xaryoedxsodz675kyfns4
+    full_hash: nism2m3x4msl4mwy2ne6cnywy76hnamb
+    build_hash: odyrqz4v7fc67q4lpzvodsoev7swbmqj
+- maven:
+    version: 3.6.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openjdk:
+        hash: aaxojlkkvknzfzkb7kqk3dzeaczc3h6c
+        type:
+        - run
+    hash: 47ohewsnoia4cya472wyg6s35u6kvnxl
+    full_hash: 4bzg6srlankt3nfeju67axxq6bxl3wzd
+    build_hash: 47ohewsnoia4cya472wyg6s35u6kvnxl
+- openjdk:
+    version: 1.8.0_222-b10
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: aaxojlkkvknzfzkb7kqk3dzeaczc3h6c
+    full_hash: qflesnsa5glq65gxlhb4l3kcwd2gooxy
+    build_hash: aaxojlkkvknzfzkb7kqk3dzeaczc3h6c

@@ -1,0 +1,66 @@
+{
+    "intersect": [
+        [
+            "node_target_set",
+            "libxc Target(skylake)"
+        ],
+        [
+            "concrete",
+            "libxc"
+        ],
+        [
+            "node_compiler_set",
+            "libxc gcc"
+        ],
+        [
+            "node_platform_set",
+            "libxc linux"
+        ],
+        [
+            "node_os_set",
+            "libxc ubuntu20.04"
+        ],
+        [
+            "node",
+            "libxc"
+        ],
+        [
+            "node_compiler_version_set",
+            "libxc gcc Version(9.3.0)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "variant_set",
+            "libxc cuda bool(False)"
+        ],
+        [
+            "variant_set",
+            "libxc cuda_arch none"
+        ],
+        [
+            "version",
+            "libxc Version(5.0.0)"
+        ],
+        [
+            "variant_set",
+            "libxc patches a2977e2f48c9bc7c9627eaadd4bef5323dcfa0e69a65e66b8c2eb4689b670959"
+        ],
+        [
+            "variant_set",
+            "libxc patches 42e805682b7120163998a6d7e9abb8d7065602a2d548877b0fb7cd13233f4c9a"
+        ],
+        [
+            "variant_set",
+            "libxc shared bool(True)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "libxc Version(4.3.2)"
+        ]
+    ],
+    "spec1_name": "libxc-spack-v0.16.0",
+    "spec2_name": "libxc-spack-v0.15.3"
+}

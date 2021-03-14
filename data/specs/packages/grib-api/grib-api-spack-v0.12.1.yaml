@@ -1,0 +1,62 @@
+spec:
+- grib-api:
+    version: 1.24.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      aec: false
+      build_type: RelWithDebInfo
+      examples: true
+      fortran: false
+      jp2k: openjpeg
+      netcdf: false
+      numpy: false
+      openmp: false
+      patches:
+      - 9abcf53ee1b8844f2aa5ff360b83f9548752b25b0357c94ddc4ae56f84d27978
+      - caa4c2f2ac4a13a61c3372cd64f2f6f6570c78ed2ab91497a76b02c584abe1bc
+      png: false
+      pthreads: false
+      python: false
+      test: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 9abcf53ee1b8844f2aa5ff360b83f9548752b25b0357c94ddc4ae56f84d27978
+    - caa4c2f2ac4a13a61c3372cd64f2f6f6570c78ed2ab91497a76b02c584abe1bc
+    dependencies:
+      openjpeg:
+        hash: yivbkhu3kzyml6lws5y6fw6z7xwkiiec
+        type:
+        - build
+        - link
+    hash: gvw4ldntfg44yapo7uzb7lm5iwtuu6oq
+- openjpeg:
+    version: 1.5.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: yivbkhu3kzyml6lws5y6fw6z7xwkiiec

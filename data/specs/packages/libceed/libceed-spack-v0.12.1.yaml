@@ -1,0 +1,53 @@
+spec:
+- libceed:
+    version: '0.2'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cuda: false
+      debug: false
+      occa: true
+      patches:
+      - e6d12fc189d4f4d6afdb561f4a6d4eba121697aee3daaabb64e362bf01c664a2
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - e6d12fc189d4f4d6afdb561f4a6d4eba121697aee3daaabb64e362bf01c664a2
+    dependencies:
+      occa:
+        hash: zoxocgatmaeb3zrqe4k4ltiwz3gfyxzh
+        type:
+        - build
+        - link
+    hash: gcxd6jwmb3nlyiapzdmgw57z56ipt5j5
+- occa:
+    version: v1.0.0-alpha.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cuda: false
+      opencl: true
+      openmp: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: zoxocgatmaeb3zrqe4k4ltiwz3gfyxzh

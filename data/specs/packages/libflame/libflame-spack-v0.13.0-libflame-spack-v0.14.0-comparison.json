@@ -1,0 +1,142 @@
+{
+    "intersect": [
+        [
+            "variant_set",
+            "libflame threads bool(False)"
+        ],
+        [
+            "node_os_set",
+            "libflame ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ],
+        [
+            "variant_set",
+            "libflame shared bool(True)"
+        ],
+        [
+            "variant_set",
+            "libflame static bool(True)"
+        ],
+        [
+            "version",
+            "libflame Version(5.2.0)"
+        ],
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ],
+        [
+            "node_compiler_set",
+            "libflame gcc"
+        ],
+        [
+            "node",
+            "libflame"
+        ],
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ],
+        [
+            "concrete",
+            "libflame"
+        ],
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "libflame patches c5cae9e9afe42a6cdca1dcfdc39058a3e75d076483467c1e0fefe6bb76a4b16b"
+        ],
+        [
+            "node_target_set",
+            "libflame Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "libflame patches bf75a5b56d4d63f23d01976eb2e61bb0b2816b662a7c7a3de9f03b9276b0973a"
+        ],
+        [
+            "node_platform_set",
+            "libflame linux"
+        ],
+        [
+            "node_compiler_version_set",
+            "libflame gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "libflame debug bool(False)"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "variant_set",
+            "libflame lapack2flame bool(True)"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "version",
+            "openblas Version(0.3.8)"
+        ],
+        [
+            "variant_set",
+            "openblas consistentFPCSR bool(False)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "variant_set",
+            "openblas cpu_target auto"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.7)"
+        ],
+        [
+            "variant_set",
+            "openblas avx512 bool(False)"
+        ],
+        [
+            "variant_set",
+            "openblas avx2 bool(True)"
+        ],
+        [
+            "variant_set",
+            "openblas virtual_machine bool(False)"
+        ]
+    ],
+    "spec1_name": "libflame-spack-v0.14.0",
+    "spec2_name": "libflame-spack-v0.13.0"
+}

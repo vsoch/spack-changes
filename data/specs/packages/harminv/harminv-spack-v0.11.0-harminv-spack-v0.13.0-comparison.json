@@ -1,0 +1,126 @@
+{
+    "intersect": [
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "node",
+            "harminv"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ],
+        [
+            "node_platform_set",
+            "harminv linux"
+        ],
+        [
+            "node_compiler_set",
+            "harminv gcc"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "node_compiler_version_set",
+            "harminv gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ],
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ],
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ],
+        [
+            "node_os_set",
+            "harminv ubuntu20.04"
+        ],
+        [
+            "concrete",
+            "harminv"
+        ],
+        [
+            "version",
+            "harminv Version(1.4)"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "variant_set",
+            "openblas virtual_machine bool(False)"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "openblas avx512 bool(False)"
+        ],
+        [
+            "node_target_set",
+            "harminv Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "openblas avx2 bool(True)"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.7)"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target auto"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "variant_set",
+            "openblas patches 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(x86_64)"
+        ],
+        [
+            "node_target_set",
+            "harminv Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target "
+        ],
+        [
+            "version",
+            "openblas Version(0.2.20)"
+        ]
+    ],
+    "spec1_name": "harminv-spack-v0.13.0",
+    "spec2_name": "harminv-spack-v0.11.0"
+}

@@ -1,0 +1,117 @@
+spec:
+- libflame:
+    version: 5.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      debug: false
+      lapack2flame: true
+      patches:
+      - bf75a5b56d4d63f23d01976eb2e61bb0b2816b662a7c7a3de9f03b9276b0973a
+      - c5cae9e9afe42a6cdca1dcfdc39058a3e75d076483467c1e0fefe6bb76a4b16b
+      shared: true
+      static: true
+      threads: no
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - c5cae9e9afe42a6cdca1dcfdc39058a3e75d076483467c1e0fefe6bb76a4b16b
+    - bf75a5b56d4d63f23d01976eb2e61bb0b2816b662a7c7a3de9f03b9276b0973a
+    dependencies:
+      openblas:
+        hash: s3stxgxse4q72fqjv4mxorndnhlnejxn
+        type:
+        - build
+        - link
+    hash: mj2q5n7tzxz5vbvddn4pti5n5267maui
+    build_hash: mj2q5n7tzxz5vbvddn4pti5n5267maui
+- openblas:
+    version: 0.3.8
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      consistentFPCSR: false
+      ilp64: false
+      pic: true
+      shared: true
+      threads: none
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: s3stxgxse4q72fqjv4mxorndnhlnejxn
+    build_hash: s3stxgxse4q72fqjv4mxorndnhlnejxn

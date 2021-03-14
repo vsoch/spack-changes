@@ -1,0 +1,122 @@
+{
+    "intersect": [
+        [
+            "node_platform_set",
+            "occa linux"
+        ],
+        [
+            "variant_set",
+            "occa openmp bool(True)"
+        ],
+        [
+            "node_os_set",
+            "libceed ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "occa cuda bool(False)"
+        ],
+        [
+            "variant_set",
+            "libceed occa bool(True)"
+        ],
+        [
+            "concrete",
+            "libceed"
+        ],
+        [
+            "node",
+            "libceed"
+        ],
+        [
+            "node_compiler_set",
+            "libceed gcc"
+        ],
+        [
+            "node_compiler_version_set",
+            "libceed gcc Version(9.3.0)"
+        ],
+        [
+            "node_compiler_set",
+            "occa gcc"
+        ],
+        [
+            "variant_set",
+            "libceed debug bool(False)"
+        ],
+        [
+            "node_platform_set",
+            "libceed linux"
+        ],
+        [
+            "node_os_set",
+            "occa ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "libceed cuda bool(False)"
+        ],
+        [
+            "concrete",
+            "occa"
+        ],
+        [
+            "node",
+            "occa"
+        ],
+        [
+            "variant_set",
+            "occa opencl bool(True)"
+        ],
+        [
+            "node_compiler_version_set",
+            "occa gcc Version(9.3.0)"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_target_set",
+            "occa Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "libceed libxsmm bool(False)"
+        ],
+        [
+            "node_target_set",
+            "libceed Target(skylake)"
+        ],
+        [
+            "version",
+            "libceed Version(0.5)"
+        ],
+        [
+            "version",
+            "occa Version(1.0.0-alpha.5)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "libceed Version(0.2)"
+        ],
+        [
+            "node_target_set",
+            "libceed Target(x86_64)"
+        ],
+        [
+            "version",
+            "occa Version(v1.0.0-alpha.5)"
+        ],
+        [
+            "node_target_set",
+            "occa Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "libceed patches e6d12fc189d4f4d6afdb561f4a6d4eba121697aee3daaabb64e362bf01c664a2"
+        ]
+    ],
+    "spec1_name": "libceed-spack-v0.14.0",
+    "spec2_name": "libceed-spack-v0.12.1"
+}

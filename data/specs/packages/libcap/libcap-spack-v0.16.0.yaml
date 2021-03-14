@@ -1,0 +1,53 @@
+spec:
+- libcap:
+    version: '2.25'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 3db844dd771b320b8117b72f4e00b560051311fbbd4cba1ebcbd7c19116c1d66
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 3db844dd771b320b8117b72f4e00b560051311fbbd4cba1ebcbd7c19116c1d66
+    hash: kmc67qommxbo5wrgjasyw52psktyxzse
+    full_hash: z5jj46t6ukgqi6lyy7r7y65uebjxph3e
+    build_hash: kmc67qommxbo5wrgjasyw52psktyxzse

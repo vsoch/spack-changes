@@ -1,0 +1,118 @@
+{
+    "intersect": [
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "concrete",
+            "jags"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "node_os_set",
+            "jags ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "node",
+            "jags"
+        ],
+        [
+            "node_compiler_version_set",
+            "jags gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ],
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "node_compiler_set",
+            "jags gcc"
+        ],
+        [
+            "node_platform_set",
+            "jags linux"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ],
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "version",
+            "jags Version(4.3.0)"
+        ],
+        [
+            "node_target_set",
+            "jags Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "openblas consistentFPCSR bool(False)"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.8)"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "variant_set",
+            "openblas patches 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d"
+        ],
+        [
+            "node_target_set",
+            "jags Target(x86_64)"
+        ],
+        [
+            "version",
+            "jags Version(4.2.0)"
+        ],
+        [
+            "version",
+            "openblas Version(0.2.20)"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(x86_64)"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target "
+        ]
+    ],
+    "spec1_name": "jags-spack-v0.14.1",
+    "spec2_name": "jags-spack-v0.11.1"
+}

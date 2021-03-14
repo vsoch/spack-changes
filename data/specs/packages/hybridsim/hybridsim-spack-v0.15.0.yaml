@@ -1,0 +1,157 @@
+spec:
+- hybridsim:
+    version: 2.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - e266e00e3777feb1d9b3691f6a5a88d1d99c5aa0e0811fcf5461d55e0ac4a7bd
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - e266e00e3777feb1d9b3691f6a5a88d1d99c5aa0e0811fcf5461d55e0ac4a7bd
+    dependencies:
+      dramsim2:
+        hash: ovkivqeaqts2esxleqw6x557kr7ugrci
+        type:
+        - build
+        - link
+      nvdimmsim:
+        hash: siajavj2msmbofxlbf32myuhjus6u3c4
+        type:
+        - build
+        - link
+    hash: k77ra4tk44yszzulfoiyacq6qzkcwm7g
+    build_hash: k77ra4tk44yszzulfoiyacq6qzkcwm7g
+- dramsim2:
+    version: 2.2.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: ovkivqeaqts2esxleqw6x557kr7ugrci
+    build_hash: ovkivqeaqts2esxleqw6x557kr7ugrci
+- nvdimmsim:
+    version: 2.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: siajavj2msmbofxlbf32myuhjus6u3c4
+    build_hash: siajavj2msmbofxlbf32myuhjus6u3c4
