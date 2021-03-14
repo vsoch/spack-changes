@@ -1,0 +1,437 @@
+spec:
+- perl-data-optlist:
+    version: '0.110'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: tk2dmiunhoyh6ao7a2watdiqipxe5pc3
+        type:
+        - build
+        - link
+        - run
+      perl-sub-install:
+        hash: qse5qiz72ywi2yz72bkgtdkqnsleyvl7
+        type:
+        - build
+        - run
+    hash: 4z73l4uwglyy5jxhpk24pysg2eeyiitt
+    full_hash: djav4nvxlru6kt7j7aklzrekpikmzn7y
+    build_hash: xm34onpv5owq23gov2oqsek6n5he7fbc
+- perl:
+    version: 5.32.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cpanm: true
+      shared: true
+      threads: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      berkeley-db:
+        hash: gjtqt2qiwzi5pwhial5xgbvj2ehjh7go
+        type:
+        - build
+        - link
+      gdbm:
+        hash: djktpjohdxlnkbh4l4tcmrw4xnc32fhl
+        type:
+        - build
+        - link
+    hash: mmp5qlpxvylcksn4zz7vljp74rog2g4w
+    full_hash: w4jfmhmxu6uqo4ls3at7rxxmmorm2szz
+    build_hash: tk2dmiunhoyh6ao7a2watdiqipxe5pc3
+- berkeley-db:
+    version: 18.1.40
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: gjtqt2qiwzi5pwhial5xgbvj2ehjh7go
+    full_hash: qtwkyjtoihy3xnzgsshmr4q7j7mkme2k
+    build_hash: gjtqt2qiwzi5pwhial5xgbvj2ehjh7go
+- gdbm:
+    version: 1.18.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: phf7aqxevdxe3bw6v6liqclb5hzlz22x
+        type:
+        - build
+        - link
+    hash: jry6g36fxsyalhuthbffmla623dlqg4g
+    full_hash: fjy3imkxjkvqemteo2pysxmuwfb32ely
+    build_hash: djktpjohdxlnkbh4l4tcmrw4xnc32fhl
+- readline:
+    version: '8.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      ncurses:
+        hash: ttaxtqu5cyjqoalkuoi7r4k4kmgheydo
+        type:
+        - build
+        - link
+    hash: 6erg6r3ryymdcoplpwglxcfvqlpqaxxc
+    full_hash: gml7funyikp2tu4ngg4jiexp6otysay4
+    build_hash: phf7aqxevdxe3bw6v6liqclb5hzlz22x
+- ncurses:
+    version: '6.2'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      symlinks: false
+      termlib: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      pkgconf:
+        hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+        type:
+        - build
+    hash: v3z5jtv4ztmho7onysxesbp2wqrrbn5x
+    full_hash: zuimpjfdx7gd6o3xhhzqekxazfgdgivh
+    build_hash: ttaxtqu5cyjqoalkuoi7r4k4kmgheydo
+- pkgconf:
+    version: 1.7.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+    full_hash: lx2czuhqhj2kenyn2e6fced7falhzbgn
+    build_hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+- perl-sub-install:
+    version: '0.928'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: tk2dmiunhoyh6ao7a2watdiqipxe5pc3
+        type:
+        - build
+        - link
+        - run
+    hash: c462ah46kjyo3nutdzsr7vxkmegedsn6
+    full_hash: t4kmwskf7fsltr73qdpiusngz5hl6kbh
+    build_hash: qse5qiz72ywi2yz72bkgtdkqnsleyvl7

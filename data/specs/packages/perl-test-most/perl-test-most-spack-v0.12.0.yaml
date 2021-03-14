@@ -1,0 +1,455 @@
+spec:
+- perl-test-most:
+    version: '0.35'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+      perl-exception-class:
+        hash: rhduypmflijevk2broxuxijjpumcse7g
+        type:
+        - build
+        - run
+      perl-test-deep:
+        hash: bfg2wowcgegaevfpl3c4s73qcb7bfppw
+        type:
+        - build
+        - run
+      perl-test-differences:
+        hash: heu3dvjycp4dz7fix5gk5gn7sgtronk4
+        type:
+        - build
+        - run
+      perl-test-exception:
+        hash: j4yxpdhfq7vbtorcdbkq5pvewkehfayn
+        type:
+        - build
+        - run
+      perl-test-warn:
+        hash: ivkoqohx2ljramse2dc7cl6nyzn2h6tp
+        type:
+        - build
+        - run
+    hash: nezeza3nyhbtj767ue3ncj552zptodox
+- perl:
+    version: 5.26.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cpanm: true
+      patches:
+      - 0eac10ed90aeb0459ad8851f88081d439a4e41978e586ec743069e8b059370ac
+      shared: true
+      threads: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 0eac10ed90aeb0459ad8851f88081d439a4e41978e586ec743069e8b059370ac
+    dependencies:
+      gdbm:
+        hash: fzvsksjky7i5avp2u57hon4kg7pulfdu
+        type:
+        - build
+        - link
+    hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+- gdbm:
+    version: 1.14.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: b6cesxkclhis6fvbbo3peueaiuplllq7
+        type:
+        - build
+        - link
+    hash: fzvsksjky7i5avp2u57hon4kg7pulfdu
+- readline:
+    version: '7.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      ncurses:
+        hash: knlhhuplrseiyu5te2ugih2cogoxjen3
+        type:
+        - build
+        - link
+    hash: b6cesxkclhis6fvbbo3peueaiuplllq7
+- ncurses:
+    version: '6.1'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      symlinks: false
+      termlib: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: knlhhuplrseiyu5te2ugih2cogoxjen3
+- perl-exception-class:
+    version: '1.43'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+      perl-class-data-inheritable:
+        hash: 5wphjfqmrfacz2xx7phjtyob7b7do73t
+        type:
+        - build
+        - run
+      perl-devel-stacktrace:
+        hash: yv55jnfhgyv3luvhcjzpulo4plbu25wf
+        type:
+        - build
+        - run
+    hash: rhduypmflijevk2broxuxijjpumcse7g
+- perl-class-data-inheritable:
+    version: '0.08'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+    hash: 5wphjfqmrfacz2xx7phjtyob7b7do73t
+- perl-devel-stacktrace:
+    version: '2.02'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+    hash: yv55jnfhgyv3luvhcjzpulo4plbu25wf
+- perl-test-deep:
+    version: '1.127'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+    hash: bfg2wowcgegaevfpl3c4s73qcb7bfppw
+- perl-test-differences:
+    version: '0.64'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+      perl-capture-tiny:
+        hash: k5bo5brp7wv5xwgk32v22dcpxvrb6hbf
+        type:
+        - build
+        - run
+      perl-text-diff:
+        hash: vwxnpr7yvaivt3f7lo2mo4vj77ypa5if
+        type:
+        - build
+        - run
+    hash: heu3dvjycp4dz7fix5gk5gn7sgtronk4
+- perl-capture-tiny:
+    version: '0.46'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+    hash: k5bo5brp7wv5xwgk32v22dcpxvrb6hbf
+- perl-text-diff:
+    version: '1.45'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+      perl-algorithm-diff:
+        hash: 63swta274kc5o5usxdwi4z2xjzsvysfr
+        type:
+        - build
+        - run
+    hash: vwxnpr7yvaivt3f7lo2mo4vj77ypa5if
+- perl-algorithm-diff:
+    version: '1.1903'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+    hash: 63swta274kc5o5usxdwi4z2xjzsvysfr
+- perl-test-exception:
+    version: '0.43'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+      perl-sub-uplevel:
+        hash: aj54dxzrbu7ob2fr4gx5xksnzffh2nrd
+        type:
+        - build
+        - run
+    hash: j4yxpdhfq7vbtorcdbkq5pvewkehfayn
+- perl-sub-uplevel:
+    version: '0.2800'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+    hash: aj54dxzrbu7ob2fr4gx5xksnzffh2nrd
+- perl-test-warn:
+    version: '0.30'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - link
+        - run
+    hash: ivkoqohx2ljramse2dc7cl6nyzn2h6tp

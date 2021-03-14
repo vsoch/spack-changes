@@ -1,0 +1,98 @@
+{
+    "intersect": [
+        [
+            "node",
+            "zlib"
+        ],
+        [
+            "variant_set",
+            "zlib optimize bool(True)"
+        ],
+        [
+            "concrete",
+            "pigz"
+        ],
+        [
+            "variant_set",
+            "zlib pic bool(True)"
+        ],
+        [
+            "variant_set",
+            "zlib shared bool(True)"
+        ],
+        [
+            "version",
+            "zlib Version(1.2.11)"
+        ],
+        [
+            "node_os_set",
+            "zlib ubuntu20.04"
+        ],
+        [
+            "concrete",
+            "zlib"
+        ],
+        [
+            "node_compiler_set",
+            "pigz gcc"
+        ],
+        [
+            "node_compiler_version_set",
+            "pigz gcc Version(9.3.0)"
+        ],
+        [
+            "node_compiler_version_set",
+            "zlib gcc Version(9.3.0)"
+        ],
+        [
+            "node",
+            "pigz"
+        ],
+        [
+            "node_os_set",
+            "pigz ubuntu20.04"
+        ],
+        [
+            "node_platform_set",
+            "pigz linux"
+        ],
+        [
+            "node_compiler_set",
+            "zlib gcc"
+        ],
+        [
+            "node_platform_set",
+            "zlib linux"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_target_set",
+            "zlib Target(skylake)"
+        ],
+        [
+            "node_target_set",
+            "pigz Target(skylake)"
+        ],
+        [
+            "version",
+            "pigz Version(2.4)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "pigz Version(2.3.4)"
+        ],
+        [
+            "node_target_set",
+            "pigz Target(x86_64)"
+        ],
+        [
+            "node_target_set",
+            "zlib Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "pigz-spack-v0.13.0",
+    "spec2_name": "pigz-spack-v0.11.2"
+}

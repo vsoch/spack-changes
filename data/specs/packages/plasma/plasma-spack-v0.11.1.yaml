@@ -1,0 +1,53 @@
+spec:
+- plasma:
+    version: '17.1'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 86e93a43e8571cbf586610090032e71d9c917a7564bc198a574ac981f4cab485
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openblas:
+        hash: 3inizjueeps72anaqcwdunozaga6eqro
+        type:
+        - build
+        - link
+    hash: 6zgnj4jerbnfkq3jtc2hylnfkmkt2vf2
+- openblas:
+    version: 0.2.20
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cpu_target: ''
+      ilp64: false
+      patches:
+      - 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d
+      pic: true
+      shared: true
+      threads: none
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 3inizjueeps72anaqcwdunozaga6eqro
+
