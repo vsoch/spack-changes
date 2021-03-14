@@ -57,9 +57,9 @@ def main():
         git.checkout(release["version"], dest=git.folder)
 
         for spec in specs:
-            spec_folder = os.path.join(here, spec)
+            spec_folder = os.path.join(here, "packages", spec)
             if not os.path.exists(spec_folder):
-                os.mkdir(spec_folder)
+                os.makedirs(spec_folder)
             filename = "%s-spack-%s.yaml" % (spec, release["version"])
             spec_output = os.path.join(spec_folder, filename)
 

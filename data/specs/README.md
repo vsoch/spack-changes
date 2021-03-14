@@ -16,7 +16,7 @@ To run the script, you want to provide one or more spack packages as arguments:
 $ python generate_specs.py axom ascent
 ```
 
-Note that you can also generate a list of packages:
+This will write output to [packages](packages). Note that you can also generate a list of packages:
 
 ```bash
 $ spack list > packages.txt
@@ -54,11 +54,12 @@ because it's trying to validate them). We can provide one or more package folder
 
 ```bash
 $ export PATH=/path/to/spack/bin:$PATH
-$ spack python calculate_diff.py ascent
+$ spack python calculate_diff.py packages/ascent
 ```
 
 The algorithms to discuss data structures (separate from the solver diff approach)
-are discussed next.
+are discussed next. We will be running this more at scale in the following sections,
+but before that, let's discuss the comparison metrics.
 
 ### Level 1 Comparison: List of Packages
 
@@ -128,24 +129,70 @@ need to weight them based on importance.
 We will calculate them as different metrics for now.
 
 
+### Detailed Comparisons
+
+For the detailed view, we will want to know exactly what is different (and overlapping)
+between packages. For this strategy, we use the spack asp solver to generate a list
+of facts for each spec, and then we output the differences between each one, along
+with the intersection. Since these visualizations are separate, they are output
+as one file per pair of packages. The main visualization (to show similarity scores)
+will link to these views. The plotting is dicusssed next.
+
 ### 3. Plot Results
 
-Once we have diffs for the specs (each metric with different data) we can use
-the [plot_diffs.py](plot_diffs.py) script to generate an interactive output
-file for each package to show a matrix of a single package compared to different
-versions of itself over time (it's spec as produced by different versions of spack).
-The following command creates the output folder under docs, then a subfolder
-for the package, and directs the extraction script to output there.
+The data output by the previous spec, which is located in each package folder,
+works with the [index.html](index.html) and [compare.html](compare.html)
+to generate a similarity matrix (half) and column-like Venn diagram to compare
+packages. We just need to:
 
+1. generate results for many packages
+2. add the result names to an index.html to link them all together
 
-```bash
-$ mkdir -p ../../docs/ascent
-$ python plot_diffs.py ascent/spec-diffs.json ../../docs/ascent
+Discussed next.
+
+### 4. Run Scaled
+
+Note that some older versions of spack produce specs that are sort of empty
+like this (and we cannot use):
+
+```yaml
+spec:
+- octave-io:
+    versions:
+    - ':'
+    hash: c3mls5rk6ohxlkflxx65kdh3byudfg35
 ```
 
-### 4. Filter and Run Scaled
+So the script is modified to not include these. We now would want to run this
+at scale, generating data for each package. Remember we need to have spack
+on our path:
 
-Finally, we want to filter down to packages that have successfully produced specs,
-and generate these interfaces across all packages!
+```bash
+$ export PATH=/path/to/spack/bin:$PATH
+```
 
-**TODO**
+And then a simple for loop can work to run the script, ensuring that we don't
+run it for directories with the result already existing.
+
+```bash
+for package in $(ls packages/); do
+   echo "Parsing $package"
+   outfile="packages/${package}/spec-diffs.json"
+   if [ ! -f "${outfile}" ]; then
+       spack python calculate_diff.py "packages/${package}"
+   fi
+done
+```
+
+Finally, we want to generate an entry for each package we find.
+
+```bash
+for package in $(ls packages/); do
+   outfile="packages/${package}/spec-diffs.json"
+   if [ -f "${outfile}" ]; then
+       echo "<div onclick=\"document.location='spec.html?name=packages/${package}'\" class=\"card\"> ${package}</div>"
+   fi
+done
+```
+
+I just copy pasted this into the [index.html](index.html).

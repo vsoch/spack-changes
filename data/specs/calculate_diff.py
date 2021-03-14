@@ -55,6 +55,7 @@ def write_file(filename, content):
 def is_semvar(version):
     try:
         StrictVersion(version)
+        float(version.replace(".", "", 1))
         return True
     except ValueError:
         return False
@@ -134,6 +135,12 @@ def create_package_lookup(spec):
     return lookup
 
 
+def is_empty(spec):
+    """A quick check if a spec is mostly empty"""
+    name = list(spec['spec'][0].keys())[0]
+    return 'versions' in spec['spec'][0][name] and spec['spec'][0][name]['versions'] == [':']
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit("Please provide at least one package directory.")
@@ -144,6 +151,9 @@ def main():
     for package_dir in package_dirs:
 
         print("Parsing package directory %s" % package_dir)
+        if not os.path.exists(package_dir):
+            print("%s does not exist, skipping." % package_dir)
+            continue
 
         # Keep a lookup of diffs, by version1-version2 (sorted)
         diffs = {}
@@ -155,10 +165,17 @@ def main():
         _versions = {}
         for spec_file in spec_files:
             spec = read_yaml(spec_file)
+
             for package in spec["spec"]:
                 name = list(package.keys())[0]
+                
+                # We can't parse these "empty" specs
+                if "versions" in package[name] and package[name]['versions'] == [':']:
+                    continue
+
                 if name not in _versions:
                     _versions[name] = set()
+
                 if package[name]["compiler"]["name"] not in _versions:
                     _versions[package[name]["compiler"]["name"]] = set()
 
@@ -188,10 +205,18 @@ def main():
             spack_spec1 = load_spack_spec(spec_file1)
             spec1_name = os.path.basename(spec_file1).replace(".yaml", "")
 
+            # We can't parse these "empty" specs
+            if is_empty(spec1):
+                continue
+
             for spec_file2 in spec_files:
                 spec2 = read_yaml(spec_file2)
                 spec2_name = os.path.basename(spec_file2).replace(".yaml", "")
                 spack_spec2 = load_spack_spec(spec_file2)
+
+                # We can't parse these "empty" specs
+                if is_empty(spec2):
+                    continue
 
                 # The unique key for the result is the sorted spec names
                 specs_sorted = sorted([spec1_name, spec2_name])
@@ -254,8 +279,12 @@ def main():
 
                 for package in packages1.intersection(packages2):
 
+
                     # If we don't have semantic versions, we compare them verbatim
                     if not versions[package]["semvar"]:
+                        if package not in lookup1 or package not in lookup2:
+                            continue
+                            
                         if lookup1[package]["version"] == lookup2[package]["version"]:
                             intersection += 1
                         continue
@@ -333,6 +362,9 @@ def main():
                 diffs[key] = result
 
         # Save the result to the package folder
+        if not diffs:
+            sys.exit("No comparisons.")
+
         result_file = os.path.join(package_dir, "spec-diffs.json")
         write_json(result_file, diffs)
 
@@ -354,7 +386,7 @@ def main():
                         "value": result[result_type],
                     }
                 )
-
+        
         result_file = os.path.join(package_dir, "spec-diffs-vizdata.json")
         write_json(result_file, vizdata)
 
