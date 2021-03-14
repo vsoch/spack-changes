@@ -1,0 +1,125 @@
+spec:
+- ps-lite:
+    version: '20170328'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      patches:
+      - a08bfe32296a8940204625a12d9682997a321ddab9bf376c1605c4773cbec2e2
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - a08bfe32296a8940204625a12d9682997a321ddab9bf376c1605c4773cbec2e2
+    dependencies:
+      protobuf:
+        hash: 3bmdivoh6pm6u2tkj6ndfvy3yrzvimp4
+        type:
+        - build
+        - link
+      zeromq:
+        hash: 2etjpxwzkqi5wepoc4azuh772rtsoa7o
+        type:
+        - build
+        - link
+    hash: xyp6ymztbtdtuioaobjvwn5tcw7df5qc
+- protobuf:
+    version: 3.5.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: 3bmdivoh6pm6u2tkj6ndfvy3yrzvimp4
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+- zeromq:
+    version: 4.2.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      libsodium: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libsodium:
+        hash: kxfvzntqc2fectvwdtn2cynoe5evwyyy
+        type:
+        - build
+        - link
+    hash: 2etjpxwzkqi5wepoc4azuh772rtsoa7o
+- libsodium:
+    version: 1.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: kxfvzntqc2fectvwdtn2cynoe5evwyyy
