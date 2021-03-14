@@ -1,0 +1,67 @@
+spec:
+- beast1:
+    version: 1.10.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      beagle: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      jdk:
+        hash: y6ljwwbze4oqb7ic3tplsl3pmypoddg7
+        type:
+        - run
+      libbeagle:
+        hash: 6qzmfp2gc2a7ufvczo4hikwemumt6ynf
+        type:
+        - build
+        - link
+        - run
+    hash: o4sj55x7bzi3c53x36fn4w42qc6rd23t
+- jdk:
+    version: 11.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: y6ljwwbze4oqb7ic3tplsl3pmypoddg7
+- libbeagle:
+    version: 2.1.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 6qzmfp2gc2a7ufvczo4hikwemumt6ynf

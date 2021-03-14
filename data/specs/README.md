@@ -190,7 +190,6 @@ run it for directories with the result already existing.
 for package in $(ls packages/); do
    outfile="packages/${package}/spec-diffs.json"
    if [ ! -f "${outfile}" ]; then
-       echo "Parsing $package"
        spack python calculate_diff.py "packages/${package}"
    fi
 done

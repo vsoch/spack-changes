@@ -1,0 +1,47 @@
+spec:
+- bliss:
+    version: '0.73'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 27540159a92caa9cc2f99f5f20b55f32308d01a520c7969d1333979d6ad10afa
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 27540159a92caa9cc2f99f5f20b55f32308d01a520c7969d1333979d6ad10afa
+    dependencies:
+      gmp:
+        hash: 54ttc5dzgj5ehzjukptzyaowe2j2sxx2
+        type:
+        - build
+        - link
+    hash: rcydocjihlfha3wteg33t2zuzhnmsb6i
+- gmp:
+    version: 6.1.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 54ttc5dzgj5ehzjukptzyaowe2j2sxx2

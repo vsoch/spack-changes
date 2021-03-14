@@ -1,0 +1,96 @@
+spec:
+- bazel:
+    version: 0.4.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 49bf0732415343504ba32bdd757e94e529e4cf2f8dbbdfe08a138f2a5d26faec
+      - 53d1c63931722713a3ef42ea7209d28c686fb4086913f9e16edbe228bfa27337
+      - 989661963339dcacb6ba9ee9325e69e54bf4f1ae17a6bf76d884d916cd8ecf60
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      jdk:
+        hash: yngzhj5hsvncnxlhsh5vkn2m7prpu2j6
+        type:
+        - build
+        - link
+      zip:
+        hash: 6leqt4guyz6hfipfsujwwd6gapfjs5sc
+        type:
+        - build
+        - link
+    hash: uwumollrabt4rxroxrwfpox7m3qme2dt
+- jdk:
+    version: 8u141-b15
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: yngzhj5hsvncnxlhsh5vkn2m7prpu2j6
+- zip:
+    version: '3.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+        type:
+        - build
+        - link
+    hash: 6leqt4guyz6hfipfsujwwd6gapfjs5sc
+- bzip2:
+    version: 1.0.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+

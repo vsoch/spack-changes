@@ -1,0 +1,118 @@
+spec:
+- bamutil:
+    version: 1.0.13
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - a4d1691842a31e82fa0462ef2f8fa2c5b58cdf9c97ecc477e9c9dd56869faa08
+      - c9b87755fd034ede672e54d560f801f32b91565be2b059330752c5cbd1f23b4b
+      - cbe40d983e476039c10976d98df3f5d95cbfe8fcff2c1e3fbeab5acc2ff74b9b
+      - da45587e34ab29e6f506e3d596b1b9ec0a8a63622d667bb460ac1c18aaf9eba6
+      - e8934f5b4c86969567bae0a6ec6b94b6c9d0416cc2abf05ceb2130285c59c895
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - da45587e34ab29e6f506e3d596b1b9ec0a8a63622d667bb460ac1c18aaf9eba6
+    - a4d1691842a31e82fa0462ef2f8fa2c5b58cdf9c97ecc477e9c9dd56869faa08
+    - cbe40d983e476039c10976d98df3f5d95cbfe8fcff2c1e3fbeab5acc2ff74b9b
+    - c9b87755fd034ede672e54d560f801f32b91565be2b059330752c5cbd1f23b4b
+    - e8934f5b4c86969567bae0a6ec6b94b6c9d0416cc2abf05ceb2130285c59c895
+    dependencies:
+      zlib:
+        hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+        type:
+        - build
+        - link
+    hash: ykepvfnr7jiu6ilgcfsddj2jpgqnbh75
+    full_hash: s7nry723cslgl4u7svno7ixbxzwpepsi
+    build_hash: ykepvfnr7jiu6ilgcfsddj2jpgqnbh75
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+    full_hash: nfa3orbnlq6az76gfdesjmej62pvjh7x
+    build_hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2

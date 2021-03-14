@@ -54,146 +54,246 @@ body {
   border-radius: 5px;
   border: .75rem solid white;
   margin: 10px;
-  padding: 20px;
+  padding: 3px;
   height: 5vh;
   color: #333;
-  min-height: 100px;
-  width: calc(10%);
+  min-height: 50px;
+  width: calc(12%);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#search {
+  position: absolute;
+  left: 490px;
+  top: 28px;
 }
 
 </style>    
     
     <body>
-
      <h1 class='title'>Which Spack Spec?</h1>
+     <div id="search">
+     <div class="input-group">
+  <div class="form-outline">
+    <input placeholder="search" type="search" id="searchbox" class="form-control" />
+  </div>
+</div>
+     
+     </div>
      <main class="grid flex-grid">
-<div onclick="document.location='spec.html?name=packages/3proxy'" class="card"> 3proxy</div>
-<div onclick="document.location='spec.html?name=packages/abduco'" class="card"> abduco</div>
-<div onclick="document.location='spec.html?name=packages/abi-compliance-checker'" class="card"> abi-compliance-checker</div>
-<div onclick="document.location='spec.html?name=packages/abi-dumper'" class="card"> abi-dumper</div>
-<div onclick="document.location='spec.html?name=packages/abinit'" class="card"> abinit</div>
-<div onclick="document.location='spec.html?name=packages/abseil-cpp'" class="card"> abseil-cpp</div>
-<div onclick="document.location='spec.html?name=packages/abyss'" class="card"> abyss</div>
-<div onclick="document.location='spec.html?name=packages/accfft'" class="card"> accfft</div>
-<div onclick="document.location='spec.html?name=packages/acct'" class="card"> acct</div>
-<div onclick="document.location='spec.html?name=packages/accumulo'" class="card"> accumulo</div>
-<div onclick="document.location='spec.html?name=packages/ace'" class="card"> ace</div>
-<div onclick="document.location='spec.html?name=packages/ack'" class="card"> ack</div>
-<div onclick="document.location='spec.html?name=packages/acl'" class="card"> acl</div>
-<div onclick="document.location='spec.html?name=packages/acpica-tools'" class="card"> acpica-tools</div>
-<div onclick="document.location='spec.html?name=packages/acpid'" class="card"> acpid</div>
-<div onclick="document.location='spec.html?name=packages/activeharmony'" class="card"> activeharmony</div>
-<div onclick="document.location='spec.html?name=packages/activemq'" class="card"> activemq</div>
-<div onclick="document.location='spec.html?name=packages/acts'" class="card"> acts</div>
-<div onclick="document.location='spec.html?name=packages/addrwatch'" class="card"> addrwatch</div>
-<div onclick="document.location='spec.html?name=packages/adept-utils'" class="card"> adept-utils</div>
-<div onclick="document.location='spec.html?name=packages/adf'" class="card"> adf</div>
-<div onclick="document.location='spec.html?name=packages/adiak'" class="card"> adiak</div>
-<div onclick="document.location='spec.html?name=packages/adios'" class="card"> adios</div>
-<div onclick="document.location='spec.html?name=packages/adios2'" class="card"> adios2</div>
-<div onclick="document.location='spec.html?name=packages/adlbx'" class="card"> adlbx</div>
-<div onclick="document.location='spec.html?name=packages/admixtools'" class="card"> admixtools</div>
-<div onclick="document.location='spec.html?name=packages/adol-c'" class="card"> adol-c</div>
-<div onclick="document.location='spec.html?name=packages/advancecomp'" class="card"> advancecomp</div>
-<div onclick="document.location='spec.html?name=packages/aegean'" class="card"> aegean</div>
-<div onclick="document.location='spec.html?name=packages/aeskeyfind'" class="card"> aeskeyfind</div>
-<div onclick="document.location='spec.html?name=packages/aespipe'" class="card"> aespipe</div>
-<div onclick="document.location='spec.html?name=packages/agrep'" class="card"> agrep</div>
-<div onclick="document.location='spec.html?name=packages/aida'" class="card"> aida</div>
-<div onclick="document.location='spec.html?name=packages/alan'" class="card"> alan</div>
-<div onclick="document.location='spec.html?name=packages/albany'" class="card"> albany</div>
-<div onclick="document.location='spec.html?name=packages/albert'" class="card"> albert</div>
-<div onclick="document.location='spec.html?name=packages/alglib'" class="card"> alglib</div>
-<div onclick="document.location='spec.html?name=packages/alluxio'" class="card"> alluxio</div>
-<div onclick="document.location='spec.html?name=packages/alsa-lib'" class="card"> alsa-lib</div>
-<div onclick="document.location='spec.html?name=packages/aluminum'" class="card"> aluminum</div>
-<div onclick="document.location='spec.html?name=packages/ambari'" class="card"> ambari</div>
-<div onclick="document.location='spec.html?name=packages/amber'" class="card"> amber</div>
-<div onclick="document.location='spec.html?name=packages/amdblis'" class="card"> amdblis</div>
-<div onclick="document.location='spec.html?name=packages/amdlibflame'" class="card"> amdlibflame</div>
-<div onclick="document.location='spec.html?name=packages/amg'" class="card"> amg</div>
-<div onclick="document.location='spec.html?name=packages/amg2013'" class="card"> amg2013</div>
-<div onclick="document.location='spec.html?name=packages/aml'" class="card"> aml</div>
-<div onclick="document.location='spec.html?name=packages/amp'" class="card"> amp</div>
-<div onclick="document.location='spec.html?name=packages/ampliconnoise'" class="card"> ampliconnoise</div>
-<div onclick="document.location='spec.html?name=packages/amrex'" class="card"> amrex</div>
-<div onclick="document.location='spec.html?name=packages/amrvis'" class="card"> amrvis</div>
-<div onclick="document.location='spec.html?name=packages/anaconda2'" class="card"> anaconda2</div>
-<div onclick="document.location='spec.html?name=packages/anaconda3'" class="card"> anaconda3</div>
-<div onclick="document.location='spec.html?name=packages/andi'" class="card"> andi</div>
-<div onclick="document.location='spec.html?name=packages/angsd'" class="card"> angsd</div>
-<div onclick="document.location='spec.html?name=packages/ant'" class="card"> ant</div>
-<div onclick="document.location='spec.html?name=packages/antimony'" class="card"> antimony</div>
-<div onclick="document.location='spec.html?name=packages/antlr'" class="card"> antlr</div>
-<div onclick="document.location='spec.html?name=packages/ants'" class="card"> ants</div>
-<div onclick="document.location='spec.html?name=packages/aocc'" class="card"> aocc</div>
-<div onclick="document.location='spec.html?name=packages/aoflagger'" class="card"> aoflagger</div>
-<div onclick="document.location='spec.html?name=packages/aom'" class="card"> aom</div>
-<div onclick="document.location='spec.html?name=packages/apachetop'" class="card"> apachetop</div>
-<div onclick="document.location='spec.html?name=packages/ape'" class="card"> ape</div>
-<div onclick="document.location='spec.html?name=packages/aperture-photometry'" class="card"> aperture-photometry</div>
-<div onclick="document.location='spec.html?name=packages/apex'" class="card"> apex</div>
-<div onclick="document.location='spec.html?name=packages/applewmproto'" class="card"> applewmproto</div>
-<div onclick="document.location='spec.html?name=packages/appres'" class="card"> appres</div>
-<div onclick="document.location='spec.html?name=packages/apr'" class="card"> apr</div>
-<div onclick="document.location='spec.html?name=packages/apr-util'" class="card"> apr-util</div>
-<div onclick="document.location='spec.html?name=packages/aragorn'" class="card"> aragorn</div>
-<div onclick="document.location='spec.html?name=packages/arbor'" class="card"> arbor</div>
-<div onclick="document.location='spec.html?name=packages/arborx'" class="card"> arborx</div>
-<div onclick="document.location='spec.html?name=packages/archer'" class="card"> archer</div>
-<div onclick="document.location='spec.html?name=packages/argobots'" class="card"> argobots</div>
-<div onclick="document.location='spec.html?name=packages/argon2'" class="card"> argon2</div>
-<div onclick="document.location='spec.html?name=packages/argp-standalone'" class="card"> argp-standalone</div>
-<div onclick="document.location='spec.html?name=packages/argtable'" class="card"> argtable</div>
-<div onclick="document.location='spec.html?name=packages/aria2'" class="card"> aria2</div>
-<div onclick="document.location='spec.html?name=packages/armadillo'" class="card"> armadillo</div>
-<div onclick="document.location='spec.html?name=packages/arm-forge'" class="card"> arm-forge</div>
-<div onclick="document.location='spec.html?name=packages/arpack-ng'" class="card"> arpack-ng</div>
-<div onclick="document.location='spec.html?name=packages/arrow'" class="card"> arrow</div>
-<div onclick="document.location='spec.html?name=packages/asagi'" class="card"> asagi</div>
-<div onclick="document.location='spec.html?name=packages/ascent'" class="card"> ascent</div>
-<div onclick="document.location='spec.html?name=packages/asciidoc'" class="card"> asciidoc</div>
-<div onclick="document.location='spec.html?name=packages/asciidoc-py3'" class="card"> asciidoc-py3</div>
-<div onclick="document.location='spec.html?name=packages/asdcplib'" class="card"> asdcplib</div>
-<div onclick="document.location='spec.html?name=packages/asdf-cxx'" class="card"> asdf-cxx</div>
-<div onclick="document.location='spec.html?name=packages/aspa'" class="card"> aspa</div>
-<div onclick="document.location='spec.html?name=packages/aspcud'" class="card"> aspcud</div>
-<div onclick="document.location='spec.html?name=packages/aspect'" class="card"> aspect</div>
-<div onclick="document.location='spec.html?name=packages/aspell'" class="card"> aspell</div>
-<div onclick="document.location='spec.html?name=packages/aspell6-de'" class="card"> aspell6-de</div>
-<div onclick="document.location='spec.html?name=packages/aspell6-en'" class="card"> aspell6-en</div>
-<div onclick="document.location='spec.html?name=packages/aspell6-es'" class="card"> aspell6-es</div>
-<div onclick="document.location='spec.html?name=packages/aspera-cli'" class="card"> aspera-cli</div>
-<div onclick="document.location='spec.html?name=packages/assimp'" class="card"> assimp</div>
-<div onclick="document.location='spec.html?name=packages/astra'" class="card"> astra</div>
-<div onclick="document.location='spec.html?name=packages/astral'" class="card"> astral</div>
-<div onclick="document.location='spec.html?name=packages/astyle'" class="card"> astyle</div>
-<div onclick="document.location='spec.html?name=packages/atf'" class="card"> atf</div>
-<div onclick="document.location='spec.html?name=packages/athena'" class="card"> athena</div>
-<div onclick="document.location='spec.html?name=packages/atk'" class="card"> atk</div>
-<div onclick="document.location='spec.html?name=packages/atlas'" class="card"> atlas</div>
-<div onclick="document.location='spec.html?name=packages/atmi'" class="card"> atmi</div>
-<div onclick="document.location='spec.html?name=packages/atom-dft'" class="card"> atom-dft</div>
-<div onclick="document.location='spec.html?name=packages/atompaw'" class="card"> atompaw</div>
-<div onclick="document.location='spec.html?name=packages/atop'" class="card"> atop</div>
-<div onclick="document.location='spec.html?name=packages/at-spi2-atk'" class="card"> at-spi2-atk</div>
-<div onclick="document.location='spec.html?name=packages/at-spi2-core'" class="card"> at-spi2-core</div>
-<div onclick="document.location='spec.html?name=packages/attr'" class="card"> attr</div>
-<div onclick="document.location='spec.html?name=packages/audacious'" class="card"> audacious</div>
-<div onclick="document.location='spec.html?name=packages/audacity'" class="card"> audacity</div>
-<div onclick="document.location='spec.html?name=packages/audit-userspace'" class="card"> audit-userspace</div>
-<div onclick="document.location='spec.html?name=packages/augustus'" class="card"> augustus</div>
-<div onclick="document.location='spec.html?name=packages/authd'" class="card"> authd</div>
-<div onclick="document.location='spec.html?name=packages/authselect'" class="card"> authselect</div>
-<div onclick="document.location='spec.html?name=packages/autoconf'" class="card"> autoconf</div>
-<div onclick="document.location='spec.html?name=packages/autoconf-archive'" class="card"> autoconf-archive</div>
-<div onclick="document.location='spec.html?name=packages/autodock-gpu'" class="card"> autodock-gpu</div>
-<div onclick="document.location='spec.html?name=packages/autodock-vina'" class="card"> autodock-vina</div>
-<div onclick="document.location='spec.html?name=packages/autofact'" class="card"> autofact</div>
-<div onclick="document.location='spec.html?name=packages/autogen'" class="card"> autogen</div>
-<div onclick="document.location='spec.html?name=packages/automaded'" class="card"> automaded</div>
-<div onclick="document.location='spec.html?name=packages/automake'" class="card"> automake</div>
-<div onclick="document.location='spec.html?name=packages/avizo'" class="card"> avizo</div>
+
+      <div onclick="document.location='spec.html?name=packages/3proxy'" class="card"> 3proxy</div>
+      <div onclick="document.location='spec.html?name=packages/abduco'" class="card"> abduco</div>
+      <div onclick="document.location='spec.html?name=packages/abi-compliance-checker'" class="card"> abi-compliance-checker</div>
+      <div onclick="document.location='spec.html?name=packages/abi-dumper'" class="card"> abi-dumper</div>
+      <div onclick="document.location='spec.html?name=packages/abinit'" class="card"> abinit</div>
+      <div onclick="document.location='spec.html?name=packages/abseil-cpp'" class="card"> abseil-cpp</div>
+      <div onclick="document.location='spec.html?name=packages/abyss'" class="card"> abyss</div>
+      <div onclick="document.location='spec.html?name=packages/accfft'" class="card"> accfft</div>
+      <div onclick="document.location='spec.html?name=packages/acct'" class="card"> acct</div>
+      <div onclick="document.location='spec.html?name=packages/accumulo'" class="card"> accumulo</div>
+      <div onclick="document.location='spec.html?name=packages/ace'" class="card"> ace</div>
+      <div onclick="document.location='spec.html?name=packages/ack'" class="card"> ack</div>
+      <div onclick="document.location='spec.html?name=packages/acl'" class="card"> acl</div>
+      <div onclick="document.location='spec.html?name=packages/acpica-tools'" class="card"> acpica-tools</div>
+      <div onclick="document.location='spec.html?name=packages/acpid'" class="card"> acpid</div>
+      <div onclick="document.location='spec.html?name=packages/activeharmony'" class="card"> activeharmony</div>
+      <div onclick="document.location='spec.html?name=packages/activemq'" class="card"> activemq</div>
+      <div onclick="document.location='spec.html?name=packages/acts'" class="card"> acts</div>
+      <div onclick="document.location='spec.html?name=packages/addrwatch'" class="card"> addrwatch</div>
+      <div onclick="document.location='spec.html?name=packages/adept-utils'" class="card"> adept-utils</div>
+      <div onclick="document.location='spec.html?name=packages/adf'" class="card"> adf</div>
+      <div onclick="document.location='spec.html?name=packages/adiak'" class="card"> adiak</div>
+      <div onclick="document.location='spec.html?name=packages/adios'" class="card"> adios</div>
+      <div onclick="document.location='spec.html?name=packages/adios2'" class="card"> adios2</div>
+      <div onclick="document.location='spec.html?name=packages/adlbx'" class="card"> adlbx</div>
+      <div onclick="document.location='spec.html?name=packages/admixtools'" class="card"> admixtools</div>
+      <div onclick="document.location='spec.html?name=packages/adol-c'" class="card"> adol-c</div>
+      <div onclick="document.location='spec.html?name=packages/advancecomp'" class="card"> advancecomp</div>
+      <div onclick="document.location='spec.html?name=packages/aegean'" class="card"> aegean</div>
+      <div onclick="document.location='spec.html?name=packages/aeskeyfind'" class="card"> aeskeyfind</div>
+      <div onclick="document.location='spec.html?name=packages/aespipe'" class="card"> aespipe</div>
+      <div onclick="document.location='spec.html?name=packages/agrep'" class="card"> agrep</div>
+      <div onclick="document.location='spec.html?name=packages/aida'" class="card"> aida</div>
+      <div onclick="document.location='spec.html?name=packages/alan'" class="card"> alan</div>
+      <div onclick="document.location='spec.html?name=packages/albany'" class="card"> albany</div>
+      <div onclick="document.location='spec.html?name=packages/albert'" class="card"> albert</div>
+      <div onclick="document.location='spec.html?name=packages/alglib'" class="card"> alglib</div>
+      <div onclick="document.location='spec.html?name=packages/alluxio'" class="card"> alluxio</div>
+      <div onclick="document.location='spec.html?name=packages/alsa-lib'" class="card"> alsa-lib</div>
+      <div onclick="document.location='spec.html?name=packages/aluminum'" class="card"> aluminum</div>
+      <div onclick="document.location='spec.html?name=packages/ambari'" class="card"> ambari</div>
+      <div onclick="document.location='spec.html?name=packages/amber'" class="card"> amber</div>
+      <div onclick="document.location='spec.html?name=packages/amdblis'" class="card"> amdblis</div>
+      <div onclick="document.location='spec.html?name=packages/amdlibflame'" class="card"> amdlibflame</div>
+      <div onclick="document.location='spec.html?name=packages/amg'" class="card"> amg</div>
+      <div onclick="document.location='spec.html?name=packages/amg2013'" class="card"> amg2013</div>
+      <div onclick="document.location='spec.html?name=packages/aml'" class="card"> aml</div>
+      <div onclick="document.location='spec.html?name=packages/amp'" class="card"> amp</div>
+      <div onclick="document.location='spec.html?name=packages/ampliconnoise'" class="card"> ampliconnoise</div>
+      <div onclick="document.location='spec.html?name=packages/amrex'" class="card"> amrex</div>
+      <div onclick="document.location='spec.html?name=packages/amrvis'" class="card"> amrvis</div>
+      <div onclick="document.location='spec.html?name=packages/anaconda2'" class="card"> anaconda2</div>
+      <div onclick="document.location='spec.html?name=packages/anaconda3'" class="card"> anaconda3</div>
+      <div onclick="document.location='spec.html?name=packages/andi'" class="card"> andi</div>
+      <div onclick="document.location='spec.html?name=packages/angsd'" class="card"> angsd</div>
+      <div onclick="document.location='spec.html?name=packages/ant'" class="card"> ant</div>
+      <div onclick="document.location='spec.html?name=packages/antimony'" class="card"> antimony</div>
+      <div onclick="document.location='spec.html?name=packages/antlr'" class="card"> antlr</div>
+      <div onclick="document.location='spec.html?name=packages/ants'" class="card"> ants</div>
+      <div onclick="document.location='spec.html?name=packages/aocc'" class="card"> aocc</div>
+      <div onclick="document.location='spec.html?name=packages/aoflagger'" class="card"> aoflagger</div>
+      <div onclick="document.location='spec.html?name=packages/aom'" class="card"> aom</div>
+      <div onclick="document.location='spec.html?name=packages/apachetop'" class="card"> apachetop</div>
+      <div onclick="document.location='spec.html?name=packages/ape'" class="card"> ape</div>
+      <div onclick="document.location='spec.html?name=packages/aperture-photometry'" class="card"> aperture-photometry</div>
+      <div onclick="document.location='spec.html?name=packages/apex'" class="card"> apex</div>
+      <div onclick="document.location='spec.html?name=packages/applewmproto'" class="card"> applewmproto</div>
+      <div onclick="document.location='spec.html?name=packages/appres'" class="card"> appres</div>
+      <div onclick="document.location='spec.html?name=packages/apr'" class="card"> apr</div>
+      <div onclick="document.location='spec.html?name=packages/apr-util'" class="card"> apr-util</div>
+      <div onclick="document.location='spec.html?name=packages/aragorn'" class="card"> aragorn</div>
+      <div onclick="document.location='spec.html?name=packages/arbor'" class="card"> arbor</div>
+      <div onclick="document.location='spec.html?name=packages/arborx'" class="card"> arborx</div>
+      <div onclick="document.location='spec.html?name=packages/archer'" class="card"> archer</div>
+      <div onclick="document.location='spec.html?name=packages/argobots'" class="card"> argobots</div>
+      <div onclick="document.location='spec.html?name=packages/argon2'" class="card"> argon2</div>
+      <div onclick="document.location='spec.html?name=packages/argp-standalone'" class="card"> argp-standalone</div>
+      <div onclick="document.location='spec.html?name=packages/argtable'" class="card"> argtable</div>
+      <div onclick="document.location='spec.html?name=packages/aria2'" class="card"> aria2</div>
+      <div onclick="document.location='spec.html?name=packages/armadillo'" class="card"> armadillo</div>
+      <div onclick="document.location='spec.html?name=packages/arm-forge'" class="card"> arm-forge</div>
+      <div onclick="document.location='spec.html?name=packages/arpack-ng'" class="card"> arpack-ng</div>
+      <div onclick="document.location='spec.html?name=packages/arrow'" class="card"> arrow</div>
+      <div onclick="document.location='spec.html?name=packages/asagi'" class="card"> asagi</div>
+      <div onclick="document.location='spec.html?name=packages/ascent'" class="card"> ascent</div>
+      <div onclick="document.location='spec.html?name=packages/asciidoc'" class="card"> asciidoc</div>
+      <div onclick="document.location='spec.html?name=packages/asciidoc-py3'" class="card"> asciidoc-py3</div>
+      <div onclick="document.location='spec.html?name=packages/asdcplib'" class="card"> asdcplib</div>
+      <div onclick="document.location='spec.html?name=packages/asdf-cxx'" class="card"> asdf-cxx</div>
+      <div onclick="document.location='spec.html?name=packages/aspa'" class="card"> aspa</div>
+      <div onclick="document.location='spec.html?name=packages/aspcud'" class="card"> aspcud</div>
+      <div onclick="document.location='spec.html?name=packages/aspect'" class="card"> aspect</div>
+      <div onclick="document.location='spec.html?name=packages/aspell'" class="card"> aspell</div>
+      <div onclick="document.location='spec.html?name=packages/aspell6-de'" class="card"> aspell6-de</div>
+      <div onclick="document.location='spec.html?name=packages/aspell6-en'" class="card"> aspell6-en</div>
+      <div onclick="document.location='spec.html?name=packages/aspell6-es'" class="card"> aspell6-es</div>
+      <div onclick="document.location='spec.html?name=packages/aspera-cli'" class="card"> aspera-cli</div>
+      <div onclick="document.location='spec.html?name=packages/assimp'" class="card"> assimp</div>
+      <div onclick="document.location='spec.html?name=packages/astra'" class="card"> astra</div>
+      <div onclick="document.location='spec.html?name=packages/astral'" class="card"> astral</div>
+      <div onclick="document.location='spec.html?name=packages/astyle'" class="card"> astyle</div>
+      <div onclick="document.location='spec.html?name=packages/atf'" class="card"> atf</div>
+      <div onclick="document.location='spec.html?name=packages/athena'" class="card"> athena</div>
+      <div onclick="document.location='spec.html?name=packages/atk'" class="card"> atk</div>
+      <div onclick="document.location='spec.html?name=packages/atlas'" class="card"> atlas</div>
+      <div onclick="document.location='spec.html?name=packages/atmi'" class="card"> atmi</div>
+      <div onclick="document.location='spec.html?name=packages/atom-dft'" class="card"> atom-dft</div>
+      <div onclick="document.location='spec.html?name=packages/atompaw'" class="card"> atompaw</div>
+      <div onclick="document.location='spec.html?name=packages/atop'" class="card"> atop</div>
+      <div onclick="document.location='spec.html?name=packages/at-spi2-atk'" class="card"> at-spi2-atk</div>
+      <div onclick="document.location='spec.html?name=packages/at-spi2-core'" class="card"> at-spi2-core</div>
+      <div onclick="document.location='spec.html?name=packages/attr'" class="card"> attr</div>
+      <div onclick="document.location='spec.html?name=packages/audacious'" class="card"> audacious</div>
+      <div onclick="document.location='spec.html?name=packages/audacity'" class="card"> audacity</div>
+      <div onclick="document.location='spec.html?name=packages/audit-userspace'" class="card"> audit-userspace</div>
+      <div onclick="document.location='spec.html?name=packages/augustus'" class="card"> augustus</div>
+      <div onclick="document.location='spec.html?name=packages/authd'" class="card"> authd</div>
+      <div onclick="document.location='spec.html?name=packages/authselect'" class="card"> authselect</div>
+      <div onclick="document.location='spec.html?name=packages/autoconf'" class="card"> autoconf</div>
+      <div onclick="document.location='spec.html?name=packages/autoconf-archive'" class="card"> autoconf-archive</div>
+      <div onclick="document.location='spec.html?name=packages/autodock-gpu'" class="card"> autodock-gpu</div>
+      <div onclick="document.location='spec.html?name=packages/autodock-vina'" class="card"> autodock-vina</div>
+      <div onclick="document.location='spec.html?name=packages/autofact'" class="card"> autofact</div>
+      <div onclick="document.location='spec.html?name=packages/autogen'" class="card"> autogen</div>
+      <div onclick="document.location='spec.html?name=packages/automaded'" class="card"> automaded</div>
+      <div onclick="document.location='spec.html?name=packages/automake'" class="card"> automake</div>
+      <div onclick="document.location='spec.html?name=packages/avizo'" class="card"> avizo</div>
+      <div onclick="document.location='spec.html?name=packages/awscli'" class="card"> awscli</div>
+      <div onclick="document.location='spec.html?name=packages/aws-parallelcluster'" class="card"> aws-parallelcluster</div>
+      <div onclick="document.location='spec.html?name=packages/axel'" class="card"> axel</div>
+      <div onclick="document.location='spec.html?name=packages/axl'" class="card"> axl</div>
+      <div onclick="document.location='spec.html?name=packages/babeltrace'" class="card"> babeltrace</div>
+      <div onclick="document.location='spec.html?name=packages/backupninja'" class="card"> backupninja</div>
+      <div onclick="document.location='spec.html?name=packages/bamaddrg'" class="card"> bamaddrg</div>
+      <div onclick="document.location='spec.html?name=packages/bamdst'" class="card"> bamdst</div>
+      <div onclick="document.location='spec.html?name=packages/bam-readcount'" class="card"> bam-readcount</div>
+      <div onclick="document.location='spec.html?name=packages/bamtools'" class="card"> bamtools</div>
+      <div onclick="document.location='spec.html?name=packages/bamutil'" class="card"> bamutil</div>
+      <div onclick="document.location='spec.html?name=packages/bannergrab'" class="card"> bannergrab</div>
+      <div onclick="document.location='spec.html?name=packages/barrnap'" class="card"> barrnap</div>
+      <div onclick="document.location='spec.html?name=packages/bash'" class="card"> bash</div>
+      <div onclick="document.location='spec.html?name=packages/bash-completion'" class="card"> bash-completion</div>
+      <div onclick="document.location='spec.html?name=packages/bashtop'" class="card"> bashtop</div>
+      <div onclick="document.location='spec.html?name=packages/bat'" class="card"> bat</div>
+      <div onclick="document.location='spec.html?name=packages/batctl'" class="card"> batctl</div>
+      <div onclick="document.location='spec.html?name=packages/bats'" class="card"> bats</div>
+      <div onclick="document.location='spec.html?name=packages/bazel'" class="card"> bazel</div>
+      <div onclick="document.location='spec.html?name=packages/bbcp'" class="card"> bbcp</div>
+      <div onclick="document.location='spec.html?name=packages/bbmap'" class="card"> bbmap</div>
+      <div onclick="document.location='spec.html?name=packages/bc'" class="card"> bc</div>
+      <div onclick="document.location='spec.html?name=packages/bcache'" class="card"> bcache</div>
+      <div onclick="document.location='spec.html?name=packages/bcftools'" class="card"> bcftools</div>
+      <div onclick="document.location='spec.html?name=packages/bcl2fastq2'" class="card"> bcl2fastq2</div>
+      <div onclick="document.location='spec.html?name=packages/bdftopcf'" class="card"> bdftopcf</div>
+      <div onclick="document.location='spec.html?name=packages/bdii'" class="card"> bdii</div>
+      <div onclick="document.location='spec.html?name=packages/bdw-gc'" class="card"> bdw-gc</div>
+      <div onclick="document.location='spec.html?name=packages/beagle'" class="card"> beagle</div>
+      <div onclick="document.location='spec.html?name=packages/beakerlib'" class="card"> beakerlib</div>
+      <div onclick="document.location='spec.html?name=packages/bear'" class="card"> bear</div>
+      <div onclick="document.location='spec.html?name=packages/beast1'" class="card"> beast1</div>
+      <div onclick="document.location='spec.html?name=packages/beast2'" class="card"> beast2</div>
+      <div onclick="document.location='spec.html?name=packages/beast-tracer'" class="card"> beast-tracer</div>
+      <div onclick="document.location='spec.html?name=packages/bedops'" class="card"> bedops</div>
+      <div onclick="document.location='spec.html?name=packages/bedtools2'" class="card"> bedtools2</div>
+      <div onclick="document.location='spec.html?name=packages/beforelight'" class="card"> beforelight</div>
+      <div onclick="document.location='spec.html?name=packages/benchmark'" class="card"> benchmark</div>
+      <div onclick="document.location='spec.html?name=packages/berkeley-db'" class="card"> berkeley-db</div>
+      <div onclick="document.location='spec.html?name=packages/bertini'" class="card"> bertini</div>
+      <div onclick="document.location='spec.html?name=packages/bgpdump'" class="card"> bgpdump</div>
+      <div onclick="document.location='spec.html?name=packages/bib2xhtml'" class="card"> bib2xhtml</div>
+      <div onclick="document.location='spec.html?name=packages/bigreqsproto'" class="card"> bigreqsproto</div>
+      <div onclick="document.location='spec.html?name=packages/bind9'" class="card"> bind9</div>
+      <div onclick="document.location='spec.html?name=packages/binutils'" class="card"> binutils</div>
+      <div onclick="document.location='spec.html?name=packages/bioawk'" class="card"> bioawk</div>
+      <div onclick="document.location='spec.html?name=packages/biobloom'" class="card"> biobloom</div>
+      <div onclick="document.location='spec.html?name=packages/biopieces'" class="card"> biopieces</div>
+      <div onclick="document.location='spec.html?name=packages/bird'" class="card"> bird</div>
+      <div onclick="document.location='spec.html?name=packages/bismark'" class="card"> bismark</div>
+      <div onclick="document.location='spec.html?name=packages/bison'" class="card"> bison</div>
+      <div onclick="document.location='spec.html?name=packages/bitlbee'" class="card"> bitlbee</div>
+      <div onclick="document.location='spec.html?name=packages/bitmap'" class="card"> bitmap</div>
+      <div onclick="document.location='spec.html?name=packages/bitsery'" class="card"> bitsery</div>
+      <div onclick="document.location='spec.html?name=packages/blasr'" class="card"> blasr</div>
+      <div onclick="document.location='spec.html?name=packages/blasr-libcpp'" class="card"> blasr-libcpp</div>
+      <div onclick="document.location='spec.html?name=packages/blast2go'" class="card"> blast2go</div>
+      <div onclick="document.location='spec.html?name=packages/blast-legacy'" class="card"> blast-legacy</div>
+      <div onclick="document.location='spec.html?name=packages/blast-plus'" class="card"> blast-plus</div>
+      <div onclick="document.location='spec.html?name=packages/blat'" class="card"> blat</div>
+      <div onclick="document.location='spec.html?name=packages/blaze'" class="card"> blaze</div>
+      <div onclick="document.location='spec.html?name=packages/blis'" class="card"> blis</div>
+      <div onclick="document.location='spec.html?name=packages/bliss'" class="card"> bliss</div>
+      <div onclick="document.location='spec.html?name=packages/blitz'" class="card"> blitz</div>
+      <div onclick="document.location='spec.html?name=packages/blktrace'" class="card"> blktrace</div>
+      <div onclick="document.location='spec.html?name=packages/blogbench'" class="card"> blogbench</div>
+      <div onclick="document.location='spec.html?name=packages/blt'" class="card"> blt</div>
+      <div onclick="document.location='spec.html?name=packages/bmake'" class="card"> bmake</div>
+      <div onclick="document.location='spec.html?name=packages/bmi'" class="card"> bmi</div>
+      <div onclick="document.location='spec.html?name=packages/bml'" class="card"> bml</div>
+      <div onclick="document.location='spec.html?name=packages/boinc-client'" class="card"> boinc-client</div>
+      <div onclick="document.location='spec.html?name=packages/bolt'" class="card"> bolt</div>
+      <div onclick="document.location='spec.html?name=packages/bonniepp'" class="card"> bonniepp</div>
       <div onclick="document.location='spec.html?name=packages/py-black'" class="card"> py-black</div>
-    </body>
+    </main>      
+<script>
+$("#searchbox").on("keyup", function () {
+    var search = $(this).val().trim().toLowerCase();
+    $('.card').hide();
+    $(".card").show().filter(function () {
+        return $(this).text().toLowerCase().indexOf(search) < 0;
+    }).hide();        
+});
+</script>      
+</body>
 </html>

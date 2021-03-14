@@ -1,0 +1,102 @@
+{
+    "intersect": [
+        [
+            "node_compiler_set",
+            "bowtie gcc"
+        ],
+        [
+            "node_os_set",
+            "bowtie ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "bowtie tbb bool(False)"
+        ],
+        [
+            "node",
+            "bowtie"
+        ],
+        [
+            "node_platform_set",
+            "bowtie linux"
+        ],
+        [
+            "node_compiler_version_set",
+            "bowtie gcc Version(9.3.0)"
+        ],
+        [
+            "concrete",
+            "bowtie"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "node_compiler_set",
+            "zlib gcc"
+        ],
+        [
+            "variant_set",
+            "zlib pic bool(True)"
+        ],
+        [
+            "node_platform_set",
+            "zlib linux"
+        ],
+        [
+            "node_target_set",
+            "bowtie Target(skylake)"
+        ],
+        [
+            "node_target_set",
+            "zlib Target(skylake)"
+        ],
+        [
+            "version",
+            "bowtie Version(1.3.0)"
+        ],
+        [
+            "concrete",
+            "zlib"
+        ],
+        [
+            "node_os_set",
+            "zlib ubuntu20.04"
+        ],
+        [
+            "variant_set",
+            "zlib shared bool(True)"
+        ],
+        [
+            "version",
+            "zlib Version(1.2.11)"
+        ],
+        [
+            "node_compiler_version_set",
+            "zlib gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "zlib optimize bool(True)"
+        ],
+        [
+            "node",
+            "zlib"
+        ],
+        [
+            "variant_set",
+            "bowtie patches 55bcf0058a9c83c2daced39ca417be893a88c37eeaa97114a67415f149d8a8cb"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "node_target_set",
+            "bowtie Target(x86_64)"
+        ],
+        [
+            "version",
+            "bowtie Version(1.2)"
+        ]
+    ],
+    "spec1_name": "bowtie-spack-v0.16.1",
+    "spec2_name": "bowtie-spack-v0.12.0"
+}

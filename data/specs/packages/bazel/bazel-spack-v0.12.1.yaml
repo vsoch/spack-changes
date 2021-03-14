@@ -1,0 +1,100 @@
+spec:
+- bazel:
+    version: 0.17.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 49bf0732415343504ba32bdd757e94e529e4cf2f8dbbdfe08a138f2a5d26faec
+      - cbe243d5e7bbac3421aec640d560dd0d40f74005d9a81e09a2d33ff539eae8a9
+      - ee4fff15ffa82fb46b7dd292a2995d9156574e7a0d4d44cc171e1958ebbc7a00
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - cbe243d5e7bbac3421aec640d560dd0d40f74005d9a81e09a2d33ff539eae8a9
+    - 49bf0732415343504ba32bdd757e94e529e4cf2f8dbbdfe08a138f2a5d26faec
+    - ee4fff15ffa82fb46b7dd292a2995d9156574e7a0d4d44cc171e1958ebbc7a00
+    dependencies:
+      jdk:
+        hash: y6ljwwbze4oqb7ic3tplsl3pmypoddg7
+        type:
+        - build
+        - link
+        - run
+      zip:
+        hash: 6leqt4guyz6hfipfsujwwd6gapfjs5sc
+        type:
+        - build
+        - link
+    hash: 64rmxcysretzp423zezfgjk3zqocgnyx
+- jdk:
+    version: 11.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: y6ljwwbze4oqb7ic3tplsl3pmypoddg7
+- zip:
+    version: '3.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+        type:
+        - build
+        - link
+    hash: 6leqt4guyz6hfipfsujwwd6gapfjs5sc
+- bzip2:
+    version: 1.0.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
