@@ -1,0 +1,4158 @@
+spec:
+- py-geeadd:
+    version: 0.3.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-beautifulsoup4:
+        hash: n6vev2guzdgpaqv56xtgkfsqzskblk3h
+        type:
+        - build
+        - run
+      py-clipboard:
+        hash: xqkqjiwov5ohiezfh7abhm5a7nmsvvj4
+        type:
+        - build
+        - run
+      py-earthengine-api:
+        hash: vlwplck6znmrac6ipxmck7ktnhj3p7rl
+        type:
+        - build
+        - run
+      py-future:
+        hash: kckguh2uz73tqelsiimcm4zn6geqluvn
+        type:
+        - build
+        - run
+      py-google-cloud-storage:
+        hash: iwk2zknm2iltcvcsnm4z45vctf4iq6l5
+        type:
+        - build
+        - run
+      py-oauth2client:
+        hash: o2oxtexlpgzaweqvbfziythayekzxslk
+        type:
+        - build
+        - run
+      py-poster:
+        hash: yz6qruto2jarz6qa6xbf5tnpvrb3tsc2
+        type:
+        - build
+        - run
+      py-pytest:
+        hash: nei46lt7orsmuowqpq3ms5thxdiivfjd
+        type:
+        - build
+        - test
+      py-requests:
+        hash: mdgkwpbidscxm74pyuyjmkte5pn3k2b7
+        type:
+        - build
+        - run
+      py-requests-toolbelt:
+        hash: c36qlopx7tcggdw5k36wvwwgz2qegchn
+        type:
+        - build
+        - run
+      py-retrying:
+        hash: icimi2klgl2pwpit2kev5mezdz43tz5h
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: 7v5yxcbe3c77fem63x2idtcb7kgre5mm
+    build_hash: dotyp7stzui3rfbasjllhrveiplognb2
+- py-beautifulsoup4:
+    version: 4.8.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-soupsieve:
+        hash: rrwhal3lfozq7ehc6hqmzvqfkxb4x24c
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: ssj2paafevl4l4oirwlcqfmv4qpgrzf7
+    build_hash: n6vev2guzdgpaqv56xtgkfsqzskblk3h
+- py-setuptools:
+    version: 46.1.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: f3n7ptgumci4256unbtojmqu32qrli2j
+    build_hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+- python:
+    version: 3.7.7
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      bz2: true
+      ctypes: true
+      dbm: true
+      debug: false
+      libxml2: true
+      lzma: true
+      nis: false
+      optimizations: false
+      patches:
+      - 0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87
+      pic: true
+      pyexpat: true
+      pythoncmd: true
+      readline: true
+      shared: true
+      sqlite3: true
+      ssl: true
+      tix: false
+      tkinter: false
+      ucs4: false
+      uuid: false
+      zlib: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87
+    dependencies:
+      bzip2:
+        hash: ofmco4rqu3n2otpjguhlwbqz2p4omday
+        type:
+        - build
+        - link
+      expat:
+        hash: 2gfvlrgdkc3tepvmbgt7zp5faavhd53f
+        type:
+        - build
+        - link
+      gdbm:
+        hash: djktpjohdxlnkbh4l4tcmrw4xnc32fhl
+        type:
+        - build
+        - link
+      gettext:
+        hash: lba7qfqzka7mqroyjquujujws3lhk2bt
+        type:
+        - build
+        - link
+      libffi:
+        hash: umq6vkiev6xtv433ezamg74is65eh643
+        type:
+        - build
+        - link
+      ncurses:
+        hash: ttaxtqu5cyjqoalkuoi7r4k4kmgheydo
+        type:
+        - build
+        - link
+      openssl:
+        hash: xurfhe5qhijed7rbdsm5oqy7743qfmll
+        type:
+        - build
+        - link
+      pkgconf:
+        hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+        type:
+        - build
+      readline:
+        hash: phf7aqxevdxe3bw6v6liqclb5hzlz22x
+        type:
+        - build
+        - link
+      sqlite:
+        hash: yvrlhm4j4pdci6pxzfjgjtop52wz6hax
+        type:
+        - build
+        - link
+      xz:
+        hash: guluvi76ucyfsughpx4ge4xqoeruxjyb
+        type:
+        - build
+        - link
+      zlib:
+        hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+        type:
+        - build
+        - link
+    hash: jeshpj22mt52x5fpnnycg425qsktfn2m
+    build_hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+- bzip2:
+    version: 1.0.8
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      diffutils:
+        hash: 2tm6lq6qmyrj6jjiruf7rxb3nzonnq3i
+        type:
+        - build
+    hash: xn4fe3zt3okv3rl24tscfuym3xxzvgll
+    build_hash: ofmco4rqu3n2otpjguhlwbqz2p4omday
+- diffutils:
+    version: '3.7'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libiconv:
+        hash: af5tdk6ilv6mah2ntgb5odryvlosijnz
+        type:
+        - build
+        - link
+    hash: 2tm6lq6qmyrj6jjiruf7rxb3nzonnq3i
+    build_hash: 2tm6lq6qmyrj6jjiruf7rxb3nzonnq3i
+- libiconv:
+    version: '1.16'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: af5tdk6ilv6mah2ntgb5odryvlosijnz
+    build_hash: af5tdk6ilv6mah2ntgb5odryvlosijnz
+- expat:
+    version: 2.2.9
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      libbsd: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libbsd:
+        hash: z4fnf3d2ewsptdgeua3h5pssdg3gdoog
+        type:
+        - build
+        - link
+    hash: 2gfvlrgdkc3tepvmbgt7zp5faavhd53f
+    build_hash: 2gfvlrgdkc3tepvmbgt7zp5faavhd53f
+- libbsd:
+    version: 0.10.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: z4fnf3d2ewsptdgeua3h5pssdg3gdoog
+    build_hash: z4fnf3d2ewsptdgeua3h5pssdg3gdoog
+- gdbm:
+    version: 1.18.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: phf7aqxevdxe3bw6v6liqclb5hzlz22x
+        type:
+        - build
+        - link
+    hash: jry6g36fxsyalhuthbffmla623dlqg4g
+    build_hash: djktpjohdxlnkbh4l4tcmrw4xnc32fhl
+- readline:
+    version: '8.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      ncurses:
+        hash: ttaxtqu5cyjqoalkuoi7r4k4kmgheydo
+        type:
+        - build
+        - link
+    hash: 6erg6r3ryymdcoplpwglxcfvqlpqaxxc
+    build_hash: phf7aqxevdxe3bw6v6liqclb5hzlz22x
+- ncurses:
+    version: '6.2'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      symlinks: false
+      termlib: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      pkgconf:
+        hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+        type:
+        - build
+    hash: v3z5jtv4ztmho7onysxesbp2wqrrbn5x
+    build_hash: ttaxtqu5cyjqoalkuoi7r4k4kmgheydo
+- pkgconf:
+    version: 1.7.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+    build_hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+- gettext:
+    version: 0.20.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      bzip2: true
+      curses: true
+      git: true
+      libunistring: false
+      libxml2: true
+      tar: true
+      xz: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: ofmco4rqu3n2otpjguhlwbqz2p4omday
+        type:
+        - build
+        - link
+      libiconv:
+        hash: af5tdk6ilv6mah2ntgb5odryvlosijnz
+        type:
+        - build
+        - link
+      libxml2:
+        hash: wdujhdi2lv4pkczt7u2y6k5o4eqrstir
+        type:
+        - build
+        - link
+      ncurses:
+        hash: ttaxtqu5cyjqoalkuoi7r4k4kmgheydo
+        type:
+        - build
+        - link
+      tar:
+        hash: v2t5umv3cgfsc3fbzuzm7u7ig7gxdqq5
+        type:
+        - build
+        - link
+      xz:
+        hash: guluvi76ucyfsughpx4ge4xqoeruxjyb
+        type:
+        - build
+        - link
+        - run
+    hash: 74cthua2irrduwd5xrhj4xn2hytfned2
+    build_hash: lba7qfqzka7mqroyjquujujws3lhk2bt
+- libxml2:
+    version: 2.9.10
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      python: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libiconv:
+        hash: af5tdk6ilv6mah2ntgb5odryvlosijnz
+        type:
+        - build
+        - link
+      pkgconf:
+        hash: lwcroefxaeuqfg5nshj4wl7ps4allnsy
+        type:
+        - build
+      xz:
+        hash: guluvi76ucyfsughpx4ge4xqoeruxjyb
+        type:
+        - build
+        - link
+      zlib:
+        hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+        type:
+        - build
+        - link
+    hash: folxclnhb4zjtfo7xorl2o25iuswdlst
+    build_hash: wdujhdi2lv4pkczt7u2y6k5o4eqrstir
+- xz:
+    version: 5.2.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: guluvi76ucyfsughpx4ge4xqoeruxjyb
+    build_hash: guluvi76ucyfsughpx4ge4xqoeruxjyb
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+    build_hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+- tar:
+    version: '1.32'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libiconv:
+        hash: af5tdk6ilv6mah2ntgb5odryvlosijnz
+        type:
+        - build
+        - link
+    hash: v2t5umv3cgfsc3fbzuzm7u7ig7gxdqq5
+    build_hash: v2t5umv3cgfsc3fbzuzm7u7ig7gxdqq5
+- libffi:
+    version: '3.3'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0
+    hash: umq6vkiev6xtv433ezamg74is65eh643
+    build_hash: umq6vkiev6xtv433ezamg74is65eh643
+- openssl:
+    version: 1.1.1g
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      systemcerts: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      perl:
+        hash: l45zdlyweexu352alt7qzxyt3ql5vbl4
+        type:
+        - build
+        - test
+      zlib:
+        hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+        type:
+        - build
+        - link
+    hash: ydjcqkuqeyvtci25oqlo423v2svpbstf
+    build_hash: xurfhe5qhijed7rbdsm5oqy7743qfmll
+- perl:
+    version: 5.30.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cpanm: true
+      shared: true
+      threads: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      gdbm:
+        hash: djktpjohdxlnkbh4l4tcmrw4xnc32fhl
+        type:
+        - build
+        - link
+    hash: 3u333u45jetsfnoliww4eycfcnyc7pib
+    build_hash: l45zdlyweexu352alt7qzxyt3ql5vbl4
+- sqlite:
+    version: 3.31.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      column_metadata: true
+      fts: true
+      functions: false
+      rtree: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: phf7aqxevdxe3bw6v6liqclb5hzlz22x
+        type:
+        - build
+        - link
+      zlib:
+        hash: sl7m27mzkbejtkrajigj3a3m37ygv4u2
+        type:
+        - build
+        - link
+    hash: h7dhme4tjg43ylsozptr4nzquxv7jlv5
+    build_hash: yvrlhm4j4pdci6pxzfjgjtop52wz6hax
+- py-soupsieve:
+    version: 1.9.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: vz6uqlnb4qazpxka65xjyws2drbj3wuq
+    build_hash: rrwhal3lfozq7ehc6hqmzvqfkxb4x24c
+- py-clipboard:
+    version: 0.0.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-pyperclip:
+        hash: 62vmiknrz2zl7qciwabrp22qt7fz4ing
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: w337mdyemj2p2qahgwmau362s2hqcpcy
+    build_hash: xqkqjiwov5ohiezfh7abhm5a7nmsvvj4
+- py-pyperclip:
+    version: 1.7.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: msdmkswrgeypsq4rpaznw3ubo7rlev4p
+    build_hash: 62vmiknrz2zl7qciwabrp22qt7fz4ing
+- py-earthengine-api:
+    version: 0.1.186
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-google-api-python-client:
+        hash: regbcgr4ey7zgmxch5j74yxnq2afk7cv
+        type:
+        - build
+        - run
+      py-google-auth:
+        hash: jlxl5pob5vebkosvrbg47rrtpqpsyalq
+        type:
+        - build
+        - run
+      py-google-auth-httplib2:
+        hash: isu6s7lv4uod26klswese6s5vzhyxwrt
+        type:
+        - build
+        - run
+      py-httplib2:
+        hash: 5zbq7uysw4ex3bhn2kdgltjakk7dfb2g
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: oetbm6pph7baw3uwvestseiveumx7mvn
+    build_hash: vlwplck6znmrac6ipxmck7ktnhj3p7rl
+- py-google-api-python-client:
+    version: 1.7.10
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-google-auth:
+        hash: jlxl5pob5vebkosvrbg47rrtpqpsyalq
+        type:
+        - build
+        - run
+      py-google-auth-httplib2:
+        hash: isu6s7lv4uod26klswese6s5vzhyxwrt
+        type:
+        - build
+        - run
+      py-httplib2:
+        hash: 5zbq7uysw4ex3bhn2kdgltjakk7dfb2g
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      py-uritemplate:
+        hash: aiihtm2t5cbjcyjqqswzhnvqv4arfyof
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: k7c3srqtlqur4tch5pbpxxmtjdzk2ju5
+    build_hash: regbcgr4ey7zgmxch5j74yxnq2afk7cv
+- py-google-auth:
+    version: 1.6.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-cachetools:
+        hash: vyd2e5sh3hxwavglbwiqnmplx3cn2gvj
+        type:
+        - build
+        - run
+      py-pyasn1-modules:
+        hash: p2ds7beywbwrx4h5lodbkg5eugjweqo5
+        type:
+        - build
+        - run
+      py-rsa:
+        hash: q72cdpqjk6bfnmc2ehpgkpmqxvp6xr6d
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: ziicosyhrd2is4umtxezt7gbypyvy747
+    build_hash: jlxl5pob5vebkosvrbg47rrtpqpsyalq
+- py-cachetools:
+    version: 3.1.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: rrmujvw4sdps5wxzngoduzvwkdcul733
+    build_hash: vyd2e5sh3hxwavglbwiqnmplx3cn2gvj
+- py-pyasn1-modules:
+    version: 0.2.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-pyasn1:
+        hash: 5u6eslmeqf3tdzphmbnu6zwyqabaq6ls
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: jgvkv7stwgajmgvitbw6olw76ex665mk
+    build_hash: p2ds7beywbwrx4h5lodbkg5eugjweqo5
+- py-pyasn1:
+    version: 0.4.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: xl3ajjjzzvcm7gumvp3oxfvpxmuxivwb
+    build_hash: 5u6eslmeqf3tdzphmbnu6zwyqabaq6ls
+- py-rsa:
+    version: '4.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-pyasn1:
+        hash: 5u6eslmeqf3tdzphmbnu6zwyqabaq6ls
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: mwtccz4ps2weorubus2rkzjsckc6rmuy
+    build_hash: q72cdpqjk6bfnmc2ehpgkpmqxvp6xr6d
+- py-six:
+    version: 1.14.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: glx7zdtjt55g2cfh56aniq3mibwvwxy6
+    build_hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+- py-google-auth-httplib2:
+    version: 0.0.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-google-auth:
+        hash: jlxl5pob5vebkosvrbg47rrtpqpsyalq
+        type:
+        - build
+        - run
+      py-httplib2:
+        hash: 5zbq7uysw4ex3bhn2kdgltjakk7dfb2g
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: 2zccwe24a43xk4grgbdpeiz5pd3czqye
+    build_hash: isu6s7lv4uod26klswese6s5vzhyxwrt
+- py-httplib2:
+    version: 0.13.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: g7ta7xnfnttyujbdrtssaprzrwecoiun
+    build_hash: 5zbq7uysw4ex3bhn2kdgltjakk7dfb2g
+- py-uritemplate:
+    version: 3.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: xjijklo6xyuwilhbhilkqxb7tlrwdu27
+    build_hash: aiihtm2t5cbjcyjqqswzhnvqv4arfyof
+- py-future:
+    version: 0.17.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: agufqy3fugzewn7dl3q6fc6mcmjrwx4a
+    build_hash: kckguh2uz73tqelsiimcm4zn6geqluvn
+- py-google-cloud-storage:
+    version: 1.18.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-google-auth:
+        hash: jlxl5pob5vebkosvrbg47rrtpqpsyalq
+        type:
+        - build
+        - run
+      py-google-cloud-core:
+        hash: cvlxmanp6cvsrsilxuv35w6dtaowdpjl
+        type:
+        - build
+        - run
+      py-google-resumable-media:
+        hash: xwam2iwrksp3gcw424ehswtztlpwkx3x
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: 2a4xnngahwkx7ozlx3ddxskmd27byhg2
+    build_hash: iwk2zknm2iltcvcsnm4z45vctf4iq6l5
+- py-google-cloud-core:
+    version: 1.0.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-google-api-core:
+        hash: lwrldviafql4ardyxanp22xdusrss4p4
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: fopt4av6squmsmv54lf547f3zoi2zrpc
+    build_hash: cvlxmanp6cvsrsilxuv35w6dtaowdpjl
+- py-google-api-core:
+    version: 1.14.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-google-auth:
+        hash: jlxl5pob5vebkosvrbg47rrtpqpsyalq
+        type:
+        - build
+        - run
+      py-googleapis-common-protos:
+        hash: lloxwvdpd5zter2ccguvr7eantm5ij35
+        type:
+        - build
+        - run
+      py-protobuf:
+        hash: bs2j52ksbikwkon2bjqn7mlebqiqthzj
+        type:
+        - build
+        - run
+      py-pytz:
+        hash: ms3btq7vbqnazc5obzvv424xtotoctgu
+        type:
+        - build
+        - run
+      py-requests:
+        hash: mdgkwpbidscxm74pyuyjmkte5pn3k2b7
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+        - run
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: ylrke2gswl2663u3gjcgsuml2yzutj3i
+    build_hash: lwrldviafql4ardyxanp22xdusrss4p4
+- py-googleapis-common-protos:
+    version: 1.6.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-protobuf:
+        hash: bs2j52ksbikwkon2bjqn7mlebqiqthzj
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: 7hq2xryvtsoghw5uy75lijehf4wpe7je
+    build_hash: lloxwvdpd5zter2ccguvr7eantm5ij35
+- py-protobuf:
+    version: 3.11.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cpp: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+        - run
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: qg7iectevenrpm3nvkbb4vee3d7rjpft
+    build_hash: bs2j52ksbikwkon2bjqn7mlebqiqthzj
+- py-pytz:
+    version: '2019.3'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: mjr2sxdwezvydyc7avtvh3kfycoabzyy
+    build_hash: ms3btq7vbqnazc5obzvv424xtotoctgu
+- py-requests:
+    version: 2.22.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-certifi:
+        hash: exbip6pjwwfylfmx6iejlu4aqbd4l3ff
+        type:
+        - build
+        - run
+      py-chardet:
+        hash: junruekf3mrcacar6n2lqpozqwq4fyel
+        type:
+        - build
+        - run
+      py-idna:
+        hash: xu7r6557tsgw7taq2w6fav5i4j56nbfu
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-urllib3:
+        hash: pak5ko2givhqvx6cf6keb7rplyf72wtr
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: 2lmijiwj3nsnlatbfp6bxr52nlobg2yb
+    build_hash: mdgkwpbidscxm74pyuyjmkte5pn3k2b7
+- py-certifi:
+    version: 2019.9.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: twsicranplmiyihdl5nzzoddfhlzq6un
+    build_hash: exbip6pjwwfylfmx6iejlu4aqbd4l3ff
+- py-chardet:
+    version: 3.0.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-pytest-runner:
+        hash: 2qpopfi4c3t77vp2ngseypzevqshkacw
+        type:
+        - build
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: oq32qe2fg4qpyanw5d7byigf4mxe7xwv
+    build_hash: junruekf3mrcacar6n2lqpozqwq4fyel
+- py-pytest-runner:
+    version: '5.1'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-setuptools-scm:
+        hash: ubtrafvhwrk6xpyus244gbrtd3povy5i
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: aclltjws47uhxke4o7es7ranescy7u6z
+    build_hash: 2qpopfi4c3t77vp2ngseypzevqshkacw
+- py-setuptools-scm:
+    version: 4.1.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      toml: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: mu3k2v2jadprswleijtnqnrhcprylt2l
+    build_hash: ubtrafvhwrk6xpyus244gbrtd3povy5i
+- py-idna:
+    version: '2.8'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+        - link
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: c3ehvuiqn72bpku5jfy4anx5z5jfxehh
+    build_hash: xu7r6557tsgw7taq2w6fav5i4j56nbfu
+- py-urllib3:
+    version: 1.25.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      secure: false
+      socks: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: iiltry7i2pulls7n6hq5edgnogzf3bx2
+    build_hash: pak5ko2givhqvx6cf6keb7rplyf72wtr
+- py-google-resumable-media:
+    version: 0.3.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: fqjvxqu7sij6sysv4ojnpan6xpr53qu6
+    build_hash: xwam2iwrksp3gcw424ehswtztlpwkx3x
+- py-oauth2client:
+    version: 4.1.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-httplib2:
+        hash: 5zbq7uysw4ex3bhn2kdgltjakk7dfb2g
+        type:
+        - build
+        - run
+      py-pyasn1:
+        hash: 5u6eslmeqf3tdzphmbnu6zwyqabaq6ls
+        type:
+        - build
+        - run
+      py-pyasn1-modules:
+        hash: p2ds7beywbwrx4h5lodbkg5eugjweqo5
+        type:
+        - build
+        - run
+      py-rsa:
+        hash: q72cdpqjk6bfnmc2ehpgkpmqxvp6xr6d
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: dmibhxozkbmifeqgsbihwmpaazct6d7j
+    build_hash: o2oxtexlpgzaweqvbfziythayekzxslk
+- py-poster:
+    version: 0.8.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 97ace6c8ebe16fa1e099e8a200984447a32008a092cbfa9c788eb5ed70195291
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 97ace6c8ebe16fa1e099e8a200984447a32008a092cbfa9c788eb5ed70195291
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: if2lno3yiojxpxtwfypw7vskkc7nctaz
+    build_hash: yz6qruto2jarz6qa6xbf5tnpvrb3tsc2
+- py-pytest:
+    version: 5.3.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-attrs:
+        hash: j6do4pvckyk63twj7gs5zp6wll7aiydr
+        type:
+        - build
+        - run
+      py-importlib-metadata:
+        hash: ht4u3kdk4q5ir5xu6jcivywasl6njxvl
+        type:
+        - build
+        - run
+      py-more-itertools:
+        hash: shv5fvat65ehspflyi7elogro522xk7u
+        type:
+        - build
+        - run
+      py-packaging:
+        hash: prodz4oo6vc3l4v3pytga3oyfkymq7xi
+        type:
+        - build
+        - run
+      py-pluggy:
+        hash: zsemp3pum3fdyp5vywvd6kqtgfx2mbci
+        type:
+        - build
+        - run
+      py-py:
+        hash: ozcwt23jqvyxgqbmcudfav4se5ddzk57
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+        - run
+      py-setuptools-scm:
+        hash: ubtrafvhwrk6xpyus244gbrtd3povy5i
+        type:
+        - build
+      py-wcwidth:
+        hash: uqucnwbamdcyuui6st772qo5f4g7nx3t
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: rk7o3lpot66wgo6brne56kk75ymu4cdv
+    build_hash: nei46lt7orsmuowqpq3ms5thxdiivfjd
+- py-attrs:
+    version: 19.3.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: nqwkhbe6ej3mdyqk3fgawtjazukoggyq
+    build_hash: j6do4pvckyk63twj7gs5zp6wll7aiydr
+- py-importlib-metadata:
+    version: 1.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-setuptools-scm:
+        hash: ubtrafvhwrk6xpyus244gbrtd3povy5i
+        type:
+        - build
+      py-zipp:
+        hash: nuaanxdekz7bzmcl7d5t5teikhs5w6sy
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: b2ry4n34bctq7gi3cnrgsi2pctu3cl6g
+    build_hash: ht4u3kdk4q5ir5xu6jcivywasl6njxvl
+- py-zipp:
+    version: 0.6.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-more-itertools:
+        hash: shv5fvat65ehspflyi7elogro522xk7u
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-setuptools-scm:
+        hash: ubtrafvhwrk6xpyus244gbrtd3povy5i
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: hcggbbiuzqkihrw4b6b6dvmf3uzbivzd
+    build_hash: nuaanxdekz7bzmcl7d5t5teikhs5w6sy
+- py-more-itertools:
+    version: 7.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: kirqtglgqws3nf3pqmbxoj4b5flcmed3
+    build_hash: shv5fvat65ehspflyi7elogro522xk7u
+- py-packaging:
+    version: '19.2'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-pyparsing:
+        hash: pji3ptkez773n5nt47yn4cxut4ccnsa4
+        type:
+        - build
+        - run
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: aldocaxu3mzfb2uzaie2l3ywdejuugpw
+    build_hash: prodz4oo6vc3l4v3pytga3oyfkymq7xi
+- py-pyparsing:
+    version: 2.4.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: norbtbcc5h6waysgs5tjncxxui5vd2ug
+    build_hash: pji3ptkez773n5nt47yn4cxut4ccnsa4
+- py-pluggy:
+    version: 0.13.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-importlib-metadata:
+        hash: ht4u3kdk4q5ir5xu6jcivywasl6njxvl
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-setuptools-scm:
+        hash: ubtrafvhwrk6xpyus244gbrtd3povy5i
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: wpftbqrv2lux4ijmhsqh5mllrabewppy
+    build_hash: zsemp3pum3fdyp5vywvd6kqtgfx2mbci
+- py-py:
+    version: 1.8.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-setuptools-scm:
+        hash: ubtrafvhwrk6xpyus244gbrtd3povy5i
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: ezsghro2tqfhqgyf6hukg3mt6gdyzkj3
+    build_hash: ozcwt23jqvyxgqbmcudfav4se5ddzk57
+- py-wcwidth:
+    version: 0.1.7
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: yeqk4deufjl3czcq5wrv3iptgebdvgyc
+    build_hash: uqucnwbamdcyuui6st772qo5f4g7nx3t
+- py-requests-toolbelt:
+    version: 0.9.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-requests:
+        hash: mdgkwpbidscxm74pyuyjmkte5pn3k2b7
+        type:
+        - build
+        - run
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: i2jrwx3tc3ftugfaetxc5bs6cr4vzbj4
+    build_hash: c36qlopx7tcggdw5k36wvwwgz2qegchn
+- py-retrying:
+    version: 1.3.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-setuptools:
+        hash: pb7hvwtavofdv55itafb7j7s5l5zym6g
+        type:
+        - build
+      py-six:
+        hash: u2lwd3rdesrkpl3i7rhfwydb7vr4piw4
+        type:
+        - build
+        - run
+      python:
+        hash: ab2qx5yxx7bal76j3dsbvwdmzuaaaqbv
+        type:
+        - build
+        - link
+        - run
+    hash: m6gm6nmcvw4soos7zfdjaqm4fbrsiw2h
+    build_hash: icimi2klgl2pwpit2kev5mezdz43tz5h
