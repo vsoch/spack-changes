@@ -1,0 +1,54 @@
+spec:
+- ramulator:
+    version: sst
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target:
+        name: skylake
+        vendor: GenuineIntel
+        features:
+        - adx
+        - aes
+        - avx
+        - avx2
+        - bmi1
+        - bmi2
+        - clflushopt
+        - f16c
+        - fma
+        - mmx
+        - movbe
+        - pclmulqdq
+        - popcnt
+        - rdrand
+        - rdseed
+        - sse
+        - sse2
+        - sse4_1
+        - sse4_2
+        - ssse3
+        - xsavec
+        - xsaveopt
+        generation: 0
+        parents:
+        - broadwell
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 6698ec6507cb5565a8cad626e1412f280ab0303a72b4f75bdcf7f19c0704ee30
+      - ae91cd1eb867c7f02415028a720ace0561e144c099d080c18a6466b03b35558a
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 6698ec6507cb5565a8cad626e1412f280ab0303a72b4f75bdcf7f19c0704ee30
+    - ae91cd1eb867c7f02415028a720ace0561e144c099d080c18a6466b03b35558a
+    hash: yl2jsgeqhyxxutij4k6twwoorug45ge2
+    build_hash: yl2jsgeqhyxxutij4k6twwoorug45ge2
