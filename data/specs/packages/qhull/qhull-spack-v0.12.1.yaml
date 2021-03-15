@@ -1,0 +1,24 @@
+spec:
+- qhull:
+    version: '2015.2'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      patches:
+      - 10ddc62a1600b0ede23fb0502e29dca389d18689fd8dfe7a849e3a989c0e607e
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 10ddc62a1600b0ede23fb0502e29dca389d18689fd8dfe7a849e3a989c0e607e
+    hash: 5b3hcnmali5ahl24ny2mcgwhmafczmx7

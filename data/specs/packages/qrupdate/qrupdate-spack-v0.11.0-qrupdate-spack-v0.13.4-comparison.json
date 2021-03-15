@@ -1,0 +1,126 @@
+{
+    "intersect": [
+        [
+            "node_compiler_set",
+            "openblas gcc"
+        ],
+        [
+            "concrete",
+            "qrupdate"
+        ],
+        [
+            "node_compiler_set",
+            "qrupdate gcc"
+        ],
+        [
+            "node_platform_set",
+            "qrupdate linux"
+        ],
+        [
+            "node_os_set",
+            "openblas ubuntu20.04"
+        ],
+        [
+            "node",
+            "qrupdate"
+        ],
+        [
+            "node_compiler_version_set",
+            "openblas gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas pic bool(True)"
+        ],
+        [
+            "node_compiler_version_set",
+            "qrupdate gcc Version(9.3.0)"
+        ],
+        [
+            "variant_set",
+            "openblas ilp64 bool(False)"
+        ],
+        [
+            "node",
+            "openblas"
+        ],
+        [
+            "concrete",
+            "openblas"
+        ],
+        [
+            "variant_set",
+            "openblas shared bool(True)"
+        ],
+        [
+            "variant_set",
+            "openblas threads none"
+        ],
+        [
+            "version",
+            "qrupdate Version(1.1.2)"
+        ],
+        [
+            "node_platform_set",
+            "openblas linux"
+        ],
+        [
+            "node_os_set",
+            "qrupdate ubuntu20.04"
+        ]
+    ],
+    "spec1_not_spec2": [
+        [
+            "variant_set",
+            "openblas avx2 bool(True)"
+        ],
+        [
+            "variant_set",
+            "openblas avx512 bool(False)"
+        ],
+        [
+            "variant_set",
+            "openblas virtual_machine bool(False)"
+        ],
+        [
+            "version",
+            "openblas Version(0.3.7)"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(skylake)"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target auto"
+        ],
+        [
+            "node_target_set",
+            "qrupdate Target(skylake)"
+        ]
+    ],
+    "spec2_not_spec1": [
+        [
+            "version",
+            "openblas Version(0.2.20)"
+        ],
+        [
+            "variant_set",
+            "openblas cpu_target "
+        ],
+        [
+            "variant_set",
+            "openblas patches 47cfa7a952ac7b2e4632c73ae199d69fb54490627b66a62c681e21019c4ddc9d"
+        ],
+        [
+            "node_target_set",
+            "openblas Target(x86_64)"
+        ],
+        [
+            "node_target_set",
+            "qrupdate Target(x86_64)"
+        ]
+    ],
+    "spec1_name": "qrupdate-spack-v0.13.4",
+    "spec2_name": "qrupdate-spack-v0.11.0"
+}

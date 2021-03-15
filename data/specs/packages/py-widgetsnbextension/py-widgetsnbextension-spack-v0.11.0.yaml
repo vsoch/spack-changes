@@ -1,0 +1,1711 @@
+spec:
+- py-widgetsnbextension:
+    version: 1.2.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-jupyter-notebook:
+        hash: mplcpj3mpx5wsh4mgkk3u42cbawa5nha
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: mc6xwpvla3wqehjlzcvnuhstrhe24sui
+- py-jupyter-notebook:
+    version: 4.2.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      terminal: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      node-js:
+        hash: j2qadwagtswasol73gagnhx7wdgr7y4x
+        type:
+        - build
+        - run
+      py-ipykernel:
+        hash: wkkukbu3x3dgdpgofpwoeew54jzxmpzd
+        type:
+        - build
+        - run
+      py-ipython-genutils:
+        hash: oivok3tylqkik3ap5tg3xqr7toxujg5l
+        type:
+        - build
+        - run
+      py-jinja2:
+        hash: ykdvkppmyawhrw3whv2gcq2fhtfshgee
+        type:
+        - build
+        - run
+      py-jupyter-client:
+        hash: qmtnnpt4ysrh2hqbtozogssyqj4yc35v
+        type:
+        - build
+        - run
+      py-jupyter-console:
+        hash: 5kepwzoo6nquy3bo337wt6l6eqtqpjo5
+        type:
+        - build
+        - run
+      py-jupyter-core:
+        hash: vcfw3arxwn4zea3onazbciqo7p4mgprq
+        type:
+        - build
+        - run
+      py-nbconvert:
+        hash: zujykoxxh253vysqrqoout7cqq4htgcn
+        type:
+        - build
+        - run
+      py-nbformat:
+        hash: 3eino2hrbooctmd54qy35e63ukpqscja
+        type:
+        - build
+        - run
+      py-tornado:
+        hash: kgt744osnq3dujtfzj6ga7mjqjyakk3s
+        type:
+        - build
+        - run
+      py-traitlets:
+        hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: mplcpj3mpx5wsh4mgkk3u42cbawa5nha
+- node-js:
+    version: 7.1.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      debug: false
+      doc: false
+      icu4c: false
+      openssl: true
+      zlib: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openssl:
+        hash: kabeq7znc3syojyyrrl5srmjuyftyyru
+        type:
+        - build
+        - link
+    hash: j2qadwagtswasol73gagnhx7wdgr7y4x
+- openssl:
+    version: 1.0.2k
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: kabeq7znc3syojyyrrl5srmjuyftyyru
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+- py-ipykernel:
+    version: 4.5.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-ipython:
+        hash: k76vzuh3loegkkjgioumsays4cof57ol
+        type:
+        - build
+        - run
+      py-jupyter-client:
+        hash: qmtnnpt4ysrh2hqbtozogssyqj4yc35v
+        type:
+        - build
+        - run
+      py-pexpect:
+        hash: hlhay74oazymc3tzekbgcdfw5htqs56p
+        type:
+        - build
+        - run
+      py-tornado:
+        hash: kgt744osnq3dujtfzj6ga7mjqjyakk3s
+        type:
+        - build
+        - run
+      py-traitlets:
+        hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: wkkukbu3x3dgdpgofpwoeew54jzxmpzd
+- py-ipython:
+    version: 5.1.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-backports-shutil-get-terminal-size:
+        hash: c2er2bbd447qyqnh6a7wefaujwfbulvu
+        type:
+        - build
+        - run
+      py-decorator:
+        hash: snh63afrj7x7sj3p3tyb34dpw3pdvtky
+        type:
+        - build
+        - run
+      py-pathlib2:
+        hash: qeqhxsnkipwhdhi5tjxrmebawol2qivy
+        type:
+        - build
+        - run
+      py-pexpect:
+        hash: hlhay74oazymc3tzekbgcdfw5htqs56p
+        type:
+        - build
+        - run
+      py-pickleshare:
+        hash: y2j4mprnjekb67fqrvdbkhz7d3b6qtzx
+        type:
+        - build
+        - run
+      py-prompt-toolkit:
+        hash: gf2gdlnf3joxg7cobuqghmvsdynun62w
+        type:
+        - build
+        - run
+      py-pygments:
+        hash: smyzsy4whtdfmpxi5s4syk4d5uqucc3s
+        type:
+        - build
+        - run
+      py-simplegeneric:
+        hash: 62xflibhmjcf2ufl5hnrbsn5rbl2bwqi
+        type:
+        - build
+        - run
+      py-traitlets:
+        hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: k76vzuh3loegkkjgioumsays4cof57ol
+- py-backports-shutil-get-terminal-size:
+    version: 1.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: c2er2bbd447qyqnh6a7wefaujwfbulvu
+- python:
+    version: 2.7.14
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 123082ab3483ded78e86d7c809e98a804b3465b4683c96bd79a2fd799f572244
+      pic: true
+      shared: true
+      tk: false
+      ucs4: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+        type:
+        - build
+        - link
+      ncurses:
+        hash: j4qcjrlbso5rszejqfooxt44djpyvcap
+        type:
+        - build
+        - link
+      openssl:
+        hash: kabeq7znc3syojyyrrl5srmjuyftyyru
+        type:
+        - build
+        - link
+      readline:
+        hash: kjf7xxqgugjnfxtxuskvajbf2dwhlmyg
+        type:
+        - build
+        - link
+      sqlite:
+        hash: uupv2ukiamclotvandshai6e4g5ac5fi
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+- bzip2:
+    version: 1.0.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+- ncurses:
+    version: '6.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 4110a40613b800da2b2888c352b64c75a82809d48341061e4de5861e8b28423f
+      - f84b2708a42777aadcc7f502a261afe10ca5646a51c1ef8b5e60d2070d926b57
+      symlinks: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: j4qcjrlbso5rszejqfooxt44djpyvcap
+- readline:
+    version: '7.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      ncurses:
+        hash: j4qcjrlbso5rszejqfooxt44djpyvcap
+        type:
+        - build
+        - link
+    hash: kjf7xxqgugjnfxtxuskvajbf2dwhlmyg
+- sqlite:
+    version: 3.20.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: kjf7xxqgugjnfxtxuskvajbf2dwhlmyg
+        type:
+        - build
+        - link
+    hash: uupv2ukiamclotvandshai6e4g5ac5fi
+- py-decorator:
+    version: 4.0.9
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: snh63afrj7x7sj3p3tyb34dpw3pdvtky
+- py-pathlib2:
+    version: 2.1.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: qeqhxsnkipwhdhi5tjxrmebawol2qivy
+- py-pexpect:
+    version: 4.2.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-ptyprocess:
+        hash: 6ejkvisppyx36yyjdrg3dduy5dmuq5tr
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: hlhay74oazymc3tzekbgcdfw5htqs56p
+- py-ptyprocess:
+    version: 0.5.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 6ejkvisppyx36yyjdrg3dduy5dmuq5tr
+- py-pickleshare:
+    version: 0.7.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: y2j4mprnjekb67fqrvdbkhz7d3b6qtzx
+- py-prompt-toolkit:
+    version: 1.0.9
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-six:
+        hash: o7dzwmzto5s25mlx5fhsgr6xdidjshsd
+        type:
+        - build
+        - run
+      py-wcwidth:
+        hash: bkxsmvzwo6khjdvl4ux6spaosdwzcn5b
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: gf2gdlnf3joxg7cobuqghmvsdynun62w
+- py-six:
+    version: 1.10.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: o7dzwmzto5s25mlx5fhsgr6xdidjshsd
+- py-wcwidth:
+    version: 0.1.7
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: bkxsmvzwo6khjdvl4ux6spaosdwzcn5b
+- py-pygments:
+    version: 2.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: smyzsy4whtdfmpxi5s4syk4d5uqucc3s
+- py-simplegeneric:
+    version: 0.8.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 62xflibhmjcf2ufl5hnrbsn5rbl2bwqi
+- py-traitlets:
+    version: 4.3.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-decorator:
+        hash: snh63afrj7x7sj3p3tyb34dpw3pdvtky
+        type:
+        - build
+        - run
+      py-enum34:
+        hash: h5p5yij2qrukxftwoysiq4efadn4t3hc
+        type:
+        - build
+        - run
+      py-ipython-genutils:
+        hash: oivok3tylqkik3ap5tg3xqr7toxujg5l
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+- py-enum34:
+    version: 1.1.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: h5p5yij2qrukxftwoysiq4efadn4t3hc
+- py-ipython-genutils:
+    version: 0.1.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: oivok3tylqkik3ap5tg3xqr7toxujg5l
+- py-jupyter-client:
+    version: 4.4.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-jupyter-core:
+        hash: vcfw3arxwn4zea3onazbciqo7p4mgprq
+        type:
+        - build
+        - run
+      py-traitlets:
+        hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+        type:
+        - build
+        - run
+      py-zmq:
+        hash: a4lxnbzaqq6lfxgx6uevxxvn2vu2ave7
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: qmtnnpt4ysrh2hqbtozogssyqj4yc35v
+- py-jupyter-core:
+    version: 4.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-traitlets:
+        hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: vcfw3arxwn4zea3onazbciqo7p4mgprq
+- py-zmq:
+    version: 16.0.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-cffi:
+        hash: dximzridpt63wzsdgkuhws4neqdockwq
+        type:
+        - build
+        - run
+      py-cython:
+        hash: qdvq4ircujrwddn4zmenoqxp6ulg256c
+        type:
+        - build
+        - run
+      py-py:
+        hash: wtgqwvseauftxqv3a27brlytb2nefqlw
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+      zeromq:
+        hash: t4pslj32vo3tyj2wegyo5quvjn4b3vcb
+        type:
+        - build
+        - link
+    hash: a4lxnbzaqq6lfxgx6uevxxvn2vu2ave7
+- py-cffi:
+    version: 1.10.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libffi:
+        hash: 24epkahjuk32quxhifpe7btmqdk5f3kp
+        type:
+        - build
+        - link
+      py-pycparser:
+        hash: 7f7qphnrdwgmfof7j3zk2rtzqdo4ah4w
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: dximzridpt63wzsdgkuhws4neqdockwq
+- libffi:
+    version: 3.2.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 24epkahjuk32quxhifpe7btmqdk5f3kp
+- py-pycparser:
+    version: '2.17'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 7f7qphnrdwgmfof7j3zk2rtzqdo4ah4w
+- py-cython:
+    version: 0.25.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: qdvq4ircujrwddn4zmenoqxp6ulg256c
+- py-py:
+    version: 1.4.33
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: wtgqwvseauftxqv3a27brlytb2nefqlw
+- zeromq:
+    version: 4.2.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libsodium:
+        hash: b2pqvaavlnxt5x46isyzaujm47phjhln
+        type:
+        - build
+        - link
+    hash: t4pslj32vo3tyj2wegyo5quvjn4b3vcb
+- libsodium:
+    version: 1.0.13
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: b2pqvaavlnxt5x46isyzaujm47phjhln
+- py-tornado:
+    version: 4.4.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-backports-abc:
+        hash: 3axxe5ll4agzphk5444dfqvu4mm67zat
+        type:
+        - build
+        - run
+      py-backports-ssl-match-hostname:
+        hash: vs2oz2howkdsctvct72qnrlqe3zwoivm
+        type:
+        - build
+        - run
+      py-certifi:
+        hash: opouzj53vjpfjbhorvlnijejdaea6i46
+        type:
+        - build
+        - run
+      py-singledispatch:
+        hash: prwbj25773oudy5bjcas5ulm43twwl4w
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: kgt744osnq3dujtfzj6ga7mjqjyakk3s
+- py-backports-abc:
+    version: '0.4'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 3axxe5ll4agzphk5444dfqvu4mm67zat
+- py-backports-ssl-match-hostname:
+    version: 3.5.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: vs2oz2howkdsctvct72qnrlqe3zwoivm
+- py-certifi:
+    version: 2017.1.23
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: opouzj53vjpfjbhorvlnijejdaea6i46
+- py-singledispatch:
+    version: 3.4.0.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-six:
+        hash: o7dzwmzto5s25mlx5fhsgr6xdidjshsd
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: prwbj25773oudy5bjcas5ulm43twwl4w
+- py-jinja2:
+    version: 2.9.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-babel:
+        hash: 4euhev33bgqzrugb2ytyyihhpwit5gtn
+        type:
+        - build
+        - run
+      py-markupsafe:
+        hash: wjl34mgaxyn2gbgg5qe62u5ymidoredk
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: ykdvkppmyawhrw3whv2gcq2fhtfshgee
+- py-babel:
+    version: 2.4.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-pytz:
+        hash: y2aomgvwyqbddq3xnr5n6ai2i73sr7af
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 4euhev33bgqzrugb2ytyyihhpwit5gtn
+- py-pytz:
+    version: '2017.2'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: y2aomgvwyqbddq3xnr5n6ai2i73sr7af
+- py-markupsafe:
+    version: '1.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: wjl34mgaxyn2gbgg5qe62u5ymidoredk
+- py-jupyter-console:
+    version: 5.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-ipykernel:
+        hash: wkkukbu3x3dgdpgofpwoeew54jzxmpzd
+        type:
+        - build
+        - run
+      py-ipython:
+        hash: k76vzuh3loegkkjgioumsays4cof57ol
+        type:
+        - build
+        - run
+      py-jupyter-client:
+        hash: qmtnnpt4ysrh2hqbtozogssyqj4yc35v
+        type:
+        - build
+        - run
+      py-prompt-toolkit:
+        hash: gf2gdlnf3joxg7cobuqghmvsdynun62w
+        type:
+        - build
+        - run
+      py-pygments:
+        hash: smyzsy4whtdfmpxi5s4syk4d5uqucc3s
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 5kepwzoo6nquy3bo337wt6l6eqtqpjo5
+- py-nbconvert:
+    version: 4.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-entrypoints:
+        hash: iev66vh2lor4b3fwotfyowycwztwqlla
+        type:
+        - build
+        - run
+      py-jinja2:
+        hash: ykdvkppmyawhrw3whv2gcq2fhtfshgee
+        type:
+        - build
+        - run
+      py-jupyter-client:
+        hash: qmtnnpt4ysrh2hqbtozogssyqj4yc35v
+        type:
+        - build
+        - run
+      py-jupyter-core:
+        hash: vcfw3arxwn4zea3onazbciqo7p4mgprq
+        type:
+        - build
+        - run
+      py-mistune:
+        hash: 4mijonmncrssa7z47ntk5j6smwatote6
+        type:
+        - build
+        - run
+      py-nbformat:
+        hash: 3eino2hrbooctmd54qy35e63ukpqscja
+        type:
+        - build
+        - run
+      py-pygments:
+        hash: smyzsy4whtdfmpxi5s4syk4d5uqucc3s
+        type:
+        - build
+        - run
+      py-tornado:
+        hash: kgt744osnq3dujtfzj6ga7mjqjyakk3s
+        type:
+        - build
+        - run
+      py-traitlets:
+        hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: zujykoxxh253vysqrqoout7cqq4htgcn
+- py-entrypoints:
+    version: 0.2.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-configparser:
+        hash: dwcz4iw37hvivkec76zqggpt5bvo2m6c
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: iev66vh2lor4b3fwotfyowycwztwqlla
+- py-configparser:
+    version: 3.5.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: dwcz4iw37hvivkec76zqggpt5bvo2m6c
+- py-mistune:
+    version: 0.7.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 4mijonmncrssa7z47ntk5j6smwatote6
+- py-nbformat:
+    version: 4.1.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-ipython-genutils:
+        hash: oivok3tylqkik3ap5tg3xqr7toxujg5l
+        type:
+        - build
+        - run
+      py-jsonschema:
+        hash: 4msxhkqt4tfipn7mhnaun7lxr7rnitlo
+        type:
+        - build
+        - run
+      py-jupyter-core:
+        hash: vcfw3arxwn4zea3onazbciqo7p4mgprq
+        type:
+        - build
+        - run
+      py-traitlets:
+        hash: zshlt2hjyom46nje4gbckeadl5oa5lnm
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 3eino2hrbooctmd54qy35e63ukpqscja
+- py-jsonschema:
+    version: 2.5.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      py-functools32:
+        hash: qxhelfzyo6ksu7qvi2c6ushgsg6psamy
+        type:
+        - build
+        - run
+      py-vcversioner:
+        hash: bdo7wdh5ip56vbesygxdambb23yfxw6h
+        type:
+        - build
+        - run
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: 4msxhkqt4tfipn7mhnaun7lxr7rnitlo
+- py-functools32:
+    version: 3.2.3-2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: qxhelfzyo6ksu7qvi2c6ushgsg6psamy
+- py-vcversioner:
+    version: 2.16.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      python:
+        hash: lu3xwm432pbtp46arfcfh2ad4pw5c7s4
+        type:
+        - build
+        - link
+        - run
+    hash: bdo7wdh5ip56vbesygxdambb23yfxw6h
+
