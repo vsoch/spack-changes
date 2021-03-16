@@ -1,0 +1,46 @@
+spec:
+- swig:
+    version: 3.0.12
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      pcre:
+        hash: 7rt2hopz7zo66qacoaat7dxgyq3ymiue
+        type:
+        - build
+        - link
+    hash: kaxt2flus3mxmquv7c2poyvkusvcwy72
+- pcre:
+    version: '8.40'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      jit: false
+      utf: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 7rt2hopz7zo66qacoaat7dxgyq3ymiue
+

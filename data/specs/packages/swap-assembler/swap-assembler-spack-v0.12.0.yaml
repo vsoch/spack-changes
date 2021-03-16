@@ -1,0 +1,49 @@
+spec:
+- swap-assembler:
+    version: '0.4'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      mpich:
+        hash: zjw6o7a3bkfuatdkm6y6xl3yd7hp6jrj
+        type:
+        - build
+        - link
+    hash: y2trlocrlpyz47ogxwdsr63hjze2zrx3
+- mpich:
+    version: 3.2.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      device: ch3
+      hydra: true
+      netmod: tcp
+      pmi: true
+      romio: true
+      verbs: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: zjw6o7a3bkfuatdkm6y6xl3yd7hp6jrj

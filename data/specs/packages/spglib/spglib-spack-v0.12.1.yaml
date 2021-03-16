@@ -1,0 +1,26 @@
+spec:
+- spglib:
+    version: 1.10.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      patches:
+      - 4d354dc336694c1577dfc9950ccec99255332c4f08f6525b6465d7a31c4e8c75
+      - ea0ed0f06861b91d7dbc367d3533b4dd764b7bf35b3e739af60acb6e25b91e37
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - ea0ed0f06861b91d7dbc367d3533b4dd764b7bf35b3e739af60acb6e25b91e37
+    - 4d354dc336694c1577dfc9950ccec99255332c4f08f6525b6465d7a31c4e8c75
+    hash: dnksfyy7lg4tziuqdvexio6pm2w2cqcl

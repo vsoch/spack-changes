@@ -1,0 +1,70 @@
+spec:
+- xtensor:
+    version: 0.15.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      xsimd: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      xsimd:
+        hash: oig4ys6brzncthfdgnojnd2hbwv7ebkb
+        type:
+        - build
+        - link
+      xtl:
+        hash: rmcieh4752g2xlrlsp7iqsarzze2xxbv
+        type:
+        - build
+        - link
+    hash: ph5hcbj4txlcgcyxldnua446raxgqqt5
+- xsimd:
+    version: 4.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: oig4ys6brzncthfdgnojnd2hbwv7ebkb
+- xtl:
+    version: 0.4.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: rmcieh4752g2xlrlsp7iqsarzze2xxbv

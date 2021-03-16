@@ -1,0 +1,3429 @@
+spec:
+- r-smoof:
+    version: 1.5.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-bbmisc:
+        hash: uf7cy377vye7ktz7rttjdhzvsk6si63q
+        type:
+        - build
+        - run
+      r-checkmate:
+        hash: upyy6jg4jp22l74fkonqdcu4nxeptav2
+        type:
+        - build
+        - run
+      r-ggplot2:
+        hash: vb6xsnskkzzhx6gcwaqbnuyhhedroehs
+        type:
+        - build
+        - run
+      r-mco:
+        hash: ufijvz33mvhd2x2hxgrpxhyzqz22u3oa
+        type:
+        - build
+        - run
+      r-paramhelpers:
+        hash: gumedaica3i3ebr3yr3muz6m54tdcdgu
+        type:
+        - build
+        - run
+      r-plot3d:
+        hash: ylosjvetdpfk4xykrg6buqac6wsrtcxb
+        type:
+        - build
+        - run
+      r-plotly:
+        hash: cawtsrbdsgub7fawkdylif4jzr5urjvp
+        type:
+        - build
+        - run
+      r-rcolorbrewer:
+        hash: 2xt5fuc3lvaacvhhwisdngmljdkftpoi
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+      r-rcpparmadillo:
+        hash: gdwtr2pvlfievpwgaqqv2knkalxdelek
+        type:
+        - build
+        - run
+      r-rjsonio:
+        hash: 5ikvvd4j2ttdvgvbvo3xzleuan4z2ee6
+        type:
+        - build
+        - run
+    hash: 5b52ageo4wwz4iqyyeuxefxcgmjkbbx7
+- r:
+    version: 3.4.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      X: false
+      external-lapack: false
+      memory_profiling: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+        type:
+        - build
+        - link
+      cairo:
+        hash: qeglze3ryn2drk4uui4yntwiobjckbd7
+        type:
+        - build
+        - link
+      curl:
+        hash: whiwusbhxuqrk626jcfrkraec6kxzr77
+        type:
+        - build
+        - link
+      freetype:
+        hash: m23szkb7rml663upkybyuwbgrmsum2ab
+        type:
+        - build
+        - link
+      glib:
+        hash: cyfkvqijszrcgmbvkkpmpv37xiluuacz
+        type:
+        - build
+        - link
+      icu4c:
+        hash: dqoibpasmqaqbgkraqohe7pzsmsmod6d
+        type:
+        - build
+        - link
+      jdk:
+        hash: y6ljwwbze4oqb7ic3tplsl3pmypoddg7
+        type:
+        - build
+        - link
+      libjpeg-turbo:
+        hash: pswj4ubiv35ri3armizsspxxoidblnjs
+        type:
+        - build
+        - link
+      libtiff:
+        hash: fazf3ce6vws75gvhr3vfzcnog66bsk55
+        type:
+        - build
+        - link
+      ncurses:
+        hash: knlhhuplrseiyu5te2ugih2cogoxjen3
+        type:
+        - build
+        - link
+      pango:
+        hash: 5eumt4tild6cer4jiobk5grfzaboz2hx
+        type:
+        - build
+        - link
+      pcre:
+        hash: vuxhuluphckyvvj47xyrg2y5d2bqyyad
+        type:
+        - build
+        - link
+      readline:
+        hash: b6cesxkclhis6fvbbo3peueaiuplllq7
+        type:
+        - build
+        - link
+      tcl:
+        hash: uj3okd6gb3a3w7asgivrcjpya3s3vzj5
+        type:
+        - build
+        - link
+      tk:
+        hash: eaxcp62fl25pofoupclmvbn7lxse5vdx
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+- bzip2:
+    version: 1.0.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+- cairo:
+    version: 1.14.12
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      X: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      fontconfig:
+        hash: 7daxgtaqbnxgs3mhu2zhhru6nag35cig
+        type:
+        - build
+        - link
+      freetype:
+        hash: m23szkb7rml663upkybyuwbgrmsum2ab
+        type:
+        - build
+        - link
+      glib:
+        hash: cyfkvqijszrcgmbvkkpmpv37xiluuacz
+        type:
+        - build
+        - link
+      libpng:
+        hash: neu6rwpngvusitjtkfeasajne4p5cruh
+        type:
+        - build
+        - link
+      pixman:
+        hash: ae2he6s6ss25qlfrygscsqz36jccon2x
+        type:
+        - build
+        - link
+    hash: qeglze3ryn2drk4uui4yntwiobjckbd7
+- fontconfig:
+    version: 2.12.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      font-util:
+        hash: kvkhlkxwc7unv5crolpgjnweyzrqncmx
+        type:
+        - build
+        - link
+      freetype:
+        hash: m23szkb7rml663upkybyuwbgrmsum2ab
+        type:
+        - build
+        - link
+      libxml2:
+        hash: nlvl5qwlsovhwwxcfz3bd5g2l6jql2vb
+        type:
+        - build
+        - link
+    hash: 7daxgtaqbnxgs3mhu2zhhru6nag35cig
+- font-util:
+    version: 1.3.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: kvkhlkxwc7unv5crolpgjnweyzrqncmx
+- freetype:
+    version: 2.9.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      bzip2:
+        hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+        type:
+        - build
+        - link
+      libpng:
+        hash: neu6rwpngvusitjtkfeasajne4p5cruh
+        type:
+        - build
+        - link
+    hash: m23szkb7rml663upkybyuwbgrmsum2ab
+- libpng:
+    version: 1.6.34
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: neu6rwpngvusitjtkfeasajne4p5cruh
+- zlib:
+    version: 1.2.11
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      optimize: true
+      pic: true
+      shared: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+- libxml2:
+    version: 2.9.8
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      python: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      xz:
+        hash: 437sk5xvgpbxuw4machdcqgmkrgrs6bz
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: nlvl5qwlsovhwwxcfz3bd5g2l6jql2vb
+- xz:
+    version: 5.2.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 437sk5xvgpbxuw4machdcqgmkrgrs6bz
+- glib:
+    version: 2.56.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      libmount: false
+      patches:
+      - c325997b72a205ad1638bb3e3ba0e5b73e3d32ce63b2d0d3282f3e3a2ff4663c
+      tracing:
+      - ''
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - c325997b72a205ad1638bb3e3ba0e5b73e3d32ce63b2d0d3282f3e3a2ff4663c
+    dependencies:
+      gettext:
+        hash: zy53topu6kwmc4jbvfkdkitnf2rnyn3t
+        type:
+        - build
+        - link
+      libffi:
+        hash: 24epkahjuk32quxhifpe7btmqdk5f3kp
+        type:
+        - build
+        - link
+      pcre:
+        hash: vuxhuluphckyvvj47xyrg2y5d2bqyyad
+        type:
+        - build
+        - link
+      perl:
+        hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+        type:
+        - build
+        - run
+      python:
+        hash: ed245snfeyigbz5ym23u7kfij2oufx4k
+        type:
+        - build
+        - run
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: cyfkvqijszrcgmbvkkpmpv37xiluuacz
+- gettext:
+    version: 0.19.8.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      bzip2: true
+      curses: true
+      git: true
+      libunistring: false
+      libxml2: true
+      patches:
+      - 9acdb4e73f67c241b5ef32505c9ddf7cf6884ca8ea661692f21dca28483b04b8
+      tar: true
+      xz: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 9acdb4e73f67c241b5ef32505c9ddf7cf6884ca8ea661692f21dca28483b04b8
+    dependencies:
+      bzip2:
+        hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+        type:
+        - build
+        - link
+      libxml2:
+        hash: nlvl5qwlsovhwwxcfz3bd5g2l6jql2vb
+        type:
+        - build
+        - link
+      ncurses:
+        hash: knlhhuplrseiyu5te2ugih2cogoxjen3
+        type:
+        - build
+        - link
+      tar:
+        hash: uaciygvnmugxnmjydx7ybrvec7r7n3o5
+        type:
+        - build
+        - link
+      xz:
+        hash: 437sk5xvgpbxuw4machdcqgmkrgrs6bz
+        type:
+        - build
+        - link
+    hash: zy53topu6kwmc4jbvfkdkitnf2rnyn3t
+- ncurses:
+    version: '6.1'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      symlinks: false
+      termlib: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: knlhhuplrseiyu5te2ugih2cogoxjen3
+- tar:
+    version: '1.30'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: uaciygvnmugxnmjydx7ybrvec7r7n3o5
+- libffi:
+    version: 3.2.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 24epkahjuk32quxhifpe7btmqdk5f3kp
+- pcre:
+    version: '8.42'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      jit: false
+      utf: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: vuxhuluphckyvvj47xyrg2y5d2bqyyad
+- perl:
+    version: 5.26.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cpanm: true
+      patches:
+      - 0eac10ed90aeb0459ad8851f88081d439a4e41978e586ec743069e8b059370ac
+      shared: true
+      threads: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 0eac10ed90aeb0459ad8851f88081d439a4e41978e586ec743069e8b059370ac
+    dependencies:
+      gdbm:
+        hash: fzvsksjky7i5avp2u57hon4kg7pulfdu
+        type:
+        - build
+        - link
+    hash: qtrocxw4j5fgulzvvemegrmoj56xjt7s
+- gdbm:
+    version: 1.14.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: b6cesxkclhis6fvbbo3peueaiuplllq7
+        type:
+        - build
+        - link
+    hash: fzvsksjky7i5avp2u57hon4kg7pulfdu
+- readline:
+    version: '7.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      ncurses:
+        hash: knlhhuplrseiyu5te2ugih2cogoxjen3
+        type:
+        - build
+        - link
+    hash: b6cesxkclhis6fvbbo3peueaiuplllq7
+- python:
+    version: 2.7.15
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      dbm: true
+      optimizations: false
+      patches:
+      - 123082ab3483ded78e86d7c809e98a804b3465b4683c96bd79a2fd799f572244
+      pic: true
+      pythoncmd: true
+      shared: true
+      tk: false
+      ucs4: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 123082ab3483ded78e86d7c809e98a804b3465b4683c96bd79a2fd799f572244
+    dependencies:
+      bzip2:
+        hash: p7l4mcntkizfn6boxp7ob4rc55cp7slr
+        type:
+        - build
+        - link
+      gdbm:
+        hash: fzvsksjky7i5avp2u57hon4kg7pulfdu
+        type:
+        - build
+        - link
+      ncurses:
+        hash: knlhhuplrseiyu5te2ugih2cogoxjen3
+        type:
+        - build
+        - link
+      openssl:
+        hash: tjw4u3djxilrlxr5wh6o5ry6cpxzddkm
+        type:
+        - build
+        - link
+      readline:
+        hash: b6cesxkclhis6fvbbo3peueaiuplllq7
+        type:
+        - build
+        - link
+      sqlite:
+        hash: 5p7ouelfy4byozujiadohy22xq54awk6
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: ed245snfeyigbz5ym23u7kfij2oufx4k
+- openssl:
+    version: 1.0.2o
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      systemcerts: true
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: tjw4u3djxilrlxr5wh6o5ry6cpxzddkm
+- sqlite:
+    version: 3.23.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      functions: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      readline:
+        hash: b6cesxkclhis6fvbbo3peueaiuplllq7
+        type:
+        - build
+        - link
+    hash: 5p7ouelfy4byozujiadohy22xq54awk6
+- pixman:
+    version: 0.34.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libpng:
+        hash: neu6rwpngvusitjtkfeasajne4p5cruh
+        type:
+        - build
+        - link
+    hash: ae2he6s6ss25qlfrygscsqz36jccon2x
+- curl:
+    version: 7.60.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      darwinssl: false
+      libssh: false
+      libssh2: false
+      nghttp2: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openssl:
+        hash: tjw4u3djxilrlxr5wh6o5ry6cpxzddkm
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: whiwusbhxuqrk626jcfrkraec6kxzr77
+- icu4c:
+    version: '60.1'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: dqoibpasmqaqbgkraqohe7pzsmsmod6d
+- jdk:
+    version: 11.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: y6ljwwbze4oqb7ic3tplsl3pmypoddg7
+- libjpeg-turbo:
+    version: 1.5.90
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: pswj4ubiv35ri3armizsspxxoidblnjs
+- libtiff:
+    version: 4.0.9
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libjpeg-turbo:
+        hash: pswj4ubiv35ri3armizsspxxoidblnjs
+        type:
+        - build
+        - link
+      xz:
+        hash: 437sk5xvgpbxuw4machdcqgmkrgrs6bz
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: fazf3ce6vws75gvhr3vfzcnog66bsk55
+- pango:
+    version: 1.41.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      X: false
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      cairo:
+        hash: qeglze3ryn2drk4uui4yntwiobjckbd7
+        type:
+        - build
+        - link
+      glib:
+        hash: cyfkvqijszrcgmbvkkpmpv37xiluuacz
+        type:
+        - build
+        - link
+      gobject-introspection:
+        hash: gt4ce5daz7wtbohhlo2kxdzd37hboix6
+        type:
+        - build
+        - link
+      harfbuzz:
+        hash: vo3e2ybkion7q6ceq75nlqeeftq5ugnf
+        type:
+        - build
+        - link
+    hash: 5eumt4tild6cer4jiobk5grfzaboz2hx
+- gobject-introspection:
+    version: 1.49.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      patches:
+      - 6f90bb267efa043ed70b900b4b8e2faf9e8133afae311893b01060356ea81bba
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    patches:
+    - 6f90bb267efa043ed70b900b4b8e2faf9e8133afae311893b01060356ea81bba
+    dependencies:
+      cairo:
+        hash: qeglze3ryn2drk4uui4yntwiobjckbd7
+        type:
+        - build
+        - link
+      glib:
+        hash: cyfkvqijszrcgmbvkkpmpv37xiluuacz
+        type:
+        - build
+        - link
+      python:
+        hash: ed245snfeyigbz5ym23u7kfij2oufx4k
+        type:
+        - build
+        - link
+    hash: gt4ce5daz7wtbohhlo2kxdzd37hboix6
+- harfbuzz:
+    version: 1.4.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      cairo:
+        hash: qeglze3ryn2drk4uui4yntwiobjckbd7
+        type:
+        - build
+        - link
+      freetype:
+        hash: m23szkb7rml663upkybyuwbgrmsum2ab
+        type:
+        - build
+        - link
+      glib:
+        hash: cyfkvqijszrcgmbvkkpmpv37xiluuacz
+        type:
+        - build
+        - link
+      icu4c:
+        hash: dqoibpasmqaqbgkraqohe7pzsmsmod6d
+        type:
+        - build
+        - link
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: vo3e2ybkion7q6ceq75nlqeeftq5ugnf
+- tcl:
+    version: 8.6.8
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      zlib:
+        hash: p7dmb5pqi6svirhovljrkp3uyfiytz3m
+        type:
+        - build
+        - link
+    hash: uj3okd6gb3a3w7asgivrcjpya3s3vzj5
+- tk:
+    version: 8.6.8
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libx11:
+        hash: vfevlflpdf3gizpvepaokilzuwdy47kw
+        type:
+        - build
+        - link
+      tcl:
+        hash: uj3okd6gb3a3w7asgivrcjpya3s3vzj5
+        type:
+        - build
+        - link
+    hash: eaxcp62fl25pofoupclmvbn7lxse5vdx
+- libx11:
+    version: 1.6.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      kbproto:
+        hash: ceckjyytvu6m3iyw7cnedgtcrrbzqof6
+        type:
+        - build
+        - link
+      libxcb:
+        hash: nogskajwfnrjvfjyanfsxykhnvky5mn4
+        type:
+        - build
+        - link
+      xextproto:
+        hash: mubhwkm2qo3oeczhlzipj5uacfzpr2jo
+        type:
+        - build
+        - link
+    hash: vfevlflpdf3gizpvepaokilzuwdy47kw
+- kbproto:
+    version: 1.0.7
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: ceckjyytvu6m3iyw7cnedgtcrrbzqof6
+- libxcb:
+    version: '1.13'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libpthread-stubs:
+        hash: aluh6mkmjsrlt47uswefy4hzxchtf6rl
+        type:
+        - build
+        - link
+      libxau:
+        hash: uamtc4jtix27p5n3sjgkz5xfuvb6eccs
+        type:
+        - build
+        - link
+      libxdmcp:
+        hash: 3ll7a57edisrfyr5s3jaod6466yiolqc
+        type:
+        - build
+        - link
+    hash: nogskajwfnrjvfjyanfsxykhnvky5mn4
+- libpthread-stubs:
+    version: '0.4'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: aluh6mkmjsrlt47uswefy4hzxchtf6rl
+- libxau:
+    version: 1.0.8
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      xproto:
+        hash: fnrmapko4ibyekxd225f7gcaci2nbcls
+        type:
+        - build
+        - link
+    hash: uamtc4jtix27p5n3sjgkz5xfuvb6eccs
+- xproto:
+    version: 7.0.31
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: fnrmapko4ibyekxd225f7gcaci2nbcls
+- libxdmcp:
+    version: 1.1.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: 3ll7a57edisrfyr5s3jaod6466yiolqc
+- xextproto:
+    version: 7.3.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: mubhwkm2qo3oeczhlzipj5uacfzpr2jo
+- r-bbmisc:
+    version: '1.11'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-checkmate:
+        hash: upyy6jg4jp22l74fkonqdcu4nxeptav2
+        type:
+        - build
+        - run
+    hash: uf7cy377vye7ktz7rttjdhzvsk6si63q
+- r-checkmate:
+    version: 1.8.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-backports:
+        hash: azztjjgl3whtgny4gkexqmeeyvormnqt
+        type:
+        - build
+        - run
+    hash: upyy6jg4jp22l74fkonqdcu4nxeptav2
+- r-backports:
+    version: 1.1.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: azztjjgl3whtgny4gkexqmeeyvormnqt
+- r-ggplot2:
+    version: 2.2.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-digest:
+        hash: 5mxu7borfyagn2rq2zjkizaf2uvzceuj
+        type:
+        - build
+        - run
+      r-gtable:
+        hash: 7lptiib4helh6f4ih64tsbmq6t2j4xtz
+        type:
+        - build
+        - run
+      r-lazyeval:
+        hash: xtn2fhhp5rebnezqua3ykvran4xsvqgp
+        type:
+        - build
+        - run
+      r-mass:
+        hash: loxx65ra4ircrzwhsx6beduwofdwvfj6
+        type:
+        - build
+        - run
+      r-plyr:
+        hash: 2mdb27yrwmhyi5kw4skms6jwz6gpw2oa
+        type:
+        - build
+        - run
+      r-reshape2:
+        hash: w3zfi4ckpgznixbn3l3af5penpbmpdgj
+        type:
+        - build
+        - run
+      r-scales:
+        hash: zecw2ps4jym2pzbt4t2q4eii2vo6aqoa
+        type:
+        - build
+        - run
+      r-tibble:
+        hash: 6jo2ts25u72g57k2apct6izk7dnsveyf
+        type:
+        - build
+        - run
+    hash: vb6xsnskkzzhx6gcwaqbnuyhhedroehs
+- r-digest:
+    version: 0.6.12
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: 5mxu7borfyagn2rq2zjkizaf2uvzceuj
+- r-gtable:
+    version: 0.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: 7lptiib4helh6f4ih64tsbmq6t2j4xtz
+- r-lazyeval:
+    version: 0.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: xtn2fhhp5rebnezqua3ykvran4xsvqgp
+- r-mass:
+    version: 7.3-47
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: loxx65ra4ircrzwhsx6beduwofdwvfj6
+- r-plyr:
+    version: 1.8.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+    hash: 2mdb27yrwmhyi5kw4skms6jwz6gpw2oa
+- r-rcpp:
+    version: 0.12.16
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+- r-reshape2:
+    version: 1.4.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-plyr:
+        hash: 2mdb27yrwmhyi5kw4skms6jwz6gpw2oa
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+      r-stringr:
+        hash: 42mkhl4j45mccy4pakwnptsmsbtsmoo6
+        type:
+        - build
+        - run
+    hash: w3zfi4ckpgznixbn3l3af5penpbmpdgj
+- r-stringr:
+    version: 1.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-magrittr:
+        hash: 2de4au5qymiedwfz4cfg7txnpwjbkgx7
+        type:
+        - build
+        - run
+      r-stringi:
+        hash: 7nxa6e6nvqhgy6tmrdaypn5cep75e7dn
+        type:
+        - build
+        - run
+    hash: 42mkhl4j45mccy4pakwnptsmsbtsmoo6
+- r-magrittr:
+    version: '1.5'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: 2de4au5qymiedwfz4cfg7txnpwjbkgx7
+- r-stringi:
+    version: 1.1.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      icu4c:
+        hash: dqoibpasmqaqbgkraqohe7pzsmsmod6d
+        type:
+        - build
+        - link
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: 7nxa6e6nvqhgy6tmrdaypn5cep75e7dn
+- r-scales:
+    version: 0.5.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-dichromat:
+        hash: mjy6w2yvmfpidrg5cli3bl2lm72rkg5h
+        type:
+        - build
+        - run
+      r-labeling:
+        hash: hgwexq7ydcvyppuaqdkvhjrba67o6v45
+        type:
+        - build
+        - run
+      r-munsell:
+        hash: bqufg24dbzfvy6cvvc7mgy77mlc4l5g3
+        type:
+        - build
+        - run
+      r-plyr:
+        hash: 2mdb27yrwmhyi5kw4skms6jwz6gpw2oa
+        type:
+        - build
+        - run
+      r-r6:
+        hash: fnmqsm3yi2zwtexfwdw4cdlaiakwt7ts
+        type:
+        - build
+        - run
+      r-rcolorbrewer:
+        hash: 2xt5fuc3lvaacvhhwisdngmljdkftpoi
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+      r-viridislite:
+        hash: jw4t2zk2sdhf34naqnzcm6kdlsx6l5dk
+        type:
+        - build
+        - run
+    hash: zecw2ps4jym2pzbt4t2q4eii2vo6aqoa
+- r-dichromat:
+    version: 2.0-0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: mjy6w2yvmfpidrg5cli3bl2lm72rkg5h
+- r-labeling:
+    version: '0.3'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: hgwexq7ydcvyppuaqdkvhjrba67o6v45
+- r-munsell:
+    version: 0.4.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-colorspace:
+        hash: gcbuhudktfpjif45ukssf4vtf6togzy2
+        type:
+        - build
+        - run
+    hash: bqufg24dbzfvy6cvvc7mgy77mlc4l5g3
+- r-colorspace:
+    version: 1.3-2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: gcbuhudktfpjif45ukssf4vtf6togzy2
+- r-r6:
+    version: 2.2.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: fnmqsm3yi2zwtexfwdw4cdlaiakwt7ts
+- r-rcolorbrewer:
+    version: 1.1-2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: 2xt5fuc3lvaacvhhwisdngmljdkftpoi
+- r-viridislite:
+    version: 0.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: jw4t2zk2sdhf34naqnzcm6kdlsx6l5dk
+- r-tibble:
+    version: 1.3.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-assertthat:
+        hash: n45d2jczbd57sfj2hunuxhgatgczky74
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+      r-rlang:
+        hash: x7zr35s5rruts7mmasraekmdjl7blayp
+        type:
+        - build
+        - run
+    hash: 6jo2ts25u72g57k2apct6izk7dnsveyf
+- r-assertthat:
+    version: 0.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: n45d2jczbd57sfj2hunuxhgatgczky74
+- r-rlang:
+    version: 0.2.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: x7zr35s5rruts7mmasraekmdjl7blayp
+- r-mco:
+    version: 1.0-15.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: ufijvz33mvhd2x2hxgrpxhyzqz22u3oa
+- r-paramhelpers:
+    version: '1.10'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-bbmisc:
+        hash: uf7cy377vye7ktz7rttjdhzvsk6si63q
+        type:
+        - build
+        - run
+      r-checkmate:
+        hash: upyy6jg4jp22l74fkonqdcu4nxeptav2
+        type:
+        - build
+        - run
+    hash: gumedaica3i3ebr3yr3muz6m54tdcdgu
+- r-plot3d:
+    version: 1.1.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-misc3d:
+        hash: qcfqkxzz3olylpm4jyjsc4arwnkykatb
+        type:
+        - build
+        - run
+    hash: ylosjvetdpfk4xykrg6buqac6wsrtcxb
+- r-misc3d:
+    version: 0.8-4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: qcfqkxzz3olylpm4jyjsc4arwnkykatb
+- r-plotly:
+    version: 4.7.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-base64enc:
+        hash: lbcxufahylnaywvs6g7yh4zxmg5shdpi
+        type:
+        - build
+        - run
+      r-crosstalk:
+        hash: 4lgswj4fvyfazdjcno32gfazfnnwpypu
+        type:
+        - build
+        - run
+      r-data-table:
+        hash: ceafolsefpxkairopurx3vlq27hbjtta
+        type:
+        - build
+        - run
+      r-dplyr:
+        hash: acqknatqethzzn7jd426uaqkzvv3v2qr
+        type:
+        - build
+        - run
+      r-ggplot2:
+        hash: vb6xsnskkzzhx6gcwaqbnuyhhedroehs
+        type:
+        - build
+        - run
+      r-hexbin:
+        hash: w27afkxaac4krymzjcpdk5pxqzodkuja
+        type:
+        - build
+        - run
+      r-htmltools:
+        hash: gsyoc6jwyn2wvpbcvg2hsjfmjrsfjlzl
+        type:
+        - build
+        - run
+      r-htmlwidgets:
+        hash: t56326asytjen55cvmwhml3yoeizgdfz
+        type:
+        - build
+        - run
+      r-httr:
+        hash: d4c33qwlcgqdpj4vqyoss7xhi2ijspma
+        type:
+        - build
+        - run
+      r-purrr:
+        hash: 55esu767xw35jxyxz4otvqcyinewcyqk
+        type:
+        - build
+        - run
+      r-tidyr:
+        hash: iweminu34mebwoyrwaaqqbroph2mggna
+        type:
+        - build
+        - run
+    hash: cawtsrbdsgub7fawkdylif4jzr5urjvp
+- r-base64enc:
+    version: 0.1-3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: lbcxufahylnaywvs6g7yh4zxmg5shdpi
+- r-crosstalk:
+    version: 1.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-ggplot2:
+        hash: vb6xsnskkzzhx6gcwaqbnuyhhedroehs
+        type:
+        - build
+        - run
+      r-htmltools:
+        hash: gsyoc6jwyn2wvpbcvg2hsjfmjrsfjlzl
+        type:
+        - build
+        - run
+      r-jsonlite:
+        hash: acg2isshewcbvx3ijy4d2ezp4cammqb7
+        type:
+        - build
+        - run
+      r-lazyeval:
+        hash: xtn2fhhp5rebnezqua3ykvran4xsvqgp
+        type:
+        - build
+        - run
+      r-shiny:
+        hash: qygyu3jg7wsvadilnjfgxug7wcn57rl5
+        type:
+        - build
+        - run
+    hash: 4lgswj4fvyfazdjcno32gfazfnnwpypu
+- r-htmltools:
+    version: 0.3.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-digest:
+        hash: 5mxu7borfyagn2rq2zjkizaf2uvzceuj
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+    hash: gsyoc6jwyn2wvpbcvg2hsjfmjrsfjlzl
+- r-jsonlite:
+    version: '1.5'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: acg2isshewcbvx3ijy4d2ezp4cammqb7
+- r-shiny:
+    version: 1.0.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-digest:
+        hash: 5mxu7borfyagn2rq2zjkizaf2uvzceuj
+        type:
+        - build
+        - run
+      r-htmltools:
+        hash: gsyoc6jwyn2wvpbcvg2hsjfmjrsfjlzl
+        type:
+        - build
+        - run
+      r-httpuv:
+        hash: 4d6o4rf7ee5hbj5znzjas2rgyzhoqvam
+        type:
+        - build
+        - run
+      r-jsonlite:
+        hash: acg2isshewcbvx3ijy4d2ezp4cammqb7
+        type:
+        - build
+        - run
+      r-mime:
+        hash: zcikd7a4zqk2ojq35vqh5wc4fk4w76t2
+        type:
+        - build
+        - run
+      r-r6:
+        hash: fnmqsm3yi2zwtexfwdw4cdlaiakwt7ts
+        type:
+        - build
+        - run
+      r-sourcetools:
+        hash: jn64cv3ct5vfxsfmhybppggrowmrswqz
+        type:
+        - build
+        - run
+      r-xtable:
+        hash: ss2ms3li7mdd2gdr5w4rdhx3q7jxizr6
+        type:
+        - build
+        - run
+    hash: qygyu3jg7wsvadilnjfgxug7wcn57rl5
+- r-httpuv:
+    version: 1.3.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+    hash: 4d6o4rf7ee5hbj5znzjas2rgyzhoqvam
+- r-mime:
+    version: '0.5'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: zcikd7a4zqk2ojq35vqh5wc4fk4w76t2
+- r-sourcetools:
+    version: 0.1.6
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-testthat:
+        hash: js65twlhxncasyt7xxgtlqjbjvbxt2sk
+        type:
+        - build
+        - run
+    hash: jn64cv3ct5vfxsfmhybppggrowmrswqz
+- r-testthat:
+    version: 1.0.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-crayon:
+        hash: fr6m5bzyatyleyxdumhmls5as7voacbh
+        type:
+        - build
+        - run
+      r-digest:
+        hash: 5mxu7borfyagn2rq2zjkizaf2uvzceuj
+        type:
+        - build
+        - run
+      r-magrittr:
+        hash: 2de4au5qymiedwfz4cfg7txnpwjbkgx7
+        type:
+        - build
+        - run
+      r-praise:
+        hash: pbbds57e6exdsh3jj2wkema7s2xjjqpy
+        type:
+        - build
+        - run
+      r-r6:
+        hash: fnmqsm3yi2zwtexfwdw4cdlaiakwt7ts
+        type:
+        - build
+        - run
+    hash: js65twlhxncasyt7xxgtlqjbjvbxt2sk
+- r-crayon:
+    version: 1.3.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: fr6m5bzyatyleyxdumhmls5as7voacbh
+- r-praise:
+    version: 1.0.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: pbbds57e6exdsh3jj2wkema7s2xjjqpy
+- r-xtable:
+    version: 1.8-2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: ss2ms3li7mdd2gdr5w4rdhx3q7jxizr6
+- r-data-table:
+    version: 1.10.4-3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: ceafolsefpxkairopurx3vlq27hbjtta
+- r-dplyr:
+    version: 0.7.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-assertthat:
+        hash: n45d2jczbd57sfj2hunuxhgatgczky74
+        type:
+        - build
+        - run
+      r-bh:
+        hash: dz3kb63jxsd6lg5ugjc2mo5jzt6c3mxo
+        type:
+        - build
+        - run
+      r-bindr:
+        hash: fnppp5g7bx6t455o53uysrjr77t3s5so
+        type:
+        - build
+        - run
+      r-bindrcpp:
+        hash: 66wriqgditqqgcpc3wh7zgcnl3cmbd6m
+        type:
+        - build
+        - run
+      r-dbi:
+        hash: b7frrtaiyb2vl4eszwzvbv7acchvcz32
+        type:
+        - build
+        - run
+      r-glue:
+        hash: sjrcdlbcj5c2r2vb6edwbwtfglkzmu2a
+        type:
+        - build
+        - run
+      r-lazyeval:
+        hash: xtn2fhhp5rebnezqua3ykvran4xsvqgp
+        type:
+        - build
+        - run
+      r-magrittr:
+        hash: 2de4au5qymiedwfz4cfg7txnpwjbkgx7
+        type:
+        - build
+        - run
+      r-pkgconfig:
+        hash: sp2dz4ae4lqvsx7oabkv77kkay45dxi2
+        type:
+        - build
+        - run
+      r-plogr:
+        hash: la5q4rfuvvjfnefmsmmmkgr2dzsxfpns
+        type:
+        - build
+        - run
+      r-r6:
+        hash: fnmqsm3yi2zwtexfwdw4cdlaiakwt7ts
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+      r-tibble:
+        hash: 6jo2ts25u72g57k2apct6izk7dnsveyf
+        type:
+        - build
+        - run
+      r-tidyselect:
+        hash: 7sqpc6s4egcvt4xhyoofxhxhkx2b7uds
+        type:
+        - build
+        - run
+    hash: acqknatqethzzn7jd426uaqkzvv3v2qr
+- r-bh:
+    version: 1.65.0-1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: dz3kb63jxsd6lg5ugjc2mo5jzt6c3mxo
+- r-bindr:
+    version: 0.1.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: fnppp5g7bx6t455o53uysrjr77t3s5so
+- r-bindrcpp:
+    version: 0.2.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-bindr:
+        hash: fnppp5g7bx6t455o53uysrjr77t3s5so
+        type:
+        - build
+        - run
+      r-plogr:
+        hash: la5q4rfuvvjfnefmsmmmkgr2dzsxfpns
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+    hash: 66wriqgditqqgcpc3wh7zgcnl3cmbd6m
+- r-plogr:
+    version: 0.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: la5q4rfuvvjfnefmsmmmkgr2dzsxfpns
+- r-dbi:
+    version: '0.7'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: b7frrtaiyb2vl4eszwzvbv7acchvcz32
+- r-glue:
+    version: 1.2.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: sjrcdlbcj5c2r2vb6edwbwtfglkzmu2a
+- r-pkgconfig:
+    version: 2.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: sp2dz4ae4lqvsx7oabkv77kkay45dxi2
+- r-tidyselect:
+    version: 0.2.3
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-glue:
+        hash: sjrcdlbcj5c2r2vb6edwbwtfglkzmu2a
+        type:
+        - build
+        - run
+      r-purrr:
+        hash: 55esu767xw35jxyxz4otvqcyinewcyqk
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+      r-rlang:
+        hash: x7zr35s5rruts7mmasraekmdjl7blayp
+        type:
+        - build
+        - run
+    hash: 7sqpc6s4egcvt4xhyoofxhxhkx2b7uds
+- r-purrr:
+    version: 0.2.4
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-magrittr:
+        hash: 2de4au5qymiedwfz4cfg7txnpwjbkgx7
+        type:
+        - build
+        - run
+      r-rlang:
+        hash: x7zr35s5rruts7mmasraekmdjl7blayp
+        type:
+        - build
+        - run
+      r-tibble:
+        hash: 6jo2ts25u72g57k2apct6izk7dnsveyf
+        type:
+        - build
+        - run
+    hash: 55esu767xw35jxyxz4otvqcyinewcyqk
+- r-hexbin:
+    version: 1.27.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-lattice:
+        hash: wjawmvo42dnh2a5445jz6v2rz4d77ngg
+        type:
+        - build
+        - run
+    hash: w27afkxaac4krymzjcpdk5pxqzodkuja
+- r-lattice:
+    version: 0.20-35
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: wjawmvo42dnh2a5445jz6v2rz4d77ngg
+- r-htmlwidgets:
+    version: '0.9'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-htmltools:
+        hash: gsyoc6jwyn2wvpbcvg2hsjfmjrsfjlzl
+        type:
+        - build
+        - run
+      r-jsonlite:
+        hash: acg2isshewcbvx3ijy4d2ezp4cammqb7
+        type:
+        - build
+        - run
+      r-yaml:
+        hash: uc44yyz7ahjsqlydcermzw5yyoq2djvt
+        type:
+        - build
+        - run
+    hash: t56326asytjen55cvmwhml3yoeizgdfz
+- r-yaml:
+    version: 2.1.14
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: uc44yyz7ahjsqlydcermzw5yyoq2djvt
+- r-httr:
+    version: 1.3.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-curl:
+        hash: yqyl5bq6kt27ymsmo3cape7u2l3agsp2
+        type:
+        - build
+        - run
+      r-jsonlite:
+        hash: acg2isshewcbvx3ijy4d2ezp4cammqb7
+        type:
+        - build
+        - run
+      r-mime:
+        hash: zcikd7a4zqk2ojq35vqh5wc4fk4w76t2
+        type:
+        - build
+        - run
+      r-openssl:
+        hash: v3fq4u76z2ep6mmvsxiys6wrl6itc6oq
+        type:
+        - build
+        - run
+      r-r6:
+        hash: fnmqsm3yi2zwtexfwdw4cdlaiakwt7ts
+        type:
+        - build
+        - run
+    hash: d4c33qwlcgqdpj4vqyoss7xhi2ijspma
+- r-curl:
+    version: '3.0'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      curl:
+        hash: whiwusbhxuqrk626jcfrkraec6kxzr77
+        type:
+        - build
+        - link
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: yqyl5bq6kt27ymsmo3cape7u2l3agsp2
+- r-openssl:
+    version: 0.9.7
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      openssl:
+        hash: tjw4u3djxilrlxr5wh6o5ry6cpxzddkm
+        type:
+        - build
+        - link
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: v3fq4u76z2ep6mmvsxiys6wrl6itc6oq
+- r-tidyr:
+    version: 0.7.2
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-dplyr:
+        hash: acqknatqethzzn7jd426uaqkzvv3v2qr
+        type:
+        - build
+        - run
+      r-glue:
+        hash: sjrcdlbcj5c2r2vb6edwbwtfglkzmu2a
+        type:
+        - build
+        - run
+      r-magrittr:
+        hash: 2de4au5qymiedwfz4cfg7txnpwjbkgx7
+        type:
+        - build
+        - run
+      r-purrr:
+        hash: 55esu767xw35jxyxz4otvqcyinewcyqk
+        type:
+        - build
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+      r-rlang:
+        hash: x7zr35s5rruts7mmasraekmdjl7blayp
+        type:
+        - build
+        - run
+      r-stringi:
+        hash: 7nxa6e6nvqhgy6tmrdaypn5cep75e7dn
+        type:
+        - build
+        - run
+      r-tibble:
+        hash: 6jo2ts25u72g57k2apct6izk7dnsveyf
+        type:
+        - build
+        - run
+      r-tidyselect:
+        hash: 7sqpc6s4egcvt4xhyoofxhxhkx2b7uds
+        type:
+        - build
+        - run
+    hash: iweminu34mebwoyrwaaqqbroph2mggna
+- r-rcpparmadillo:
+    version: 0.8.100.1.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+      r-rcpp:
+        hash: qrbik4cf64cvxnxxcpv4bjfrxczh4jvs
+        type:
+        - build
+        - run
+    hash: gdwtr2pvlfievpwgaqqv2knkalxdelek
+- r-rjsonio:
+    version: 1.3-0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      r:
+        hash: trk6aqtgloltxwi5lzork7bpm2qjx5nc
+        type:
+        - build
+        - link
+        - run
+    hash: 5ikvvd4j2ttdvgvbvo3xzleuan4z2ee6

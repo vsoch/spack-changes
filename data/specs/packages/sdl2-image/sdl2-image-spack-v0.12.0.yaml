@@ -1,0 +1,44 @@
+spec:
+- sdl2-image:
+    version: 2.0.1
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      sdl2:
+        hash: a43vjvd6vtiblpzpqyvvtr4umhyolouv
+        type:
+        - build
+        - link
+    hash: bpnnwqnjerzhtp6g27exhz5wz6j4mrtu
+- sdl2:
+    version: 2.0.5
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: a43vjvd6vtiblpzpqyvvtr4umhyolouv
