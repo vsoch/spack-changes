@@ -1,0 +1,44 @@
+spec:
+- rdma-core:
+    version: '20'
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      build_type: RelWithDebInfo
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    dependencies:
+      libnl:
+        hash: e4ntblwhqe77qykpcg2nf4orwmmf32hk
+        type:
+        - build
+        - link
+    hash: vd75ttkphhedpoqjz2yj67rggs42lwsd
+- libnl:
+    version: 3.3.0
+    arch:
+      platform: linux
+      platform_os: ubuntu20.04
+      target: x86_64
+    compiler:
+      name: gcc
+      version: 9.3.0
+    namespace: builtin
+    parameters:
+      cflags: []
+      cppflags: []
+      cxxflags: []
+      fflags: []
+      ldflags: []
+      ldlibs: []
+    hash: e4ntblwhqe77qykpcg2nf4orwmmf32hk
